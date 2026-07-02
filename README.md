@@ -40,9 +40,9 @@ The type split is 278 XSS, 52 SQL injection, and 45 command injection cases.
 WebVulnBench will continue to expand beyond the current PHPBench-derived PHP
 targets. Future releases are expected to increase coverage along three axes:
 
-- target application languages and frameworks,
-- vulnerability types and exploit patterns,
-- the overall number of vulnerabilities, PoCs, and runnable benchmark targets.
+- application language types (e.g., Java and Golang),
+- vulnerability types (e.g., Broken Access Control),
+- scale, including the number of vulnerabilities and benchmark targets.
 
 The goal is to maintain a growing, Docker-backed benchmark suite with clear
 ground truth, reproducible PoCs, and stable metadata for tool evaluation.
