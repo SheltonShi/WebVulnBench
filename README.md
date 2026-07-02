@@ -66,8 +66,6 @@ vulnerability count and PoC count are equal.
 
 ## Citation
 
-If you use the PHPBench-derived benchmark data in this repository, please cite:
-
 ```bibtex
 @inproceedings{shi2026phpbench,
   title = {PHPBench: Automated Generation of Verifiable and Hierarchical Benchmarks for PHP Web Fuzzing},
