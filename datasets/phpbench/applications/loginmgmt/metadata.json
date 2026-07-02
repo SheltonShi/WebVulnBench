@@ -1,0 +1,14 @@
+{
+  "application": "loginmgmt",
+  "docker_image": "sheltonshi/webvulnbench:phpbench-loginmgmt-v0.1.0",
+  "name": "User Registration Login Management",
+  "poc_count": 22,
+  "pocs_file": "datasets/phpbench/applications/loginmgmt/pocs.json",
+  "source_repository": "https://phpgurukul.com/user-registration-login-and-user-management-system-with-admin-panel/",
+  "vuln_type_counts": {
+    "cmdi": 2,
+    "sqli": 1,
+    "xss": 19
+  },
+  "vulnerability_count": 22
+}

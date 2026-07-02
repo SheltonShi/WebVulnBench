@@ -1,0 +1,33 @@
+name: New target proposal
+description: Propose a new benchmark target or vulnerability batch.
+title: "[target] "
+labels: ["new-target"]
+body:
+  - type: input
+    id: application
+    attributes:
+      label: Proposed application ID
+      placeholder: app-short-name
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Source reference
+      placeholder: https://example.com/source
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Benchmark evidence
+      description: Include vulnerability labels, normal inputs, PoC inputs, and oracle/verification notes.
+    validations:
+      required: true
+  - type: input
+    id: docker_tag
+    attributes:
+      label: Docker tag
+      placeholder: sheltonshi/webvulnbench:...
+    validations:
+      required: false

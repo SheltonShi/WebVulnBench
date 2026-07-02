@@ -1,0 +1,14 @@
+{
+  "application": "wordpress",
+  "docker_image": "sheltonshi/webvulnbench:phpbench-wordpress-v0.1.0",
+  "name": "WordPress",
+  "poc_count": 80,
+  "pocs_file": "datasets/phpbench/applications/wordpress/pocs.json",
+  "source_repository": "https://github.com/WordPress/WordPress",
+  "vuln_type_counts": {
+    "cmdi": 9,
+    "sqli": 10,
+    "xss": 61
+  },
+  "vulnerability_count": 80
+}
