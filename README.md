@@ -35,6 +35,18 @@ phpbench-<application>-v0.1.0
 Total: 10 applications, 375 vulnerabilities, and 375 verifiable PoCs.
 The type split is 278 XSS, 52 SQL injection, and 45 command injection cases.
 
+## Roadmap
+
+WebVulnBench will continue to expand beyond the current PHPBench-derived PHP
+targets. Future releases are expected to increase coverage along three axes:
+
+- target application languages and frameworks,
+- vulnerability types and exploit patterns,
+- the overall number of vulnerabilities, PoCs, and runnable benchmark targets.
+
+The goal is to maintain a growing, Docker-backed benchmark suite with clear
+ground truth, reproducible PoCs, and stable metadata for tool evaluation.
+
 ## Layout
 
 ```text
@@ -51,6 +63,17 @@ stores request-level PoC metadata.
 
 For this release, each PHPBench `vuln_id` has one verifiable PoC, so the
 vulnerability count and PoC count are equal.
+
+## Community Maintenance
+
+We welcome researchers and practitioners to participate in maintaining and
+expanding WebVulnBench. Useful contributions include new vulnerable target
+applications, additional verified PoCs, metadata corrections, Docker image
+maintenance, and reproducibility improvements.
+
+For new benchmark cases, please preserve enough information to support
+verification: the target application, vulnerability type, PoC request, expected
+oracle, Docker image tag, and source reference when available.
 
 ## Safety
 
