@@ -1,0 +1,14 @@
+{
+  "application": "prestashop",
+  "docker_image": "sheltonshi/webvulnbench:phpbench-prestashop-v0.1.0",
+  "name": "PrestaShop",
+  "poc_count": 19,
+  "pocs_file": "PHP/prestashop/pocs.json",
+  "source_repository": "https://github.com/PrestaShop/PrestaShop",
+  "vuln_type_counts": {
+    "cmdi": 2,
+    "sqli": 1,
+    "xss": 16
+  },
+  "vulnerability_count": 19
+}

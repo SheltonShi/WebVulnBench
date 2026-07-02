@@ -1,0 +1,14 @@
+{
+  "application": "doctorappt",
+  "docker_image": "sheltonshi/webvulnbench:phpbench-doctorappt-v0.1.0",
+  "name": "Doctor Appointment Booking System",
+  "poc_count": 14,
+  "pocs_file": "PHP/doctorappt/pocs.json",
+  "source_repository": "https://projectworlds.in/free-projects/php-projects/online-doctor-appointment-booking-system-php-and-mysql",
+  "vuln_type_counts": {
+    "cmdi": 1,
+    "sqli": 4,
+    "xss": 9
+  },
+  "vulnerability_count": 14
+}

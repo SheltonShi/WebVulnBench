@@ -1,0 +1,14 @@
+{
+  "application": "mybb",
+  "docker_image": "sheltonshi/webvulnbench:phpbench-mybb-v0.1.0",
+  "name": "MyBB",
+  "poc_count": 42,
+  "pocs_file": "PHP/mybb/pocs.json",
+  "source_repository": "https://github.com/mybb/mybb",
+  "vuln_type_counts": {
+    "cmdi": 5,
+    "sqli": 7,
+    "xss": 30
+  },
+  "vulnerability_count": 42
+}

@@ -1,0 +1,14 @@
+{
+  "application": "drupal",
+  "docker_image": "sheltonshi/webvulnbench:phpbench-drupal-v0.1.0",
+  "name": "Drupal",
+  "poc_count": 26,
+  "pocs_file": "PHP/drupal/pocs.json",
+  "source_repository": "https://github.com/drupal/drupal",
+  "vuln_type_counts": {
+    "cmdi": 3,
+    "sqli": 4,
+    "xss": 19
+  },
+  "vulnerability_count": 26
+}

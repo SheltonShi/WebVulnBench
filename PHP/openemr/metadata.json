@@ -1,0 +1,14 @@
+{
+  "application": "openemr",
+  "docker_image": "sheltonshi/webvulnbench:phpbench-openemr-v0.1.0",
+  "name": "OpenEMR",
+  "poc_count": 89,
+  "pocs_file": "PHP/openemr/pocs.json",
+  "source_repository": "https://github.com/openemr/openemr",
+  "vuln_type_counts": {
+    "cmdi": 14,
+    "sqli": 13,
+    "xss": 62
+  },
+  "vulnerability_count": 89
+}

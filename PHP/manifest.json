@@ -1,0 +1,165 @@
+{
+  "applications": {
+    "doctorappt": {
+      "application": "doctorappt",
+      "docker_image": "sheltonshi/webvulnbench:phpbench-doctorappt-v0.1.0",
+      "name": "Doctor Appointment Booking System",
+      "poc_count": 14,
+      "pocs_file": "PHP/doctorappt/pocs.json",
+      "source_repository": "https://projectworlds.in/free-projects/php-projects/online-doctor-appointment-booking-system-php-and-mysql",
+      "vuln_type_counts": {
+        "cmdi": 1,
+        "sqli": 4,
+        "xss": 9
+      },
+      "vulnerability_count": 14
+    },
+    "drupal": {
+      "application": "drupal",
+      "docker_image": "sheltonshi/webvulnbench:phpbench-drupal-v0.1.0",
+      "name": "Drupal",
+      "poc_count": 26,
+      "pocs_file": "PHP/drupal/pocs.json",
+      "source_repository": "https://github.com/drupal/drupal",
+      "vuln_type_counts": {
+        "cmdi": 3,
+        "sqli": 4,
+        "xss": 19
+      },
+      "vulnerability_count": 26
+    },
+    "hospmgmt": {
+      "application": "hospmgmt",
+      "docker_image": "sheltonshi/webvulnbench:phpbench-hospmgmt-v0.1.0",
+      "name": "Hospital Management System",
+      "poc_count": 36,
+      "pocs_file": "PHP/hospmgmt/pocs.json",
+      "source_repository": "https://phpgurukul.com/hospital-management-system-in-php",
+      "vuln_type_counts": {
+        "cmdi": 3,
+        "sqli": 4,
+        "xss": 29
+      },
+      "vulnerability_count": 36
+    },
+    "joomla": {
+      "application": "joomla",
+      "docker_image": "sheltonshi/webvulnbench:phpbench-joomla-v0.1.0",
+      "name": "Joomla",
+      "poc_count": 27,
+      "pocs_file": "PHP/joomla/pocs.json",
+      "source_repository": "https://github.com/joomla/joomla-cms",
+      "vuln_type_counts": {
+        "cmdi": 3,
+        "sqli": 6,
+        "xss": 18
+      },
+      "vulnerability_count": 27
+    },
+    "loginmgmt": {
+      "application": "loginmgmt",
+      "docker_image": "sheltonshi/webvulnbench:phpbench-loginmgmt-v0.1.0",
+      "name": "User Registration Login Management",
+      "poc_count": 22,
+      "pocs_file": "PHP/loginmgmt/pocs.json",
+      "source_repository": "https://phpgurukul.com/user-registration-login-and-user-management-system-with-admin-panel/",
+      "vuln_type_counts": {
+        "cmdi": 2,
+        "sqli": 1,
+        "xss": 19
+      },
+      "vulnerability_count": 22
+    },
+    "mybb": {
+      "application": "mybb",
+      "docker_image": "sheltonshi/webvulnbench:phpbench-mybb-v0.1.0",
+      "name": "MyBB",
+      "poc_count": 42,
+      "pocs_file": "PHP/mybb/pocs.json",
+      "source_repository": "https://github.com/mybb/mybb",
+      "vuln_type_counts": {
+        "cmdi": 5,
+        "sqli": 7,
+        "xss": 30
+      },
+      "vulnerability_count": 42
+    },
+    "openemr": {
+      "application": "openemr",
+      "docker_image": "sheltonshi/webvulnbench:phpbench-openemr-v0.1.0",
+      "name": "OpenEMR",
+      "poc_count": 89,
+      "pocs_file": "PHP/openemr/pocs.json",
+      "source_repository": "https://github.com/openemr/openemr",
+      "vuln_type_counts": {
+        "cmdi": 14,
+        "sqli": 13,
+        "xss": 62
+      },
+      "vulnerability_count": 89
+    },
+    "piwigo": {
+      "application": "piwigo",
+      "docker_image": "sheltonshi/webvulnbench:phpbench-piwigo-v0.1.0",
+      "name": "Piwigo",
+      "poc_count": 20,
+      "pocs_file": "PHP/piwigo/pocs.json",
+      "source_repository": "https://github.com/Piwigo/Piwigo",
+      "vuln_type_counts": {
+        "cmdi": 3,
+        "sqli": 2,
+        "xss": 15
+      },
+      "vulnerability_count": 20
+    },
+    "prestashop": {
+      "application": "prestashop",
+      "docker_image": "sheltonshi/webvulnbench:phpbench-prestashop-v0.1.0",
+      "name": "PrestaShop",
+      "poc_count": 19,
+      "pocs_file": "PHP/prestashop/pocs.json",
+      "source_repository": "https://github.com/PrestaShop/PrestaShop",
+      "vuln_type_counts": {
+        "cmdi": 2,
+        "sqli": 1,
+        "xss": 16
+      },
+      "vulnerability_count": 19
+    },
+    "wordpress": {
+      "application": "wordpress",
+      "docker_image": "sheltonshi/webvulnbench:phpbench-wordpress-v0.1.0",
+      "name": "WordPress",
+      "poc_count": 80,
+      "pocs_file": "PHP/wordpress/pocs.json",
+      "source_repository": "https://github.com/WordPress/WordPress",
+      "vuln_type_counts": {
+        "cmdi": 9,
+        "sqli": 10,
+        "xss": 61
+      },
+      "vulnerability_count": 80
+    }
+  },
+  "counting_method": "Each native PHPBench Verifiable_PoCs key is treated as one stable vulnerability id. For this release, each vulnerability id has one verifiable PoC, so total_vulnerabilities equals total_pocs.",
+  "dataset": "PHPBench",
+  "dataset_release": "v0.1.0",
+  "docker_tag_template": "phpbench-{application}-v0.1.0",
+  "dockerhub_repository": "sheltonshi/webvulnbench",
+  "ground_truth_scope": "HTTP request-level PoC metadata only; code-level insertion locations are not included in this repository.",
+  "layout": "PHP/{application}/pocs.json",
+  "schema_version": "0.1.0",
+  "source_artifact": "PHPBench_Artifact/Constructed_Benchmark",
+  "source_files": {
+    "pocs": "PHPBench_Artifact/Constructed_Benchmark/Verifiable_PoCs/Verifiable_PoCs.json",
+    "target_applications": "PHPBench_Artifact/Constructed_Benchmark/Target_Application_Dataset/Target_Application_Dataset.json"
+  },
+  "total_applications": 10,
+  "total_pocs": 375,
+  "total_vulnerabilities": 375,
+  "vuln_type_counts": {
+    "cmdi": 45,
+    "sqli": 52,
+    "xss": 278
+  }
+}
