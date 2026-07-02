@@ -4,7 +4,7 @@ WebVulnBench maintains Docker image tags and PoC metadata for vulnerable web
 application benchmarks used to evaluate fuzzers, scanners, and LLM-based
 security agents.
 
-Docker images are hosted on Docker Hub (https://hub.docker.com/repository/docker/sheltonshi/webvulnbench), for example:
+Docker images are hosted on Docker Hub (https://hub.docker.com/r/sheltonshi/webvulnbench), for example:
 
 ```bash
 docker pull sheltonshi/webvulnbench:phpbench-wordpress-v0.1.0
