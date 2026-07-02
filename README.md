@@ -64,17 +64,6 @@ stores request-level PoC metadata.
 For this release, each PHPBench `vuln_id` has one verifiable PoC, so the
 vulnerability count and PoC count are equal.
 
-## Community Maintenance
-
-We welcome researchers and practitioners to participate in maintaining and
-expanding WebVulnBench. Useful contributions include new vulnerable target
-applications, additional verified PoCs, metadata corrections, Docker image
-maintenance, and reproducibility improvements.
-
-For new benchmark cases, please preserve enough information to support
-verification: the target application, vulnerability type, PoC request, expected
-oracle, Docker image tag, and source reference when available.
-
 ## Safety
 
 These images intentionally contain known vulnerabilities. Run them only in
