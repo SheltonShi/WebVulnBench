@@ -64,6 +64,19 @@ stores request-level PoC metadata.
 For this release, each PHPBench `vuln_id` has one verifiable PoC, so the
 vulnerability count and PoC count are equal.
 
+## Citation
+
+If you use the PHPBench-derived benchmark data in this repository, please cite:
+
+```bibtex
+@inproceedings{shi2026phpbench,
+  title = {PHPBench: Automated Generation of Verifiable and Hierarchical Benchmarks for PHP Web Fuzzing},
+  author = {Shi, Youkun and Zhang, Yuan and Zhang, Lei and Dai, Jiarun and Bai, Tianhao and Liu, Fengyu and Xiang, Bocheng and Luo, Xiapu and Yang, Min},
+  booktitle = {Proceedings of the ACM Conference on Computer and Communications Security (ACM CCS 2026)},
+  year = {2026}
+}
+```
+
 ## Safety
 
 These images intentionally contain known vulnerabilities. Run them only in
