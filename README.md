@@ -283,17 +283,6 @@ Each vulnerability is scored by a verifier derived from the corresponding
 report the relevant vulnerability and produce behavior that the evaluator can
 match against the known vulnerable endpoint, parameters, and payload semantics.
 
-For LLM-agent analysis, it is useful to separate failures into these categories:
-
-- hit verified by the evaluator
-- endpoint reached, vulnerable parameter tested, exploit not verified
-- endpoint reached, vulnerable parameter not tested
-- vulnerable endpoint not reached
-- agent reported a plausible issue but verifier did not confirm it
-
-This distinction separates navigation failures, parameter discovery failures,
-and exploit-construction failures.
-
 ## Citation
 
 ```bibtex
