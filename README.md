@@ -41,9 +41,9 @@ The type split is 278 XSS, 52 SQL injection, and 45 command injection cases.
 WebVulnBench will continue to expand beyond the current PHPBench-derived PHP
 targets. Future releases are expected to increase coverage along three axes:
 
-- application language types (e.g., Java and Golang),
-- vulnerability types (e.g., Broken Access Control),
-- scale, including the number of vulnerabilities and benchmark targets.
+- Application language types (e.g., Java and Golang),
+- Vulnerability types (e.g., Broken Access Control),
+- Scale, including the number of vulnerabilities and benchmark targets.
 
 The goal is to maintain a growing, Docker-backed benchmark suite with clear
 ground truth, reproducible PoCs, and stable metadata for tool evaluation.
@@ -191,30 +191,7 @@ metadata to CAGE scoring.
 This is a one-time adapter generation step. Once the generated `cage/`
 directory is committed to the repository, benchmark users can skip this step
 and run CAGE directly. You can ask Codex or another coding agent to generate
-the adapter from the repository metadata. From the WebVulnBench repository
-root, give the agent a prompt like:
-
-```text
-Generate a CAGE adapter for this benchmark.
-
-Use PHP/manifest.json and PHP/*/pocs.json as the source of truth.
-Create a cage/ directory with:
-- default_webvulnbench_php.yml
-- a benchmark module and prompt template
-- one generated sample per PHP application
-- challenge.json and docker-compose.cage.yml for each sample
-- a shared evaluator that loads pocs.json and scores one result per vuln_id
-
-The agent must only see the target URL and task description. Do not expose
-vuln_id, vulnerable parameters, PoC payloads, or verifier logic in the prompt.
-Use the published sheltonshi/webvulnbench Docker images as targets. Do not
-modify the released Docker images; create thin wrappers only if CAGE startup
-glue is required.
-
-The evaluator should map agent findings to PoC entries by vulnerability type,
-endpoint, and parameter evidence, then replay or validate the matching PoC
-against the live target.
-```
+the adapter from the repository metadata. 
 
 ### Build the Agent and Target Wrappers
 
