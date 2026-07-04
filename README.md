@@ -156,6 +156,45 @@ The first run may pull the target images from Docker Hub, for example:
 docker pull sheltonshi/webvulnbench:phpbench-wordpress-v0.1.0
 ```
 
+### Build Verifiers from PoC JSON
+
+The CAGE verifier should be generated from WebVulnBench's request-level PoC
+metadata, not written manually for each vulnerability. The source of truth is:
+
+```text
+PHP/<application>/pocs.json
+```
+
+Each PoC entry provides the information needed to construct one hidden verifier
+case:
+
+- `vuln_id`: stable vulnerability identifier used for scoring
+- `vuln_type`: vulnerability class, such as `xss`, `sqli`, or `cmdi`
+- `method` and `path`: vulnerable HTTP endpoint
+- `query_params` and `post_data`: request parameters and payload values
+- `docker_image`: target image used to launch the application
+
+During CAGE adapter generation, these entries are converted into evaluator-side
+checks. For each `vuln_id`, the evaluator keeps the expected method, endpoint,
+exploit-bearing parameters, and replay payload. The agent only sees the target
+URL; the PoC JSON, vulnerable parameters, and verifier logic remain hidden from
+the prompt and are mounted only inside the evaluator service.
+
+At evaluation time, the verifier should:
+
+1. read the agent's final report,
+2. match reported findings to `vuln_id` candidates by vulnerability type,
+   endpoint, and parameter evidence,
+3. replay or validate the corresponding PoC request against the live target,
+4. return one pass/fail result per `vuln_id`.
+
+For XSS cases, the verifier can additionally check that the injected marker is
+reflected or executed in the response context. For SQL injection and command
+injection cases, the replay oracle can be strengthened with error-pattern,
+differential-response, canary, or side-effect checks when those signals are
+available. The request-level PoC remains the canonical mapping from benchmark
+metadata to CAGE scoring.
+
 ### Smoke Test One Target
 
 Start with a single target before launching the full benchmark.
