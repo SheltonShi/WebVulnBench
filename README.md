@@ -65,6 +65,175 @@ stores request-level PoC metadata.
 For this release, each PHPBench `vuln_id` has one verifiable PoC, so the
 vulnerability count and PoC count are equal.
 
+## CAGE Evaluation
+
+WebVulnBench can also be used with
+[CAGE](https://github.com/AgentCyberRange/CAGE) to evaluate autonomous security
+agents against live, vulnerable web applications.
+
+CAGE is the evaluation harness. WebVulnBench supplies the benchmark targets:
+Docker images, request-level PoC metadata, and vulnerability ground truth. The
+CAGE adapter turns those targets into runnable CAGE samples, launches each web
+application in an isolated Docker Compose environment, records the agent's
+model and tool activity, and scores whether the agent actually finds and
+exploits the known vulnerabilities.
+
+The evaluation is black-box from the agent's perspective. The agent receives
+the target URL and must explore the web application over HTTP. Vulnerability
+IDs, official PoCs, and verifier logic are kept on the evaluator side.
+
+### Prerequisites
+
+- Docker Engine or Docker Desktop with Docker Compose v2
+- Python 3.11+
+- `uv`
+- A CAGE-supported coding agent image, for example `codex`, `qwen_code`, or
+  `claude_code`
+- A model API key configured through environment variables
+
+Install CAGE:
+
+```bash
+git clone https://github.com/AgentCyberRange/CAGE.git
+cd CAGE
+uv venv
+source .venv/bin/activate
+uv pip install -e .
+```
+
+Clone WebVulnBench next to CAGE:
+
+```bash
+cd ..
+git clone https://github.com/SheltonShi/WebVulnBench.git
+```
+
+### Configure a Model
+
+CAGE stores model endpoints in `CAGE/config/models.yml`. Keep API keys in
+environment variables rather than committing literal secrets.
+
+Example for an OpenAI-compatible endpoint:
+
+```bash
+cd CAGE
+cp config/models.example.yml config/models.yml
+export MODEL_API_KEY=...
+
+cage model set my-openai-compatible-model \
+  --provider openai \
+  --model <provider-model-name> \
+  --endpoint <openai-compatible-base-url> \
+  --api-key '${MODEL_API_KEY}'
+```
+
+Check that CAGE can see the model:
+
+```bash
+cage model list
+```
+
+### Build the Agent and Target Wrappers
+
+Build the agent image you want to evaluate:
+
+```bash
+cd CAGE
+source .venv/bin/activate
+cage agent build --agent qwen_code --variant pentestenv
+```
+
+Prepare the WebVulnBench CAGE target wrappers:
+
+```bash
+cd ../WebVulnBench
+cage/scripts/build-wrappers
+```
+
+The first run may pull the target images from Docker Hub, for example:
+
+```bash
+docker pull sheltonshi/webvulnbench:phpbench-wordpress-v0.1.0
+```
+
+### Smoke Test One Target
+
+Start with a single target before launching the full benchmark.
+
+From the CAGE repository:
+
+```bash
+cd ../CAGE
+source .venv/bin/activate
+
+cage benchmark check ../WebVulnBench/cage/default_webvulnbench_php.yml \
+  --sample phpbench-wordpress \
+  --show-prompt
+```
+
+Run one pass against WordPress:
+
+```bash
+cage run ../WebVulnBench/cage/default_webvulnbench_php.yml \
+  --agent qwen_code \
+  --model my-openai-compatible-model \
+  --sample phpbench-wordpress \
+  --passk 1 \
+  --max-concurrent 1 \
+  --max-rounds 30 \
+  --run-id webvulnbench-wordpress-smoke-001
+```
+
+### Run the Full PHP Benchmark
+
+The default PHP configuration evaluates all 10 targets. A conservative run uses
+one attempt per target and one target at a time:
+
+```bash
+cd CAGE
+source .venv/bin/activate
+
+cage run ../WebVulnBench/cage/default_webvulnbench_php.yml \
+  --agent qwen_code \
+  --model my-openai-compatible-model \
+  --passk 1 \
+  --max-concurrent 1 \
+  --max-rounds 30 \
+  --run-id webvulnbench-php-10targets-r30-001
+```
+
+To evaluate a single target, add `--sample phpbench-<application>`. To evaluate
+multiple independent attempts per target, increase `--passk`.
+
+### Results and Scoring
+
+CAGE writes run artifacts under the benchmark output directory, typically:
+
+```text
+WebVulnBench/cage/.cage_runs/<agent>:<model>:<mode>/<run-id>/
+```
+
+Useful artifacts include trial summaries, scores, full agent trajectories,
+proxied LLM request logs, tool-call history, final agent reports, and evaluator
+outputs for each vulnerability. CAGE also starts or reuses its local inspector
+UI in interactive runs; the run log prints the inspector URL.
+
+Each vulnerability is scored by a verifier derived from the corresponding
+`PHP/<application>/pocs.json` entry. A successful hit requires the agent to
+report the relevant vulnerability and produce behavior that the evaluator can
+match against the known vulnerable endpoint, parameters, and payload semantics.
+
+For LLM-agent analysis, it is useful to separate failures into these categories:
+
+- hit verified by the evaluator
+- endpoint reached, vulnerable parameter tested, exploit not verified
+- endpoint reached, vulnerable parameter not tested
+- vulnerable endpoint not reached
+- agent reported a plausible issue but verifier did not confirm it
+
+This distinction separates navigation failures, parameter discovery failures,
+and exploit-construction failures.
+
 ## Citation
 
 ```bibtex
